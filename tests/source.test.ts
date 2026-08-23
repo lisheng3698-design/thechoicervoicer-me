@@ -161,6 +161,10 @@ describe("static launch source", () => {
     expect(read(`public/${key}.txt`).trim()).toBe(key);
   });
 
+  it("keeps the GitHub Pages custom domain in every deployment", () => {
+    expect(read("public/CNAME").trim()).toBe("thechoicervoicer.me");
+  });
+
   it("connects English and Chinese equivalents with visible switches and hreflang", () => {
     const pairs = [
       ["index.html", "zh/index.html", "/zh/", "/"],
