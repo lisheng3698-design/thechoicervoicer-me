@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Choicer Voicer Online Game — Browser Voice Challenge</title>
+    <meta name="description" content="Imitate rights-cleared dialogue scenes in an independent browser voice challenge with five computer judges and one-word reviews." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://thechoicervoicer.me/games/" />
+    <link rel="alternate" hreflang="en" href="https://thechoicervoicer.me/games/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://thechoicervoicer.me/zh/games/" />
+    <link rel="alternate" hreflang="x-default" href="https://thechoicervoicer.me/games/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#78d4dd" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Choicer Voicer — Browser Voice Challenge" />
+    <meta property="og:description" content="Listen, imitate, replay, and get scored. Your microphone audio stays on your device." />
+    <meta property="og:url" content="https://thechoicervoicer.me/games/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "VideoGame",
+            "name": "The Choicer Voicer Browser Voice Game",
+            "url": "https://thechoicervoicer.me/games/",
+            "description": "An original browser party game that scores how closely a player imitates short rights-cleared dialogue scenes.",
+            "genre": ["Party game", "Voice game", "Casual game"],
+            "gamePlatform": "Web browser",
+            "operatingSystem": "Any modern operating system with a supported browser",
+            "applicationCategory": "Game",
+            "isAccessibleForFree": true,
+            "playMode": ["SinglePlayer", "MultiPlayer"],
+            "inLanguage": "en",
+            "datePublished": "2026-08-23"
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How does this browser challenge score a performance?",
+                "acceptedAnswer": { "@type": "Answer", "text": "The local scoring model compares timing, energy contour, and pitch movement. It normalizes pitch register so different natural voices can follow the same contour." }
+              },
+              {
+                "@type": "Question",
+                "name": "Where does my recording go?",
+                "acceptedAnswer": { "@type": "Answer", "text": "The recording remains a temporary local browser object. It is not uploaded or stored on a server and is discarded when the mic session or tab ends." }
+              },
+              {
+                "@type": "Question",
+                "name": "Who built this browser voice game?",
+                "acceptedAnswer": { "@type": "Answer", "text": "This browser edition uses original code, interface, scoring, and rights-cleared voice assets created for thechoicervoicer.me." }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to game</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label="The Choicer Voicer home">
+          <img src="/logo-mark.svg" alt="" width="42" height="42" />
+          <span class="brand__lockup"><span class="brand__name"><span class="brand__article">The</span> Choicer <span class="brand__accent">Voicer</span></span><small>Browser voice game</small></span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="/">Game guide</a>
+          <a href="#how-to-play">How to play</a>
+          <a href="#game-faq">FAQ</a>
+          <a class="nav-play" href="/games/" aria-current="page">Play</a>
+          <a class="language-switch" href="/zh/games/" lang="zh-CN" hreflang="zh-Hans" data-language-choice="zh">中文</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero container">
+        <p class="eyebrow">Browser voice game · 1–4 local players</p>
+        <h1>Play The Choicer Voicer in your browser.</h1>
+        <p class="page-hero__lead">Hear a character deliver a short dialogue line, copy its rhythm and movement, replay your take, then receive five votes and one-word judge reviews.</p>
+      </section>
+
+      <section class="game-shell" data-voice-show-game data-pack-url="/packs/starter-sparks.json" aria-label="Browser voice game">
+        <div class="game-toolbar">
+          <div class="game-toolbar__status"><span class="live-dot" aria-hidden="true"></span><span data-game-status aria-live="polite">Loading rights-cleared scene pack…</span> · <span data-round-label>Preparing show</span></div>
+          <div class="game-toolbar__actions">
+            <button class="icon-button" type="button" data-end-mic hidden aria-label="End microphone session">■ End mic</button>
+            <button class="icon-button" type="button" data-fullscreen-game aria-label="Toggle game fullscreen">⛶ Fullscreen</button>
+          </div>
+        </div>
+        <div class="show-progress" aria-label="Game progress">
+          <span data-progress-step="menu">01 Menu</span><span data-progress-step="setup">02 Setup</span><span data-progress-step="cue">03 Perform</span><span data-progress-step="score">04 Judges</span>
+        </div>
+        <div class="game-canvas-wrap" aria-hidden="true"><canvas></canvas></div>
+        <div class="game-panel" data-game-panel>
+          <div class="game-copy game-copy--center">
+            <p class="eyebrow">Loading</p>
+            <h2>Warming up the tiny stage…</h2>
+            <p>The game needs JavaScript and a browser with microphone support.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--cyan" id="how-to-play">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">How to play</p>
+              <h2>One round takes about ten seconds.</h2>
+            </div>
+            <p>The 16-scene library mixes four original film-style performances with 12 public-domain world classics. Each show draws four scenes, and every scene displays its country, source, character, original voice profile, context, and rights status.</p>
+          </div>
+          <div class="step-grid">
+            <article class="step-card"><div class="step-card__number">1</div><h3>Test the mic</h3><p>Grant browser permission and watch the live level meter. Audio begins only after your click.</p></article>
+            <article class="step-card"><div class="step-card__number">2</div><h3>Listen and perform</h3><p>Replay the original performance if needed, then record one timed delivery of the line.</p></article>
+            <article class="step-card"><div class="step-card__number">3</div><h3>Replay and score</h3><p>Compare both performances, reveal five votes and five one-word reviews, then continue through all four scenes.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="content-layout">
+          <article class="article-copy">
+            <p class="eyebrow">Fairness notes</p>
+            <h2>What the score actually measures</h2>
+            <p>This browser game is a playful similarity meter, not a singing exam or identity detector. The timing component compares recording length with the reference. Energy scoring follows the loud–soft shape. Pitch scoring compares the direction and spacing of voiced notes while largely ignoring whether your natural voice starts high or low.</p>
+            <p>Background noise, laptop audio leaking into the microphone, aggressive noise suppression, and very quiet input can affect the result. Headphones and a normal speaking distance give the cleanest comparison. A score is entertainment, not a judgment of voice quality.</p>
+            <h2>Original pack policy</h2>
+            <p>The bundled Starter Sparks pack contains purpose-made WAV files generated specifically for this site. It does not contain copied commercial audio, characters, logos, screenshots, or community voice pack files. Future packs should enter only with documented permission or a compatible public-domain/Creative Commons license.</p>
+            <h2 id="game-faq">Game FAQ</h2>
+            <h3>Where does my recording go?</h3>
+            <p>It stays inside this browser tab as a temporary object URL. There is no upload request, database, or user account. Choose “End mic” or close the tab to stop the stream and discard playback.</p>
+            <h3>Why is the record button locked?</h3>
+            <p>Listen to the reference once first. If audio does not play, turn off silent mode, raise media volume, and retry. Embedded in-app browsers may restrict audio and microphone APIs.</p>
+            <h3>Who built this browser voice game?</h3>
+            <p>This browser edition uses original code, interface, scoring, and AI-designed spoken performances created for thechoicervoicer.me.</p>
+          </article>
+          <aside class="side-note">
+            <h3>Browser checklist</h3>
+            <ul>
+              <li>HTTPS connection</li>
+              <li>Microphone permission</li>
+              <li>Current Chrome, Edge, Firefox, or Safari</li>
+              <li>Headphones recommended</li>
+            </ul>
+            <p><strong>Privacy:</strong> microphone recordings are not uploaded or saved to a server.</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand"><strong>The Choicer Voicer — Browser Voice Game</strong><p class="affiliation-note">Independent browser implementation. No third-party affiliation, sponsorship, or endorsement is claimed.</p></div>
+        <nav class="footer-nav" aria-label="Footer navigation"><a href="/">Game guide</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav>
+        <p class="copyright">© <span data-current-year>2026</span> thechoicervoicer.me. Audio stays local in this release.</p>
+      </div>
+    </footer>
+    <script type="module" src="/src/game.ts"></script>
+  </body>
+</html>

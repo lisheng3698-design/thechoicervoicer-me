@@ -1,0 +1,24 @@
+{
+  "name": "the-choicer-voicer-browser-game",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "assets:audio": "node scripts/generate-audio.mjs",
+    "deploy:cloudflare": "npm run build && wrangler pages deploy dist --project-name=thechoicervoicer-me",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.1.1",
+    "typescript": "^6.0.3",
+    "vite": "^8.2.1",
+    "vitest": "^4.1.10",
+    "wrangler": "^4.124.0"
+  }
+}

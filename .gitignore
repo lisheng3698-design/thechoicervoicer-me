@@ -1,0 +1,13 @@
+node_modules/
+dist/
+artifacts/
+.wrangler/
+.DS_Store
+*.log
+*.zip
+.env
+.env.*
+!.env.example
+docs/audits/
+docs/design-references/
+docs/research/
