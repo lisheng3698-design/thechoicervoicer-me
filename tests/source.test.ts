@@ -45,15 +45,18 @@ describe("static launch source", () => {
     expect(html).not.toContain("gga.dev");
   });
 
-  it("ships a distinctive voice-comparison logo across every product header", () => {
+  it("ships the interwoven-wave logo across every product header", () => {
     const logo = read("public/logo-mark.svg");
     const favicon = read("public/favicon.svg");
     expect(logo.match(/<path /g)).toHaveLength(2);
-    expect(logo.match(/<circle /g)).toHaveLength(5);
-    expect(logo).toContain("#F7F3E8");
-    expect(logo).toContain("#78D4DD");
-    expect(logo).toContain("#E06169");
-    expect(favicon).toBe(logo);
+    expect(logo).not.toContain("<circle");
+    expect(logo).not.toContain("<rect");
+    expect(logo).toContain("#273136");
+    expect(logo).toContain("#58C8D1");
+    expect(logo).not.toContain("#E06169");
+    expect(favicon.match(/<path /g)).toHaveLength(2);
+    expect(favicon).toContain("#273136");
+    expect(favicon).toContain("#58C8D1");
     for (const path of pages) {
       const html = read(path);
       expect(html, `${path} should use the product logo mark`).toContain('src="/logo-mark.svg"');
