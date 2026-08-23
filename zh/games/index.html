@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Choicer Voicer 在线游戏 — 浏览器语音挑战</title>
+    <meta name="description" content="模仿已获使用权的台词片段，获得五位电脑评委的分数和一词评价，支持 1–4 人本地轮流。" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://thechoicervoicer.me/zh/games/" />
+    <link rel="alternate" hreflang="en" href="https://thechoicervoicer.me/games/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://thechoicervoicer.me/zh/games/" />
+    <link rel="alternate" hreflang="x-default" href="https://thechoicervoicer.me/games/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#78d4dd" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Choicer Voicer — 浏览器语音挑战" />
+    <meta property="og:description" content="先听、模仿、回放并获得评委投票，麦克风音频只在本机处理。" />
+    <meta property="og:url" content="https://thechoicervoicer.me/zh/games/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "VideoGame",
+            "name": "The Choicer Voicer 浏览器语音游戏",
+            "url": "https://thechoicervoicer.me/zh/games/",
+            "description": "使用已获使用权的台词片段、五位电脑评委和本地相似度分析的独立浏览器派对游戏。",
+            "genre": ["派对游戏", "语音游戏", "休闲游戏"],
+            "gamePlatform": "网页浏览器",
+            "operatingSystem": "支持现代浏览器的操作系统",
+            "applicationCategory": "Game",
+            "isAccessibleForFree": true,
+            "playMode": ["SinglePlayer", "MultiPlayer"],
+            "inLanguage": "zh-CN",
+            "datePublished": "2026-08-23"
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "浏览器游戏如何评分？",
+                "acceptedAnswer": { "@type": "Answer", "text": "本地评分会比较节奏、能量轮廓和音高走势，并把结果转换成五位电脑评委的投票。" }
+              },
+              {
+                "@type": "Question",
+                "name": "录音会发送到哪里？",
+                "acceptedAnswer": { "@type": "Answer", "text": "录音只作为当前标签页中的临时浏览器对象存在，不会上传或存入服务器。" }
+              },
+              {
+                "@type": "Question",
+                "name": "这个浏览器语音游戏由谁开发？",
+                "acceptedAnswer": { "@type": "Answer", "text": "这个浏览器版本使用为 thechoicervoicer.me 制作的原创代码、界面、评分系统和已获使用权的语音素材。" }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/site-DDt4b0ZU.js"></script>
+    <script type="module" crossorigin src="/assets/game-DlzJBrNT.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/site-4U2di3An.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到游戏</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/zh/" aria-label="The Choicer Voicer 中文首页"><img src="/logo-mark.svg" alt="" width="42" height="42" /><span class="brand__lockup"><span class="brand__name"><span class="brand__article">The</span> Choicer <span class="brand__accent">Voicer</span></span><small>浏览器语音游戏</small></span></a>
+        <nav class="main-nav" aria-label="主导航">
+          <a href="/zh/">中文指南</a><a href="#how-to-play">玩法说明</a><a href="#game-faq">常见问题</a><a class="nav-play" href="/zh/games/" aria-current="page">游玩</a><a class="language-switch" href="/games/" lang="en" hreflang="en" data-language-choice="en">English</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero container">
+        <p class="eyebrow">浏览器语音游戏 · 1–4 人本地轮流</p>
+        <h1>在浏览器中畅玩 The Choicer Voicer。</h1>
+        <p class="page-hero__lead">听角色表演一段短台词，模仿其节奏和音高走势，回放自己的录音，再获得五位电脑评委的投票和一词评价。</p>
+      </section>
+
+      <section class="game-shell" data-voice-show-game data-pack-url="/packs/starter-sparks.json" aria-label="浏览器语音模仿游戏">
+        <div class="game-toolbar">
+          <div class="game-toolbar__status"><span class="live-dot" aria-hidden="true"></span><span data-game-status aria-live="polite">正在加载已获使用权的台词片段…</span> · <span data-round-label>正在准备游戏</span></div>
+          <div class="game-toolbar__actions"><button class="icon-button" type="button" data-end-mic hidden aria-label="结束麦克风会话">■ 关闭麦克风</button><button class="icon-button" type="button" data-fullscreen-game aria-label="切换游戏全屏">⛶ 全屏</button></div>
+        </div>
+        <div class="show-progress" aria-label="游戏进度">
+          <span data-progress-step="menu">01 菜单</span><span data-progress-step="setup">02 设置</span><span data-progress-step="cue">03 表演</span><span data-progress-step="score">04 评委</span>
+        </div>
+        <div class="game-canvas-wrap" aria-hidden="true"><canvas></canvas></div>
+        <div class="game-panel" data-game-panel><div class="game-copy game-copy--center"><p class="eyebrow">正在加载</p><h2>正在准备独立演播室……</h2><p>游戏需要启用 JavaScript，并使用支持麦克风的现代浏览器。</p></div></div>
+      </section>
+
+      <section class="section section--cyan" id="how-to-play">
+        <div class="container">
+          <div class="section-heading"><div><p class="eyebrow">玩法说明</p><h2>选择玩家，然后完成随机抽取的四个台词场景。</h2></div><p>16 段内容库包含 4 段原创电影式表演和 12 段跨国家公版经典；每段都会公开显示国家、来源、角色、原创音色、场景和授权状态。</p></div>
+          <div class="step-grid">
+            <article class="step-card"><div class="step-card__number">1</div><h3>测试麦克风</h3><p>允许浏览器访问麦克风，并确认实时电平条会随声音变化。</p></article>
+            <article class="step-card"><div class="step-card__number">2</div><h3>听原声并模仿</h3><p>先播放角色原声，再完成一次定时台词表演。评分前可以回放或重新录制。</p></article>
+            <article class="step-card"><div class="step-card__number">3</div><h3>查看评委投票</h3><p>五位电脑评委根据本地相似度分析投票，多人模式会自动轮到下一名玩家。</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="content-layout">
+          <article class="article-copy">
+            <p class="eyebrow">评分说明</p>
+            <h2>评分实际比较什么</h2>
+            <p>这是一套用于娱乐的相似度分析，不是歌唱考试，也不会识别玩家身份。节奏评分比较录音时长，能量评分追踪声音强弱轮廓，音高评分比较音高移动方向，并尽量忽略不同玩家的自然音域差异。</p>
+            <p>背景噪声、扬声器声音被麦克风重新录入、系统降噪和过低输入音量都可能影响结果。佩戴耳机并与麦克风保持正常说话距离，可以获得更稳定的比较结果。</p>
+            <h2>原创演示包原则</h2>
+            <p>内置演示包包含专门为本站生成的 WAV 文件，不包含复制的商业音频、角色、标志、截图或社区语音包。</p>
+            <h2 id="game-faq">游戏常见问题</h2>
+            <h3>录音会保存到哪里？</h3><p>录音只在当前标签页中形成临时地址。选择“关闭麦克风”或关闭标签页后，会话和临时回放都会结束。</p>
+            <h3>为什么录音按钮不可用？</h3><p>需要先播放一次提示音。如果提示音无法播放，请关闭静音模式、提高媒体音量，并避免使用限制音频权限的内嵌浏览器。</p>
+            <h3>这个浏览器语音游戏由谁开发？</h3><p>这个浏览器版本使用为 thechoicervoicer.me 制作的原创代码、界面、评分系统和 AI 设计语音表演。</p>
+          </article>
+          <aside class="side-note"><h3>浏览器检查清单</h3><ul><li>正式环境使用 HTTPS</li><li>允许麦克风权限</li><li>使用最新版 Chrome、Edge、Firefox 或 Safari</li><li>建议佩戴耳机</li></ul><p><strong>隐私：</strong>麦克风录音不会上传或保存到服务器。</p></aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand"><strong>The Choicer Voicer — 浏览器语音游戏</strong><p class="affiliation-note">本站浏览器游戏为独立实现，不声称获得任何第三方的隶属关系、赞助或背书。</p></div>
+        <nav class="footer-nav" aria-label="页脚导航"><a href="/zh/">中文指南</a><a href="/zh/about/">关于</a><a href="/zh/contact/">联系</a><a href="/zh/privacy/">隐私</a><a href="/zh/terms/">使用条款</a></nav>
+        <p class="copyright">© <span data-current-year>2026</span> thechoicervoicer.me。当前版本的音频仅在本机处理。</p>
+      </div>
+    </footer>
+  </body>
+</html>

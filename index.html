@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Choicer Voicer Online — Playable Browser Voice Game</title>
+    <meta name="description" content="Learn about The Choicer Voicer and play an independent browser voice-imitation challenge with local microphone processing, five judges, and 1–4 local players." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://thechoicervoicer.me/" />
+    <link rel="alternate" hreflang="en" href="https://thechoicervoicer.me/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://thechoicervoicer.me/zh/" />
+    <link rel="alternate" hreflang="x-default" href="https://thechoicervoicer.me/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#78d4dd" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Choicer Voicer — Playable Browser Voice Game" />
+    <meta property="og:description" content="A directly playable browser voice game with local microphone processing, five computer judges, and one-to-four-player local play." />
+    <meta property="og:url" content="https://thechoicervoicer.me/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://thechoicervoicer.me/#website",
+            "url": "https://thechoicervoicer.me/",
+            "name": "The Choicer Voicer Browser Voice Game",
+            "description": "A directly playable browser voice game and gameplay guide.",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://thechoicervoicer.me/#webpage",
+            "url": "https://thechoicervoicer.me/",
+            "name": "The Choicer Voicer Online — Playable Browser Voice Game",
+            "isPartOf": { "@id": "https://thechoicervoicer.me/#website" },
+            "dateModified": "2026-08-23",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "VideoGame",
+            "name": "The Choicer Voicer Browser Voice Game",
+            "url": "https://thechoicervoicer.me/#play",
+            "description": "An independently implemented browser party game where one to four local players imitate rights-cleared dialogue scenes and receive scores plus one-word reviews from five computer judges.",
+            "genre": ["Party game", "Voice game", "Casual game"],
+            "gamePlatform": "Web browser",
+            "playMode": ["SinglePlayer", "MultiPlayer"],
+            "isAccessibleForFree": true,
+            "inLanguage": "en"
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who built this browser voice game?",
+                "acceptedAnswer": { "@type": "Answer", "text": "This browser edition uses original code, interface, scoring, and rights-cleared voice assets created for thechoicervoicer.me." }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I play a The Choicer Voicer-style game in this browser?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. The playable game on this page uses original code and voice assets to deliver a listen, perform, replay, and judge-vote loop directly in the browser." }
+              },
+              {
+                "@type": "Question",
+                "name": "Does this site upload microphone recordings?",
+                "acceptedAnswer": { "@type": "Answer", "text": "No. Microphone analysis and temporary playback stay inside the current browser tab." }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/site-DDt4b0ZU.js"></script>
+    <script type="module" crossorigin src="/assets/game-DlzJBrNT.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/site-4U2di3An.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#play">Skip to the playable game</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label="The Choicer Voicer home">
+          <img src="/logo-mark.svg" alt="" width="42" height="42" />
+          <span class="brand__lockup"><span class="brand__name"><span class="brand__article">The</span> Choicer <span class="brand__accent">Voicer</span></span><small>Browser voice game</small></span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="nav-play" href="#play">Play now</a>
+          <a href="#how-to-play">How to play</a>
+          <a href="#feature-map">Modes</a>
+          <a href="#faq">FAQ</a>
+          <a class="language-switch" href="/zh/" lang="zh-CN" hreflang="zh-Hans" data-language-choice="zh">中文</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="home-intro container">
+        <p class="eyebrow">Browser voice game · Updated August 23, 2026</p>
+        <h1>The Choicer Voicer: play the browser voice challenge.</h1>
+        <p class="hero__lead">Hear a character perform a short, rights-cleared dialogue scene, imitate the line into your microphone, then receive scores and one-word reviews from five computer judges.</p>
+        <div class="hero__actions">
+          <a class="button button--primary button--large" href="#play">Enter the studio</a>
+        </div>
+        <div class="trust-row" aria-label="Browser challenge highlights">
+          <span class="pill">1–4 local players</span>
+          <span class="pill">Five computer judges</span>
+          <span class="pill">Local-only microphone processing</span>
+          <span class="pill">Original code and voice library</span>
+        </div>
+      </section>
+
+      <section id="play" class="game-shell game-shell--home" data-voice-show-game data-pack-url="/packs/starter-sparks.json" aria-label="Browser voice game">
+        <div class="game-toolbar">
+          <div class="game-toolbar__status"><span class="live-dot" aria-hidden="true"></span><span data-game-status aria-live="polite">Loading local scene pack…</span> · <span data-round-label>Preparing show</span></div>
+          <div class="game-toolbar__actions">
+            <button class="icon-button" type="button" data-end-mic hidden aria-label="End microphone session">■ End mic</button>
+            <button class="icon-button" type="button" data-fullscreen-game aria-label="Toggle game fullscreen">⛶ Fullscreen</button>
+          </div>
+        </div>
+        <div class="show-progress" aria-label="Game progress">
+          <span data-progress-step="menu">01 Menu</span><span data-progress-step="setup">02 Setup</span><span data-progress-step="cue">03 Perform</span><span data-progress-step="score">04 Judges</span>
+        </div>
+        <div class="game-canvas-wrap" aria-hidden="true"><canvas></canvas></div>
+        <div class="game-panel" data-game-panel>
+          <div class="game-copy game-copy--center">
+            <p class="eyebrow">Loading</p>
+            <h2>Warming up the voice studio…</h2>
+            <p>The game needs JavaScript and a modern browser with microphone support.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--ink">
+        <div class="container answer-box">
+          <div class="answer-box__label">One browser.<br />One microphone.<br />Five judges.</div>
+          <div>
+            <p class="eyebrow">What is verified</p>
+            <h2>What is The Choicer Voicer?</h2>
+            <p>The Choicer Voicer is a browser voice-imitation party game: hear a short character performance, copy its timing and vocal movement, replay your take, and face five computer judges.</p>
+            <p>This edition supports one to four local players and runs with original TypeScript, Web Audio analysis, interface design, scoring logic, and rights-cleared dialogue performances. It does not use commercial movie audio.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="how-to-play">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">How to play</p>
+            <h2>Listen. Perform. Face the panel.</h2>
+          </div>
+          <p>Every recording stays in this tab. Use headphones so the reference clip does not leak back into the microphone.</p>
+        </div>
+        <div class="step-grid">
+          <article class="step-card"><div class="step-card__number">1</div><h3>Choose the lineup</h3><p>Select one to four local players and enter names. Everyone shares the same device and microphone.</p></article>
+          <article class="step-card"><div class="step-card__number">2</div><h3>Hear the character</h3><p>Play the original performance, read the source and character card, then imitate the dialogue line in one timed take.</p></article>
+          <article class="step-card"><div class="step-card__number">3</div><h3>Collect judge votes</h3><p>Five computer judges convert the local similarity analysis into 0–5 approvals. An exceptional match can reach 6/5.</p></article>
+        </div>
+      </section>
+
+      <section class="section section--cyan" id="feature-map">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Public feature map</p>
+              <h2>What is playable in this browser edition.</h2>
+            </div>
+            <p>The browser edition focuses on a complete, replayable party loop with transparent local scoring and no account requirement.</p>
+          </div>
+          <div class="card-grid">
+            <article class="info-card"><h3>Standard game show ✓</h3><p>Reference clip, local recording, computer judging, 1–4 local players, five votes, and a final leaderboard are playable above.</p></article>
+            <article class="info-card"><h3>Scene-pack structure ✓</h3><p>Each JSON scene carries a quote, work, character, scene, rights status, audio file, and scoring profile. Unlicensed movie or community media is not bundled.</p></article>
+            <article class="info-card"><h3>Local multiplayer & privacy ✓</h3><p>Pass one device between up to four named players. Microphone recordings remain temporary objects inside the current browser tab.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="faq">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">FAQ</p>
+            <h2>What to know before you play.</h2>
+          </div>
+          <p>Learn how the browser edition handles voice assets, microphone recordings, scoring, and device support.</p>
+        </div>
+        <div class="faq-grid">
+          <article class="faq-card"><h3>Who built this browser game?</h3><p>This browser edition uses original TypeScript, Web Audio scoring, interface design, and rights-cleared voice assets created for thechoicervoicer.me.</p></article>
+          <article class="faq-card"><h3>What audio is included?</h3><p>The library contains original film-style performances and public-domain literary dialogue rendered as purpose-made voice assets. It does not bundle commercial movie audio.</p></article>
+          <article class="faq-card"><h3>Where does my recording go?</h3><p>It remains a temporary browser object in this tab. There is no upload endpoint, account, or server-side voice storage.</p></article>
+          <article class="faq-card"><h3>How does scoring work?</h3><p>The browser scoring model compares timing, energy contour, and pitch movement, then maps the result to five judge votes.</p></article>
+          <article class="faq-card"><h3>Does it work on phones?</h3><p>It is designed for current mobile browsers with microphone and MediaRecorder support. HTTPS is required after deployment.</p></article>
+          <article class="faq-card"><h3>Can I load community packs?</h3><p>Not in this build. Pack files contain third-party media and should only be used when their author grants permission.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <strong>The Choicer Voicer — Browser Voice Game</strong>
+          <p class="affiliation-note">Independent browser implementation. No third-party affiliation, sponsorship, or endorsement is claimed.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#play">Play</a>
+          <a href="/games/">Full game page</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
+        </nav>
+        <p class="copyright">© <span data-current-year>2026</span> thechoicervoicer.me. Browser voice game and guide.</p>
+      </div>
+    </footer>
+  </body>
+</html>

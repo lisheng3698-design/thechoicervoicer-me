@@ -1,0 +1,9 @@
+{
+  "name": "The Choicer Voicer Browser Voice Game",
+  "short_name": "Choicer Voice",
+  "start_url": "/#play",
+  "display": "standalone",
+  "background_color": "#f7f3e8",
+  "theme_color": "#111827",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
