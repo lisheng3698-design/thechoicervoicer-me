@@ -156,6 +156,11 @@ describe("static launch source", () => {
     expect(existsSync(resolve(project, "public/_redirects"))).toBe(false);
   });
 
+  it("publishes the IndexNow verification key at the site root", () => {
+    const key = "3816ac92e1a10a2b765a5d23261a36fa";
+    expect(read(`public/${key}.txt`).trim()).toBe(key);
+  });
+
   it("connects English and Chinese equivalents with visible switches and hreflang", () => {
     const pairs = [
       ["index.html", "zh/index.html", "/zh/", "/"],
