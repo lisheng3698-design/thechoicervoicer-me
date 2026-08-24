@@ -33,8 +33,9 @@ test("homepage is crawlable, navigable, and free of horizontal overflow", async 
   await expect(page.locator('a[href*="itch.io"]')).toHaveCount(0);
   await expect(page.getByRole("link", { name: /desktop game|official/i })).toHaveCount(0);
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", "https://thechoicervoicer.me/");
-  await expect(page.getByRole("link", { name: "Enter the studio" })).toBeVisible();
-  await expect(page.locator("[data-voice-show-game]")).toBeVisible();
+  await expect(page.locator(".home-intro--compact")).toBeVisible();
+  await expect(page.locator("[data-voice-show-game]")).toBeInViewport({ ratio: 0.25 });
+  await expect(page.locator("[data-end-mic]")).toBeHidden();
   await expect(page.getByRole("heading", { name: "Choose your show." })).toBeVisible();
   await expect(page.getByRole("button", { name: /Solo.*1 player/i })).toBeVisible();
   await expect(page.getByRole("button", { name: /Group.*2–4 players/i })).toBeVisible();
@@ -159,7 +160,7 @@ test("Chinese homepage and game setup stay fully localized", async ({ page }, te
   await page.goto("/zh/");
 
   await expect(page.locator("html")).toHaveAttribute("lang", "zh-CN");
-  await expect(page.getByRole("heading", { level: 1 })).toContainText("在线体验语音模仿游戏");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("The Choicer Voicer");
   await expect(page.locator(".brand small")).toHaveText("浏览器语音游戏");
   await expect(page.locator('a[href*="itch.io"]')).toHaveCount(0);
   await expect(page.getByRole("link", { name: /桌面游戏|官方/ })).toHaveCount(0);
@@ -175,6 +176,20 @@ test("Chinese homepage and game setup stay fully localized", async ({ page }, te
   expect(noOverflow).toBe(true);
 
   await page.screenshot({ path: testInfo.outputPath("homepage-zh.png"), fullPage: true });
+});
+
+test("homepage exposes real game controls in representative first viewports", async ({ page }) => {
+  for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {
+    for (const locale of ["/", "/zh/"]) {
+      await page.setViewportSize(viewport);
+      await page.goto(locale);
+      const solo = locale === "/"
+        ? page.getByRole("button", { name: /Solo.*1 player/i })
+        : page.getByRole("button", { name: /单人.*1 名玩家/ });
+      await expect(page.locator("[data-voice-show-game]")).toBeInViewport({ ratio: 0.25 });
+      await expect(solo).toBeInViewport({ ratio: 0.75 });
+    }
+  }
 });
 
 test("Chinese microphone-to-judge flow uses Chinese controls", async ({ page }, testInfo) => {

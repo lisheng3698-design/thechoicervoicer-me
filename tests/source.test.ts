@@ -45,6 +45,15 @@ describe("static launch source", () => {
     expect(html).not.toContain("gga.dev");
   });
 
+  it("keeps both homepages compact and puts the playable game directly after the intro", () => {
+    for (const path of ["index.html", "zh/index.html"]) {
+      const html = read(path);
+      expect(html, `${path} should use the compact homepage intro`).toContain('class="home-intro home-intro--compact container"');
+      expect(html, `${path} should remove the redundant hero CTA`).not.toContain('class="hero__actions"');
+      expect(html.indexOf('class="home-intro home-intro--compact container"')).toBeLessThan(html.indexOf('class="game-shell game-shell--home"'));
+    }
+  });
+
   it("ships the interwoven-wave logo across every product header", () => {
     const logo = read("public/logo-mark.svg");
     const favicon = read("public/favicon.svg");
