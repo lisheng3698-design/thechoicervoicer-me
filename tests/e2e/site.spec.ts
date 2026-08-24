@@ -160,7 +160,7 @@ test("Chinese homepage and game setup stay fully localized", async ({ page }, te
   await page.goto("/zh/");
 
   await expect(page.locator("html")).toHaveAttribute("lang", "zh-CN");
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("The Choicer Voicer");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("The Choicer Voicer 在线玩");
   await expect(page.locator(".brand small")).toHaveText("浏览器语音游戏");
   await expect(page.locator('a[href*="itch.io"]')).toHaveCount(0);
   await expect(page.getByRole("link", { name: /桌面游戏|官方/ })).toHaveCount(0);

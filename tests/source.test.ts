@@ -54,6 +54,32 @@ describe("static launch source", () => {
     }
   });
 
+  it("ships complete homepage social metadata and substantial source-visible English copy", () => {
+    const html = read("index.html");
+    const chinese = read("zh/index.html");
+    expect(html).toContain("<title>The Choicer Voicer — Play the Voice Imitation Game Online</title>");
+    expect(html).toContain('content="Play The Choicer Voicer online in your browser.');
+    expect(html).toContain("<h1>The Choicer Voicer Online</h1>");
+    expect(chinese).toContain("<h1>The Choicer Voicer 在线玩</h1>");
+    for (const page of [html, chinese]) {
+      expect(page).toContain('property="og:image" content="https://thechoicervoicer.me/og-the-choicer-voicer.png"');
+      expect(page).toContain('name="twitter:card" content="summary_large_image"');
+      expect(page).toContain('name="twitter:image" content="https://thechoicervoicer.me/og-the-choicer-voicer.png"');
+    }
+    const visibleEnglish = html
+      .replace(/<script[\s\S]*?<\/script>/gi, " ")
+      .replace(/<style[\s\S]*?<\/style>/gi, " ")
+      .replace(/<[^>]+>/g, " ")
+      .replace(/&[a-z0-9#]+;/gi, " ")
+      .replace(/[^\p{L}\p{N}’'–-]+/gu, " ")
+      .trim()
+      .split(/\s+/)
+      .filter(Boolean);
+    expect(visibleEnglish.length).toBeGreaterThanOrEqual(1200);
+    expect(visibleEnglish.length).toBeLessThanOrEqual(1800);
+    expect(existsSync(resolve(project, "public/og-the-choicer-voicer.png"))).toBe(true);
+  });
+
   it("ships the interwoven-wave logo across every product header", () => {
     const logo = read("public/logo-mark.svg");
     const favicon = read("public/favicon.svg");

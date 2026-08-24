@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Choicer Voicer Online — Playable Browser Voice Game</title>
-    <meta name="description" content="Learn about The Choicer Voicer and play an independent browser voice-imitation challenge with local microphone processing, five judges, and 1–4 local players." />
+    <title>The Choicer Voicer — Play the Voice Imitation Game Online</title>
+    <meta name="description" content="Play The Choicer Voicer online in your browser. Hear dialogue, imitate each performance, and get scored by five computer judges in solo or local party play." />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <link rel="canonical" href="https://thechoicervoicer.me/" />
     <link rel="alternate" hreflang="en" href="https://thechoicervoicer.me/" />
@@ -14,9 +14,19 @@
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#78d4dd" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="The Choicer Voicer — Playable Browser Voice Game" />
-    <meta property="og:description" content="A directly playable browser voice game with local microphone processing, five computer judges, and one-to-four-player local play." />
+    <meta property="og:title" content="The Choicer Voicer — Play the Voice Game Online" />
+    <meta property="og:description" content="Hear a dialogue performance, imitate it, and face five computer judges—solo or with up to four local players." />
     <meta property="og:url" content="https://thechoicervoicer.me/" />
+    <meta property="og:image" content="https://thechoicervoicer.me/og-the-choicer-voicer.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="The Choicer Voicer browser voice game with an interwoven sound-wave logo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Choicer Voicer — Play the Voice Game Online" />
+    <meta name="twitter:description" content="Listen, perform, and face five computer judges in a directly playable browser voice game." />
+    <meta name="twitter:image" content="https://thechoicervoicer.me/og-the-choicer-voicer.png" />
+    <meta name="twitter:image:alt" content="The Choicer Voicer browser voice game" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -25,22 +35,22 @@
             "@type": "WebSite",
             "@id": "https://thechoicervoicer.me/#website",
             "url": "https://thechoicervoicer.me/",
-            "name": "The Choicer Voicer Browser Voice Game",
-            "description": "A directly playable browser voice game and gameplay guide.",
+            "name": "The Choicer Voicer",
+            "description": "Play The Choicer Voicer online and learn how its browser voice-imitation game, local scoring, and party modes work.",
             "inLanguage": "en"
           },
           {
             "@type": "WebPage",
             "@id": "https://thechoicervoicer.me/#webpage",
             "url": "https://thechoicervoicer.me/",
-            "name": "The Choicer Voicer Online — Playable Browser Voice Game",
+            "name": "The Choicer Voicer — Play the Voice Imitation Game Online",
             "isPartOf": { "@id": "https://thechoicervoicer.me/#website" },
-            "dateModified": "2026-08-23",
+            "dateModified": "2026-08-24",
             "inLanguage": "en"
           },
           {
             "@type": "VideoGame",
-            "name": "The Choicer Voicer Browser Voice Game",
+            "name": "The Choicer Voicer",
             "url": "https://thechoicervoicer.me/#play",
             "description": "An independently implemented browser party game where one to four local players imitate rights-cleared dialogue scenes and receive scores plus one-word reviews from five computer judges.",
             "genre": ["Party game", "Voice game", "Casual game"],
@@ -54,13 +64,13 @@
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "Who built this browser voice game?",
-                "acceptedAnswer": { "@type": "Answer", "text": "This browser edition uses original code, interface, scoring, and rights-cleared voice assets created for thechoicervoicer.me." }
+                "name": "Can I play The Choicer Voicer online?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes. The playable game at the top of this page runs directly in a modern browser and includes solo practice plus local party play for up to four players." }
               },
               {
                 "@type": "Question",
-                "name": "Can I play a The Choicer Voicer-style game in this browser?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Yes. The playable game on this page uses original code and voice assets to deliver a listen, perform, replay, and judge-vote loop directly in the browser." }
+                "name": "How does The Choicer Voicer scoring work?",
+                "acceptedAnswer": { "@type": "Answer", "text": "The local scoring model compares performance duration, energy contour, and pitch movement, then gives five computer judges different weighting profiles for their votes." }
               },
               {
                 "@type": "Question",
@@ -95,7 +105,7 @@
       <section class="home-intro home-intro--compact container">
         <div class="home-intro__title">
           <p class="eyebrow">Browser voice game · Play instantly</p>
-          <h1>The Choicer Voicer</h1>
+          <h1>The Choicer Voicer Online</h1>
         </div>
         <div class="home-intro__summary">
           <p class="hero__lead">Hear a line, perform it, and face five computer judges—solo or with up to four local players.</p>
@@ -172,6 +182,92 @@
         </div>
       </section>
 
+      <section class="section container" id="scoring-guide">
+        <div class="content-layout">
+          <article class="article-copy">
+            <p class="eyebrow">Scoring guide</p>
+            <h2>How The Choicer Voicer scoring works.</h2>
+            <p>The game does not judge whether you have the same natural voice as the character. Instead, it measures the shape of the performance you just heard. A successful take follows the reference line’s overall length, changes in loudness, and rising or falling pitch. That makes careful listening more useful than trying to force an unfamiliar accent or vocal register.</p>
+
+            <h3>Timing rewards the shape of the whole line</h3>
+            <p>Duration contributes 25 percent of the similarity score. Starting clearly, finishing near the reference ending, and keeping pauses in roughly the same places will help. Speaking every word correctly but rushing through the middle can lower this part of the result. Before recording, listen once for meaning and a second time for pauses, held sounds, and the final beat.</p>
+
+            <h3>Energy follows loud and quiet movement</h3>
+            <p>Energy contour contributes 35 percent. The browser samples how the performance becomes louder, softer, sharper, or calmer over time, then compares that curve with the reference. You do not need to shout. A line that begins quietly and ends with emphasis should keep that same dynamic journey at a comfortable microphone level.</p>
+
+            <h3>Pitch movement matters more than a perfect voice match</h3>
+            <p>Pitch shape contributes 40 percent. The comparison looks at how your voice moves rather than demanding the exact vocal register of the recorded character. Follow a question that rises, a dramatic fall, or a sustained note in the same direction. This lets players with different voices compete on phrasing while still making the challenge recognizably about imitation.</p>
+
+            <h3>Five judges read the same take differently</h3>
+            <p>After those three values are calculated locally, five computer judges apply different weighting profiles. One may care most about rhythm, another about pitch, and another about energy or balance. The panel converts those views into zero to five approvals and a one-word reaction. A rare exceptional match can trigger the playful 6/5 result, while the detailed breakdown still shows what to practice next.</p>
+          </article>
+          <aside class="side-note" aria-label="Scoring summary">
+            <p class="eyebrow">Score at a glance</p>
+            <h3>Three signals, one performance</h3>
+            <ul>
+              <li><strong>25% timing:</strong> overall length and pacing.</li>
+              <li><strong>35% energy:</strong> loudness changes across the line.</li>
+              <li><strong>40% pitch:</strong> the direction and shape of vocal movement.</li>
+              <li>No speech transcript or voice recording is sent to a server.</li>
+            </ul>
+            <p><a href="#play">Return to the game</a> and compare two takes of the same scene to see which signal changes.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section--cyan" id="play-tips">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Performance tips</p>
+              <h2>Improve your next voice-imitation round.</h2>
+            </div>
+            <p>A higher score usually comes from reproducing the reference performance in layers: rhythm first, then energy, then pitch movement. These practical checks work in both solo and local party modes.</p>
+          </div>
+          <div class="card-grid">
+            <article class="info-card">
+              <h3>Lock in the rhythm first</h3>
+              <p>Tap the main beats with a finger while listening. Notice the first sound, the longest pause, and the final word. On your take, keep those anchors stable even if the words between them are not perfect.</p>
+              <p>For a difficult scene, use the replay control before recording. One intentional second listen is more useful than repeatedly guessing after a low score.</p>
+            </article>
+            <article class="info-card">
+              <h3>Match emotion through dynamics</h3>
+              <p>Instead of focusing only on the text, ask where the character becomes confident, uncertain, angry, amused, or quiet. Those emotional changes often create the energy curve that the browser can compare.</p>
+              <p>Keep the microphone about a hand’s width away and avoid moving it mid-line. A stable distance lets real vocal changes show up instead of accidental volume jumps.</p>
+            </article>
+            <article class="info-card">
+              <h3>Trace the pitch direction</h3>
+              <p>Listen for rises, falls, flat stretches, and held endings. Hum the melody of the sentence once if needed, then add the words while keeping the same movement.</p>
+              <p>Do not strain for the character’s exact high or low voice. The Choicer Voicer can compare contour across different natural registers, so controlled movement is more valuable than an uncomfortable impression.</p>
+            </article>
+          </div>
+
+          <div class="content-layout content-layout--followup">
+            <article class="article-copy">
+              <h3>Solo practice or local party play?</h3>
+              <p>Solo mode is the quickest way to learn a scene. You perform all four selected dialogue clips, see the three-part breakdown after each round, and can retry a line before moving on. Use it when you want to understand why one version scored better than another or when you are testing a new microphone.</p>
+              <p>Group mode is designed for a shared room rather than an online lobby. Two to four named players pass one device around and perform the same scene before the game advances. Because everyone hears the identical reference, the final leaderboard compares different interpretations of the same material. Headphones help prevent the reference audio from being captured as part of a player’s take.</p>
+
+              <h3>Desktop, phone, and microphone setup</h3>
+              <p>The game works best in a current browser that supports microphone permission and MediaRecorder. On a phone, make sure another app is not already using the microphone. On desktop, select the intended input in browser or operating-system settings before starting the sound check. The live input meter should respond to normal speech without staying pinned at maximum.</p>
+              <p>Choose a reasonably quiet room, silence notifications, and keep the device still. Built-in phone and laptop microphones are sufficient for casual play; an external microphone is optional. If permission was denied, use the site controls beside the address bar to allow microphone access, then reload the page. The recording exists only for replay and scoring during the current tab session.</p>
+            </article>
+            <aside class="side-note" aria-label="Before playing checklist">
+              <p class="eyebrow">Before you start</p>
+              <h3>A thirty-second setup</h3>
+              <ul>
+                <li>Use headphones when possible.</li>
+                <li>Allow microphone access for this site.</li>
+                <li>Speak at a normal level during sound check.</li>
+                <li>Listen to the full reference before recording.</li>
+                <li>Keep one device and microphone for every local player.</li>
+              </ul>
+              <p>Ready? <a href="#play">Start The Choicer Voicer online</a> from the game above.</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
       <section class="section container" id="faq">
         <div class="section-heading">
           <div>
@@ -181,10 +277,10 @@
           <p>Learn how the browser edition handles voice assets, microphone recordings, scoring, and device support.</p>
         </div>
         <div class="faq-grid">
-          <article class="faq-card"><h3>Who built this browser game?</h3><p>This browser edition uses original TypeScript, Web Audio scoring, interface design, and rights-cleared voice assets created for thechoicervoicer.me.</p></article>
+          <article class="faq-card"><h3>Can I play The Choicer Voicer online?</h3><p>Yes. The playable experience at the top of this page runs directly in a modern browser and includes solo practice plus local party play for up to four players.</p></article>
           <article class="faq-card"><h3>What audio is included?</h3><p>The library contains original film-style performances and public-domain literary dialogue rendered as purpose-made voice assets. It does not bundle commercial movie audio.</p></article>
           <article class="faq-card"><h3>Where does my recording go?</h3><p>It remains a temporary browser object in this tab. There is no upload endpoint, account, or server-side voice storage.</p></article>
-          <article class="faq-card"><h3>How does scoring work?</h3><p>The browser scoring model compares timing, energy contour, and pitch movement, then maps the result to five judge votes.</p></article>
+          <article class="faq-card"><h3>How does The Choicer Voicer scoring work?</h3><p>The browser scoring model compares timing, energy contour, and pitch movement, then maps the result to five judge votes.</p></article>
           <article class="faq-card"><h3>Does it work on phones?</h3><p>It is designed for current mobile browsers with microphone and MediaRecorder support. HTTPS is required after deployment.</p></article>
           <article class="faq-card"><h3>Can I load community packs?</h3><p>Not in this build. Pack files contain third-party media and should only be used when their author grants permission.</p></article>
         </div>

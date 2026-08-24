@@ -3044,7 +3044,7 @@ h3 {
   display: grid;
   align-items: end;
   gap: clamp(1.5rem, 4vw, 4rem);
-  grid-template-columns: minmax(0, 1.12fr) minmax(330px, 0.88fr);
+  grid-template-columns: minmax(0, 1.32fr) minmax(330px, 0.68fr);
   padding-block: clamp(1.3rem, 2.5vw, 2.15rem) clamp(1rem, 1.8vw, 1.6rem);
 }
 
@@ -3097,6 +3097,20 @@ h3 {
 
 .game-shell .icon-button[hidden] {
   display: none !important;
+}
+
+.content-layout--followup {
+  margin-top: clamp(2.3rem, 5vw, 4.5rem);
+  padding-top: clamp(2rem, 4vw, 3.2rem);
+  border-top: 2px solid rgba(39, 49, 54, 0.22);
+}
+
+.section[id] {
+  scroll-margin-top: 88px;
+}
+
+.content-layout--followup .article-copy h3:first-child {
+  margin-top: 0;
 }
 
 .game-shell--home[data-phase="menu"] .game-canvas-wrap {
