@@ -28,6 +28,6 @@ The earlier 56,500/month estimate is not supported by this exact-match United St
 
 - GitHub repository and Pages build: deployed.
 - GitHub Pages custom domain: configured as `thechoicervoicer.me`.
-- Registrar DNS: pending replacement of the Spaceship parking records with the GitHub Pages apex and `www` records.
-- HTTPS certificate, live Lighthouse verification, IndexNow submission, GSC verification, and Bing submission: blocked until DNS points at GitHub Pages.
-
+- Registrar DNS: apex parking was replaced on 2026-08-24. Public resolvers return `185.199.108.153`, `185.199.109.153`, and `185.199.110.153`; the fourth recommended GitHub Pages A record and the `www` CNAME still need to be added in Spaceship.
+- GitHub Pages DNS health check: apex is valid, served by Pages, contains no non-GitHub IP, and is HTTPS-eligible. Certificate issuance is still pending (`peer_failed_verification`).
+- Live HTTPS Lighthouse verification, IndexNow submission, GSC verification, and Bing submission remain pending until the certificate is issued.
