@@ -49,12 +49,14 @@ describe("static launch source", () => {
     const logo = read("public/logo-mark.svg");
     const favicon = read("public/favicon.svg");
     expect(logo.match(/<path /g)).toHaveLength(2);
+    expect(logo).toContain('viewBox="-12 -6 216 120"');
     expect(logo).not.toContain("<circle");
     expect(logo).not.toContain("<rect");
     expect(logo).toContain("#273136");
     expect(logo).toContain("#58C8D1");
     expect(logo).not.toContain("#E06169");
     expect(favicon.match(/<path /g)).toHaveLength(2);
+    expect(favicon).toContain('viewBox="-12 -6 216 120"');
     expect(favicon).toContain("#273136");
     expect(favicon).toContain("#58C8D1");
     for (const path of pages) {
