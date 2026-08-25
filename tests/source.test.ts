@@ -62,9 +62,11 @@ describe("static launch source", () => {
     expect(html).toContain("<h1>The Choicer Voicer Online</h1>");
     expect(chinese).toContain("<h1>The Choicer Voicer 在线玩</h1>");
     for (const page of [html, chinese]) {
-      expect(page).toContain('property="og:image" content="https://thechoicervoicer.me/og-the-choicer-voicer.png"');
+      expect(page).toContain('property="og:image" content="https://thechoicervoicer.me/the-choicer-voicer-google-search-preview.png"');
       expect(page).toContain('name="twitter:card" content="summary_large_image"');
-      expect(page).toContain('name="twitter:image" content="https://thechoicervoicer.me/og-the-choicer-voicer.png"');
+      expect(page).toContain('name="twitter:image" content="https://thechoicervoicer.me/the-choicer-voicer-google-search-preview.png"');
+      expect(page).toContain('"primaryImageOfPage": "https://thechoicervoicer.me/the-choicer-voicer-google-search-preview.png"');
+      expect(page).toContain('<img src="/the-choicer-voicer-google-search-preview.png"');
     }
     const visibleEnglish = html
       .replace(/<script[\s\S]*?<\/script>/gi, " ")
@@ -77,7 +79,7 @@ describe("static launch source", () => {
       .filter(Boolean);
     expect(visibleEnglish.length).toBeGreaterThanOrEqual(1200);
     expect(visibleEnglish.length).toBeLessThanOrEqual(1800);
-    expect(existsSync(resolve(project, "public/og-the-choicer-voicer.png"))).toBe(true);
+    expect(existsSync(resolve(project, "public/the-choicer-voicer-google-search-preview.png"))).toBe(true);
   });
 
   it("ships the interwoven-wave logo across every product header", () => {

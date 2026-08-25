@@ -527,6 +527,20 @@ h3 {
   grid-template-columns: 0.8fr 1.2fr;
 }
 
+.answer-box__visual {
+  display: grid;
+  gap: 1rem;
+}
+
+.answer-box__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid #293438;
+  border-radius: var(--radius);
+  box-shadow: 7px 8px 0 rgba(39, 127, 139, 0.24);
+}
+
 .answer-box__label {
   padding: 1.3rem;
   border: 3px solid white;
