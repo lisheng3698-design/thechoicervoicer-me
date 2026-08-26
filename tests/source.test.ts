@@ -45,6 +45,14 @@ describe("static launch source", () => {
     expect(html).not.toContain("gga.dev");
   });
 
+  it("preloads the voice pack on every playable page", () => {
+    for (const path of ["index.html", "games/index.html", "zh/index.html", "zh/games/index.html"]) {
+      expect(read(path), `${path} should start the voice-pack request before game initialization`).toContain(
+        '<link rel="preload" href="/packs/starter-sparks.json" as="fetch" crossorigin="anonymous" />',
+      );
+    }
+  });
+
   it("keeps both homepages compact and puts the playable game directly after the intro", () => {
     for (const path of ["index.html", "zh/index.html"]) {
       const html = read(path);
