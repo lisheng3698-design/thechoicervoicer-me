@@ -24,7 +24,7 @@ Updated: 2026-08-26
 - Core action page: `https://thechoicervoicer.me/games/`
 - GSC property: pending
 - GA4 property: `The Choicer Voicer`; web stream: `The Choicer Voicer Web` (`15504292780`)
-- GA4 Measurement ID: `G-4SMXSDGLW2`; code integration complete with consent default denied; live request and Realtime hit pending deployment verification
+- GA4 Measurement ID: `G-4SMXSDGLW2`; production tag and consent flow verified on 2026-08-26 (`gtag.js` 200, GA4 `g/collect` 204); Realtime report display remains to be visually confirmed
 - Stable local event hooks: `game_started`, `microphone_granted`, `cue_played`, `recording_started`, `round_scored`, `game_completed`, `fullscreen_toggled`, `language_switch`, `analytics_consent_updated`
 - Contact inbox: pending domain mail; do not enable ads or submissions until a working contact route is published
 
