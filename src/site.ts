@@ -82,8 +82,8 @@ function initializeAnalytics() {
 
   const consent = readAnalyticsConsent();
   window.dataLayer = window.dataLayer || [];
-  window.gtag = (...args: unknown[]) => {
-    window.dataLayer?.push(args);
+  window.gtag = function (..._args: unknown[]) {
+    window.dataLayer?.push(arguments);
   };
   window.gtag("consent", "default", {
     analytics_storage: consent ?? "denied",

@@ -239,6 +239,7 @@ describe("static launch source", () => {
     expect(site).toContain('ad_personalization: "denied"');
     expect(site).toContain('trackSiteEvent("language_switch"');
     expect(site).toContain('window.gtag?.("event", name, detail)');
+    expect(site).toContain("window.dataLayer?.push(arguments)");
     expect(site).toContain("PRODUCTION_HOSTS.has(window.location.hostname)");
     expect(css).toContain(".analytics-consent");
     expect(read("privacy/index.html")).toContain("The site does not send microphone audio");
