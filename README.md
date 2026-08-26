@@ -43,7 +43,8 @@ The canonical production host is `https://thechoicervoicer.me`. Deployment verif
 - Microphone access starts only after a user click.
 - Web Audio analysis and scoring happen in the browser.
 - MediaRecorder output is exposed only as a temporary blob URL in the current tab.
-- There is no upload endpoint, account, analytics provider, or ad script in this launch build.
+- There is no upload endpoint, account, or ad script in this launch build.
+- Google Analytics 4 uses Measurement ID `G-4SMXSDGLW2` with Consent Mode defaults that deny analytics and advertising storage until the visitor explicitly allows anonymous analytics. Microphone audio, temporary recordings, player names, and typed text are never included in analytics events.
 
 ## Bilingual scene library
 

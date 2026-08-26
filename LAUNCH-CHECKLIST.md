@@ -1,6 +1,6 @@
 # Launch checklist
 
-Updated: 2026-08-23
+Updated: 2026-08-26
 
 ## Today’s acceptance line
 
@@ -23,8 +23,9 @@ Updated: 2026-08-23
 - Primary page intent: independent fan guide
 - Core action page: `https://thechoicervoicer.me/games/`
 - GSC property: pending
-- GA4 property/tag: not configured; no tracking is active
-- Stable local event hooks: `game_started`, `microphone_granted`, `cue_played`, `recording_started`, `round_scored`, `game_completed`, `fullscreen_toggled`
+- GA4 property: `The Choicer Voicer`; web stream: `The Choicer Voicer Web` (`15504292780`)
+- GA4 Measurement ID: `G-4SMXSDGLW2`; code integration complete with consent default denied; live request and Realtime hit pending deployment verification
+- Stable local event hooks: `game_started`, `microphone_granted`, `cue_played`, `recording_started`, `round_scored`, `game_completed`, `fullscreen_toggled`, `language_switch`, `analytics_consent_updated`
 - Contact inbox: pending domain mail; do not enable ads or submissions until a working contact route is published
 
 ## Site-cluster registration card

@@ -226,6 +226,7 @@ describe("static launch source", () => {
 
   it("exposes stable privacy-safe game events and reduced-motion CSS", () => {
     const game = read("src/game.ts");
+    const site = read("src/site.ts");
     const css = read("src/style.css");
     for (const eventName of ["game_started", "microphone_granted", "cue_played", "recording_started", "round_scored", "game_completed", "fullscreen_toggled"]) {
       expect(game).toContain(`\"${eventName}\"`);
@@ -233,5 +234,14 @@ describe("static launch source", () => {
     expect(css).toContain("prefers-reduced-motion: reduce");
     expect(game).toContain("Five computer judges");
     expect(game).toContain("absolute 6/5");
+    expect(site).toContain('const DEFAULT_GA_MEASUREMENT_ID = "G-4SMXSDGLW2"');
+    expect(site).toContain('analytics_storage: consent ?? "denied"');
+    expect(site).toContain('ad_personalization: "denied"');
+    expect(site).toContain('trackSiteEvent("language_switch"');
+    expect(site).toContain('window.gtag?.("event", name, detail)');
+    expect(site).toContain("PRODUCTION_HOSTS.has(window.location.hostname)");
+    expect(css).toContain(".analytics-consent");
+    expect(read("privacy/index.html")).toContain("The site does not send microphone audio");
+    expect(read("zh/privacy/index.html")).toContain("本站不会发送麦克风音频");
   });
 });
