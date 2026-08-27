@@ -1033,6 +1033,100 @@ h3 {
   background: var(--ink);
 }
 
+.ad-showcase {
+  padding-block: clamp(2.8rem, 6vw, 5rem);
+  border-top: 1px solid rgba(17, 24, 39, 0.14);
+  background: rgba(255, 253, 246, 0.74);
+}
+
+.ad-showcase__inner {
+  width: min(calc(100% - 2rem), var(--max));
+  margin-inline: auto;
+}
+
+.ad-showcase__heading {
+  display: grid;
+  align-items: end;
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.7fr);
+  margin-bottom: 1.6rem;
+}
+
+.ad-showcase__heading h2 {
+  margin-bottom: 0;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.ad-showcase__heading > p,
+.ad-showcase__smart-link p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.ad-showcase__grid {
+  display: grid;
+  align-items: start;
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1fr) 208px;
+}
+
+.ad-showcase__native,
+.ad-showcase__rail {
+  min-width: 0;
+  padding: 0.85rem;
+  border: 1px solid rgba(17, 24, 39, 0.16);
+  border-radius: 16px;
+  background: white;
+}
+
+.ad-showcase__native {
+  min-height: 180px;
+}
+
+.ad-showcase__rail {
+  display: grid;
+  justify-items: center;
+}
+
+.ad-showcase__rail-slot {
+  width: 160px;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.ad-showcase__label {
+  margin: 0 0 0.55rem;
+  color: #64748b;
+  font-size: 0.7rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ad-showcase__smart-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding: 1rem 1.1rem;
+  border: 1px dashed rgba(17, 24, 39, 0.34);
+  border-radius: 14px;
+}
+
+.ad-showcase__smart-link a {
+  flex: 0 0 auto;
+  padding: 0.62rem 0.85rem;
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  background: var(--amber);
+  box-shadow: 3px 3px 0 var(--ink);
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
 .site-footer__inner {
   display: grid;
   gap: 2rem;
@@ -1096,8 +1190,15 @@ h3 {
   .hero,
   .section-heading,
   .answer-box,
-  .content-layout {
+  .content-layout,
+  .ad-showcase__heading,
+  .ad-showcase__grid {
     grid-template-columns: 1fr;
+  }
+
+  .ad-showcase__rail {
+    width: min(100%, 208px);
+    margin-inline: auto;
   }
 
   .hero {
@@ -1133,6 +1234,15 @@ h3 {
   .game-panel .button,
   .button-row .button {
     width: 100%;
+  }
+
+  .ad-showcase__smart-link {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .ad-showcase__smart-link a {
+    text-align: center;
   }
 
   .game-shell {

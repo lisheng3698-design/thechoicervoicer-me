@@ -252,7 +252,31 @@ describe("static launch source", () => {
     expect(site).toContain("window.dataLayer?.push(arguments)");
     expect(site).toContain("PRODUCTION_HOSTS.has(window.location.hostname)");
     expect(css).toContain(".analytics-consent");
-    expect(read("privacy/index.html")).toContain("The site does not send microphone audio");
-    expect(read("zh/privacy/index.html")).toContain("本站不会发送麦克风音频");
+    expect(read("privacy/index.html")).toContain("does not intentionally provide microphone audio");
+    expect(read("zh/privacy/index.html")).toContain("不会主动向 Analytics 或广告集成提供麦克风音频");
+  });
+
+  it("configures all Adsterra placements for production without loading them during local development", () => {
+    const ads = read("src/ads.ts");
+    const headers = read("public/_headers");
+    const readme = read("README.md");
+    for (const token of [
+      "d72f3fddaee2f6ce6a982ca1c467c4db.js",
+      "1f9d17503219073c8503247d8589db43/invoke.js",
+      "container-1f9d17503219073c8503247d8589db43",
+      "daf294790afe605ba6ae1c824cadfca5/invoke.js",
+      "2d87868027239001262173826fa2197e.js",
+      "b997538ytg?key=7f5e5731ca40999902193ee46eedbf61",
+    ]) {
+      expect(ads).toContain(token);
+    }
+    expect(ads).toContain('PRODUCTION_HOSTS.has(window.location.hostname)');
+    expect(ads).toContain('rel="sponsored nofollow noopener"');
+    expect(ads).toContain('height: 600');
+    expect(ads).toContain('width: 160');
+    expect(headers).toContain("https://incompatibletorchvulture.com");
+    expect(readme).toContain("Adsterra advertising scripts load only on the production domain");
+    expect(read("privacy/index.html")).toContain("third-party advertising supplied by Adsterra");
+    expect(read("zh/privacy/index.html")).toContain("由 Adsterra 提供并明确标注的第三方广告");
   });
 });
