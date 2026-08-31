@@ -1,4 +1,5 @@
 import "./style.css";
+import { initializeAds } from "./ads";
 
 type AnalyticsConsent = "granted" | "denied";
 
@@ -114,6 +115,7 @@ export function trackSiteEvent(name: string, detail: Record<string, unknown> = {
 }
 
 initializeAnalytics();
+initializeAds();
 
 document.querySelectorAll<HTMLElement>("[data-current-year]").forEach((element) => {
   element.textContent = String(new Date().getFullYear());
