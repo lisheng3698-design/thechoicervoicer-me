@@ -192,6 +192,36 @@ test("homepage exposes real game controls in representative first viewports", as
   }
 });
 
+test("new search-intent guides render without errors on desktop and mobile", async ({ page }) => {
+  const routes = [
+    ["/games/", "https://thechoicervoicer.me/games/"],
+    ["/app/", "https://thechoicervoicer.me/app/"],
+    ["/how-to-play/", "https://thechoicervoicer.me/how-to-play/"],
+    ["/mobile/", "https://thechoicervoicer.me/mobile/"],
+    ["/voice-packs/", "https://thechoicervoicer.me/voice-packs/"],
+  ];
+
+  for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {
+    await page.setViewportSize(viewport);
+    for (const [route, canonical] of routes) {
+      const errors: string[] = [];
+      const listener = (message: import("@playwright/test").ConsoleMessage) => {
+        if (message.type() === "error") errors.push(message.text());
+      };
+      page.on("console", listener);
+      const response = await page.goto(route);
+      expect(response?.ok(), `${route} should return a successful response`).toBe(true);
+      await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
+      await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", canonical);
+      await expect(page.locator(".breadcrumb")).toBeVisible();
+      const noOverflow = await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth);
+      expect(noOverflow, `${route} should not overflow at ${viewport.width}px`).toBe(true);
+      expect(errors, `${route} should not emit console errors`).toEqual([]);
+      page.off("console", listener);
+    }
+  }
+});
+
 test("Chinese microphone-to-judge flow uses Chinese controls", async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== "chromium-desktop", "One full localized audio-flow run is sufficient.");
   await installSyntheticMicrophone(page);

@@ -4,8 +4,30 @@ import { describe, expect, it } from "vitest";
 
 const project = resolve(import.meta.dirname, "..");
 const read = (path: string) => readFileSync(resolve(project, path), "utf8");
-const englishPages = ["index.html", "games/index.html", "about/index.html", "contact/index.html", "privacy/index.html", "terms/index.html"];
-const chinesePages = ["zh/index.html", "zh/games/index.html", "zh/about/index.html", "zh/contact/index.html", "zh/privacy/index.html", "zh/terms/index.html"];
+const englishPages = [
+  "index.html",
+  "games/index.html",
+  "app/index.html",
+  "how-to-play/index.html",
+  "mobile/index.html",
+  "voice-packs/index.html",
+  "about/index.html",
+  "contact/index.html",
+  "privacy/index.html",
+  "terms/index.html",
+];
+const chinesePages = [
+  "zh/index.html",
+  "zh/games/index.html",
+  "zh/app/index.html",
+  "zh/how-to-play/index.html",
+  "zh/mobile/index.html",
+  "zh/voice-packs/index.html",
+  "zh/about/index.html",
+  "zh/contact/index.html",
+  "zh/privacy/index.html",
+  "zh/terms/index.html",
+];
 const pages = [...englishPages, ...chinesePages];
 
 describe("static launch source", () => {
@@ -197,7 +219,10 @@ describe("static launch source", () => {
     const robots = read("public/robots.txt");
     const sitemap = read("public/sitemap.xml");
     expect(robots).toContain("https://thechoicervoicer.me/sitemap.xml");
-    expect(sitemap).toContain("https://thechoicervoicer.me/games/");
+    for (const route of ["games", "app", "how-to-play", "mobile", "voice-packs"]) {
+      expect(sitemap).toContain(`https://thechoicervoicer.me/${route}/`);
+      expect(sitemap).toContain(`https://thechoicervoicer.me/zh/${route}/`);
+    }
     expect(sitemap).toContain("https://thechoicervoicer.me/zh/");
     expect(sitemap).toContain("https://thechoicervoicer.me/zh/games/");
     expect(sitemap).toContain('hreflang="zh-Hans"');
@@ -219,6 +244,10 @@ describe("static launch source", () => {
     const pairs = [
       ["index.html", "zh/index.html", "/zh/", "/"],
       ["games/index.html", "zh/games/index.html", "/zh/games/", "/games/"],
+      ["app/index.html", "zh/app/index.html", "/zh/app/", "/app/"],
+      ["how-to-play/index.html", "zh/how-to-play/index.html", "/zh/how-to-play/", "/how-to-play/"],
+      ["mobile/index.html", "zh/mobile/index.html", "/zh/mobile/", "/mobile/"],
+      ["voice-packs/index.html", "zh/voice-packs/index.html", "/zh/voice-packs/", "/voice-packs/"],
       ["about/index.html", "zh/about/index.html", "/zh/about/", "/about/"],
       ["contact/index.html", "zh/contact/index.html", "/zh/contact/", "/contact/"],
       ["privacy/index.html", "zh/privacy/index.html", "/zh/privacy/", "/privacy/"],
@@ -269,6 +298,43 @@ describe("static launch source", () => {
       for (const marker of removedIntegrationMarkers) {
         expect(source, `${path} should not contain the removed advertising integration`).not.toContain(marker.toLowerCase());
       }
+    }
+  });
+
+  it("publishes five distinct search-intent pages with source-visible navigation", () => {
+    const targets = [
+      ["games/index.html", "https://thechoicervoicer.me/games/", "Voice Imitation Game", "/src/game.ts"],
+      ["app/index.html", "https://thechoicervoicer.me/app/", "The Choicer Voicer App", "/src/site.ts"],
+      ["how-to-play/index.html", "https://thechoicervoicer.me/how-to-play/", "How to Play The Choicer Voicer", "/src/site.ts"],
+      ["mobile/index.html", "https://thechoicervoicer.me/mobile/", "Play The Choicer Voicer on Mobile", "/src/site.ts"],
+      ["voice-packs/index.html", "https://thechoicervoicer.me/voice-packs/", "Choicer Voicer Voice Packs", "/src/site.ts"],
+    ];
+    const home = read("index.html");
+    for (const [path, canonical, titleLead, script] of targets) {
+      const html = read(path);
+      expect(html, `${path} should own a unique canonical`).toContain(`<link rel="canonical" href="${canonical}" />`);
+      expect(html, `${path} should use its query intent in the title`).toContain(`<title>${titleLead}`);
+      expect(html, `${path} should expose breadcrumbs`).toContain('class="breadcrumb container"');
+      expect(html, `${path} should expose breadcrumb schema`).toContain('"@type": "BreadcrumbList"');
+      expect(html, `${path} should use the expected entry script`).toContain(`<script type="module" src="${script}"></script>`);
+      expect(home, `homepage should link to ${canonical}`).toContain(`href="${new URL(canonical).pathname}"`);
+    }
+  });
+
+  it("keeps the voice-pack guide aligned with the shipped 16-scene manifest", () => {
+    const html = read("voice-packs/index.html");
+    const chinese = read("zh/voice-packs/index.html");
+    const tableRows = (source: string) => source.match(/<tbody>[\s\S]*?<\/tbody>/)?.[0].match(/<tr>/g)?.length ?? 0;
+    expect(tableRows(html)).toBe(16);
+    expect(tableRows(chinese)).toBe(16);
+    expect(html).toContain('"numberOfItems": 16');
+    expect(chinese).toContain('"numberOfItems":16');
+  });
+
+  it("does not present nonexistent native downloads as available", () => {
+    for (const path of ["app/index.html", "mobile/index.html", "zh/app/index.html", "zh/mobile/index.html"]) {
+      const html = read(path);
+      expect(html, `${path} should not link to an APK or app store`).not.toMatch(/href="[^"]*(?:\.apk|play\.google|apps\.apple|store\.steampowered)/i);
     }
   });
 });
