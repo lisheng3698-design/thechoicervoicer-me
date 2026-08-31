@@ -71,13 +71,15 @@
 
 | 槽位 | 主关键词 | Web.Cafe KD | Canonical | 页面类型 | 状态 |
 |---:|---|---:|---|---|---|
-| 1 | voice imitation game | 17.1（very easy） | `/games/` | 可直接游玩的游戏页 | 已完成代码，待上线验收 |
-| 2 | the choicer voicer app | 36.5（easy） | `/app/` | 浏览器 App 说明页 | 已完成代码，待上线验收 |
-| 3 | how to play the choicer voicer | 17.1（very easy） | `/how-to-play/` | HowTo 教程 | 已完成代码，待上线验收 |
-| 4 | the choicer voicer mobile | 23.8（easy） | `/mobile/` | 手机兼容/排障指南 | 已完成代码，待上线验收 |
-| 5 | choicer voicer voice packs | 47.9（medium） | `/voice-packs/` | 16 场景内容卷指南 | 已完成代码，待上线验收 |
+| 1 | voice imitation game | 17.1（very easy） | `/games/` | 可直接游玩的游戏页 | 已上线；严格分 95/100，待 GA4 Realtime |
+| 2 | the choicer voicer app | 36.5（easy） | `/app/` | 浏览器 App 说明页 | 已上线；严格分 95/100，待 GA4 Realtime |
+| 3 | how to play the choicer voicer | 17.1（very easy） | `/how-to-play/` | HowTo 教程 | 已上线；严格分 95/100，待 GA4 Realtime |
+| 4 | the choicer voicer mobile | 23.8（easy） | `/mobile/` | 手机兼容/排障指南 | 已上线；严格分 95/100，待 GA4 Realtime |
+| 5 | choicer voicer voice packs | 47.9（medium） | `/voice-packs/` | 16 场景内容卷指南 | 已上线；严格分 95/100，待 GA4 Realtime |
 
 每页都有唯一 Title、Description、H1、canonical、英文/中文 hreflang、面包屑、对应结构化数据、相关内链和 sitemap 记录。首页继续承接品牌、online、free 和错拼意图。
+
+生产版本为 `4bba487`。五页均返回 200，IndexNow 五页提交返回 HTTP 200；GSC/Bing 账号内提交与 GA4 Realtime 验证因 Chrome 后台被另一 Codex 浏览器会话占用而单独标为 `Needs recheck`，详见 `docs/inner-page-release-ledger-2026-08-31.md`。
 
 ## 实查记录
 
