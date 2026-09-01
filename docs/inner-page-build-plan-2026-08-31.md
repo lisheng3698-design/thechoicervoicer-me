@@ -7,6 +7,28 @@
 3. 相同搜索意图只保留一个 canonical。品牌错拼、倒序、online/free 变体并入首页；下载、破解、盗版和不存在的平台页不建设。
 4. Web.Cafe 哥飞版 KD 已于 2026-08-31 实查；用户未要求 Ahrefs，因此 Ahrefs 状态为“默认跳过”。
 
+## 补充 GSC 截图：按印象数去重后的建设顺序
+
+补充截图共 48 个查询、2,676 次印象和 128 次点击。截图未显示日期范围，因此本节只在这张截图内部汇总，不与上一次截图的数字相加。先按查询意图和 canonical 去重，再按各意图在本截图中的印象数合计从高到低排序。
+
+| 顺序 | 去重后主意图 | 本截图印象 | 点击 | 代表查询 | Canonical / 计划动作 | 去重结论 |
+|---:|---|---:|---:|---|---|---|
+| 1 | choicer voicer game | 1,322 | 43 | `choicer voicer game` 694；`the choicer voicer game` 423；game free、online play、voice imitation、德语/意大利语游戏变体 | `/games/` | 已上线页面承接；不重复建设 game/free/online/spelling 页面 |
+| 2 | the choicer voicer | 1,260 | 74 | `thechoicervoicer` 513；`the choicer voice` 130；`choicer voicer` 108；online/free/倒序/错拼变体 | `/` | 首页承接品牌、online、free 与错拼；不拆分薄页 |
+| 3 | the choicer voicer app | 89 | 10 | `thechoicervoicer.app` 48；`thechoicervoicer app` 40；错拼 app 1 | `/app/` | 已上线页面承接；域名式和连写变体不另建页 |
+| 4 | choicer voicer multiplayer | 3 | 1 | `choicer voicer online multiplayer` 2；意大利语“与朋友在线玩”1 | `/multiplayer/` | 已在候补计划中；当前产品只有同设备多人，继续暂缓，不能暗示在线联机 |
+| 5 | how to play the choicer voicer | 1 | 0 | `how do i play the voice choicer` 1 | `/how-to-play/` | 已上线教程承接；不新增问句型页面 |
+| 6 | game that lets you put your voice in movies | 1 | 0 | 同名查询 1 | 无 | 与当前产品功能不符，淘汰，不建设误导页面 |
+
+### 补充截图去重规则
+
+- `game`、`game free`、`game online`、`voice imitation game`、`voice over game`、域名式 game 查询和相应错拼统一归 `/games/`。
+- 品牌、`online`、`free`、倒序、连写和错拼统一归首页；已有 `/free/` 候补不因重叠查询自动升级。
+- `.app`、`app` 连写和 app 错拼统一归 `/app/`。
+- `online multiplayer` 只给现有 `/multiplayer/` 候补增加真实曝光证据，不新增第二个多人页。
+- 德语 `spielen`、法语 `en ligne`、意大利语 `gioco virale` 等查询暂由现有英文 canonical 承接；没有完整本地化前不制造单独语言薄页。
+- 本批净新增 canonical 为 0；更新的是已上线页的证据与候补优先级，不把 48 个查询误当成 48 个页面任务。
+
 ## 图 3：按展示量从高到低
 
 | 顺序 | 查询词 | 展示 | 点击/CTR | 平均排名 | 页面归属与动作 |
@@ -55,7 +77,7 @@
 
 | 候补顺序 | 关键词 | Web.Cafe KD | 计划 URL | 暂缓原因 |
 |---:|---|---:|---|---|
-| 1 | choicer voicer multiplayer | 60.4（hard） | `/multiplayer/` | 竞争较高；当前只有同设备 2–4 人，不应暗示在线联机 |
+| 1 | choicer voicer multiplayer | 60.4（hard） | `/multiplayer/` | 补充 GSC 截图已有 3 次意图簇印象；竞争较高，且当前只有同设备 2–4 人，不应暗示在线联机 |
 | 2 | the choicer voicer gameplay | 37.5（easy） | `/gameplay/` | 与 `/how-to-play/` 接近，先观察收录与查询分化 |
 | 3 | choicer voicer free | 24.3（easy；Web.Cafe volume 4,550） | `/free/` | 与首页 online/free 意图高度重叠，先由首页承接 |
 

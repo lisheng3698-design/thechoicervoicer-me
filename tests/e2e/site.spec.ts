@@ -199,6 +199,11 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/how-to-play/", "https://thechoicervoicer.me/how-to-play/"],
     ["/mobile/", "https://thechoicervoicer.me/mobile/"],
     ["/voice-packs/", "https://thechoicervoicer.me/voice-packs/"],
+    ["/microphone-not-working/", "https://thechoicervoicer.me/microphone-not-working/"],
+    ["/is-it-safe/", "https://thechoicervoicer.me/is-it-safe/"],
+    ["/alternatives/", "https://thechoicervoicer.me/alternatives/"],
+    ["/gameplay/", "https://thechoicervoicer.me/gameplay/"],
+    ["/multiplayer/", "https://thechoicervoicer.me/multiplayer/"],
   ];
 
   for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {

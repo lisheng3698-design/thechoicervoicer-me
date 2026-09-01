@@ -11,6 +11,11 @@ const englishPages = [
   "how-to-play/index.html",
   "mobile/index.html",
   "voice-packs/index.html",
+  "microphone-not-working/index.html",
+  "is-it-safe/index.html",
+  "alternatives/index.html",
+  "gameplay/index.html",
+  "multiplayer/index.html",
   "about/index.html",
   "contact/index.html",
   "privacy/index.html",
@@ -23,6 +28,11 @@ const chinesePages = [
   "zh/how-to-play/index.html",
   "zh/mobile/index.html",
   "zh/voice-packs/index.html",
+  "zh/microphone-not-working/index.html",
+  "zh/is-it-safe/index.html",
+  "zh/alternatives/index.html",
+  "zh/gameplay/index.html",
+  "zh/multiplayer/index.html",
   "zh/about/index.html",
   "zh/contact/index.html",
   "zh/privacy/index.html",
@@ -219,7 +229,7 @@ describe("static launch source", () => {
     const robots = read("public/robots.txt");
     const sitemap = read("public/sitemap.xml");
     expect(robots).toContain("https://thechoicervoicer.me/sitemap.xml");
-    for (const route of ["games", "app", "how-to-play", "mobile", "voice-packs"]) {
+    for (const route of ["games", "app", "how-to-play", "mobile", "voice-packs", "microphone-not-working", "is-it-safe", "alternatives", "gameplay", "multiplayer"]) {
       expect(sitemap).toContain(`https://thechoicervoicer.me/${route}/`);
       expect(sitemap).toContain(`https://thechoicervoicer.me/zh/${route}/`);
     }
@@ -248,6 +258,11 @@ describe("static launch source", () => {
       ["how-to-play/index.html", "zh/how-to-play/index.html", "/zh/how-to-play/", "/how-to-play/"],
       ["mobile/index.html", "zh/mobile/index.html", "/zh/mobile/", "/mobile/"],
       ["voice-packs/index.html", "zh/voice-packs/index.html", "/zh/voice-packs/", "/voice-packs/"],
+      ["microphone-not-working/index.html", "zh/microphone-not-working/index.html", "/zh/microphone-not-working/", "/microphone-not-working/"],
+      ["is-it-safe/index.html", "zh/is-it-safe/index.html", "/zh/is-it-safe/", "/is-it-safe/"],
+      ["alternatives/index.html", "zh/alternatives/index.html", "/zh/alternatives/", "/alternatives/"],
+      ["gameplay/index.html", "zh/gameplay/index.html", "/zh/gameplay/", "/gameplay/"],
+      ["multiplayer/index.html", "zh/multiplayer/index.html", "/zh/multiplayer/", "/multiplayer/"],
       ["about/index.html", "zh/about/index.html", "/zh/about/", "/about/"],
       ["contact/index.html", "zh/contact/index.html", "/zh/contact/", "/contact/"],
       ["privacy/index.html", "zh/privacy/index.html", "/zh/privacy/", "/privacy/"],
@@ -314,13 +329,18 @@ describe("static launch source", () => {
     expect(read("zh/privacy/index.html")).toContain("由 Adsterra 提供并明确标注的第三方广告");
   });
 
-  it("publishes five distinct search-intent pages with source-visible navigation", () => {
+  it("publishes ten distinct search-intent pages with source-visible navigation", () => {
     const targets = [
       ["games/index.html", "https://thechoicervoicer.me/games/", "Voice Imitation Game", "/src/game.ts"],
       ["app/index.html", "https://thechoicervoicer.me/app/", "The Choicer Voicer App", "/src/site.ts"],
       ["how-to-play/index.html", "https://thechoicervoicer.me/how-to-play/", "How to Play The Choicer Voicer", "/src/site.ts"],
       ["mobile/index.html", "https://thechoicervoicer.me/mobile/", "Play The Choicer Voicer on Mobile", "/src/site.ts"],
       ["voice-packs/index.html", "https://thechoicervoicer.me/voice-packs/", "Choicer Voicer Voice Packs", "/src/site.ts"],
+      ["microphone-not-working/index.html", "https://thechoicervoicer.me/microphone-not-working/", "The Choicer Voicer Mic Not Working", "/src/site.ts"],
+      ["is-it-safe/index.html", "https://thechoicervoicer.me/is-it-safe/", "Is The Choicer Voicer Safe?", "/src/site.ts"],
+      ["alternatives/index.html", "https://thechoicervoicer.me/alternatives/", "The Choicer Voicer Alternative", "/src/site.ts"],
+      ["gameplay/index.html", "https://thechoicervoicer.me/gameplay/", "The Choicer Voicer Gameplay", "/src/site.ts"],
+      ["multiplayer/index.html", "https://thechoicervoicer.me/multiplayer/", "Choicer Voicer Multiplayer", "/src/site.ts"],
     ];
     const home = read("index.html");
     for (const [path, canonical, titleLead, script] of targets) {
