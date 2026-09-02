@@ -16,6 +16,11 @@ const englishPages = [
   "alternatives/index.html",
   "gameplay/index.html",
   "multiplayer/index.html",
+  "pitch-matching-exercises/index.html",
+  "vocal-timing-exercises/index.html",
+  "voice-games-for-parties/index.html",
+  "voice-imitation-exercises/index.html",
+  "voice-acting-warm-ups/index.html",
   "about/index.html",
   "contact/index.html",
   "privacy/index.html",
@@ -33,6 +38,11 @@ const chinesePages = [
   "zh/alternatives/index.html",
   "zh/gameplay/index.html",
   "zh/multiplayer/index.html",
+  "zh/pitch-matching-exercises/index.html",
+  "zh/vocal-timing-exercises/index.html",
+  "zh/voice-games-for-parties/index.html",
+  "zh/voice-imitation-exercises/index.html",
+  "zh/voice-acting-warm-ups/index.html",
   "zh/about/index.html",
   "zh/contact/index.html",
   "zh/privacy/index.html",
@@ -229,7 +239,7 @@ describe("static launch source", () => {
     const robots = read("public/robots.txt");
     const sitemap = read("public/sitemap.xml");
     expect(robots).toContain("https://thechoicervoicer.me/sitemap.xml");
-    for (const route of ["games", "app", "how-to-play", "mobile", "voice-packs", "microphone-not-working", "is-it-safe", "alternatives", "gameplay", "multiplayer"]) {
+    for (const route of ["games", "app", "how-to-play", "mobile", "voice-packs", "microphone-not-working", "is-it-safe", "alternatives", "gameplay", "multiplayer", "pitch-matching-exercises", "vocal-timing-exercises", "voice-games-for-parties", "voice-imitation-exercises", "voice-acting-warm-ups"]) {
       expect(sitemap).toContain(`https://thechoicervoicer.me/${route}/`);
       expect(sitemap).toContain(`https://thechoicervoicer.me/zh/${route}/`);
     }
@@ -263,6 +273,11 @@ describe("static launch source", () => {
       ["alternatives/index.html", "zh/alternatives/index.html", "/zh/alternatives/", "/alternatives/"],
       ["gameplay/index.html", "zh/gameplay/index.html", "/zh/gameplay/", "/gameplay/"],
       ["multiplayer/index.html", "zh/multiplayer/index.html", "/zh/multiplayer/", "/multiplayer/"],
+      ["pitch-matching-exercises/index.html", "zh/pitch-matching-exercises/index.html", "/zh/pitch-matching-exercises/", "/pitch-matching-exercises/"],
+      ["vocal-timing-exercises/index.html", "zh/vocal-timing-exercises/index.html", "/zh/vocal-timing-exercises/", "/vocal-timing-exercises/"],
+      ["voice-games-for-parties/index.html", "zh/voice-games-for-parties/index.html", "/zh/voice-games-for-parties/", "/voice-games-for-parties/"],
+      ["voice-imitation-exercises/index.html", "zh/voice-imitation-exercises/index.html", "/zh/voice-imitation-exercises/", "/voice-imitation-exercises/"],
+      ["voice-acting-warm-ups/index.html", "zh/voice-acting-warm-ups/index.html", "/zh/voice-acting-warm-ups/", "/voice-acting-warm-ups/"],
       ["about/index.html", "zh/about/index.html", "/zh/about/", "/about/"],
       ["contact/index.html", "zh/contact/index.html", "/zh/contact/", "/contact/"],
       ["privacy/index.html", "zh/privacy/index.html", "/zh/privacy/", "/privacy/"],
@@ -329,7 +344,7 @@ describe("static launch source", () => {
     expect(read("zh/privacy/index.html")).toContain("由 Adsterra 提供并明确标注的第三方广告");
   });
 
-  it("publishes ten distinct search-intent pages with source-visible navigation", () => {
+  it("publishes fifteen distinct search-intent pages with source-visible navigation", () => {
     const targets = [
       ["games/index.html", "https://thechoicervoicer.me/games/", "Voice Imitation Game", "/src/game.ts"],
       ["app/index.html", "https://thechoicervoicer.me/app/", "The Choicer Voicer App", "/src/site.ts"],
@@ -341,6 +356,11 @@ describe("static launch source", () => {
       ["alternatives/index.html", "https://thechoicervoicer.me/alternatives/", "The Choicer Voicer Alternative", "/src/site.ts"],
       ["gameplay/index.html", "https://thechoicervoicer.me/gameplay/", "The Choicer Voicer Gameplay", "/src/site.ts"],
       ["multiplayer/index.html", "https://thechoicervoicer.me/multiplayer/", "Choicer Voicer Multiplayer", "/src/site.ts"],
+      ["pitch-matching-exercises/index.html", "https://thechoicervoicer.me/pitch-matching-exercises/", "Pitch Matching Exercises", "/src/site.ts"],
+      ["vocal-timing-exercises/index.html", "https://thechoicervoicer.me/vocal-timing-exercises/", "Vocal Timing Exercises", "/src/site.ts"],
+      ["voice-games-for-parties/index.html", "https://thechoicervoicer.me/voice-games-for-parties/", "Voice Games for Parties", "/src/site.ts"],
+      ["voice-imitation-exercises/index.html", "https://thechoicervoicer.me/voice-imitation-exercises/", "Voice Imitation Exercises", "/src/site.ts"],
+      ["voice-acting-warm-ups/index.html", "https://thechoicervoicer.me/voice-acting-warm-ups/", "Voice Acting Warm Up Exercises", "/src/site.ts"],
     ];
     const home = read("index.html");
     for (const [path, canonical, titleLead, script] of targets) {
@@ -348,7 +368,7 @@ describe("static launch source", () => {
       expect(html, `${path} should own a unique canonical`).toContain(`<link rel="canonical" href="${canonical}" />`);
       expect(html, `${path} should use its query intent in the title`).toContain(`<title>${titleLead}`);
       expect(html, `${path} should expose breadcrumbs`).toContain('class="breadcrumb container"');
-      expect(html, `${path} should expose breadcrumb schema`).toContain('"@type": "BreadcrumbList"');
+      expect(html, `${path} should expose breadcrumb schema`).toMatch(/"@type"\s*:\s*"BreadcrumbList"/);
       expect(html, `${path} should use the expected entry script`).toContain(`<script type="module" src="${script}"></script>`);
       expect(home, `homepage should link to ${canonical}`).toContain(`href="${new URL(canonical).pathname}"`);
     }

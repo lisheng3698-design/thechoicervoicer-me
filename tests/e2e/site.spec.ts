@@ -204,6 +204,11 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/alternatives/", "https://thechoicervoicer.me/alternatives/"],
     ["/gameplay/", "https://thechoicervoicer.me/gameplay/"],
     ["/multiplayer/", "https://thechoicervoicer.me/multiplayer/"],
+    ["/pitch-matching-exercises/", "https://thechoicervoicer.me/pitch-matching-exercises/"],
+    ["/vocal-timing-exercises/", "https://thechoicervoicer.me/vocal-timing-exercises/"],
+    ["/voice-games-for-parties/", "https://thechoicervoicer.me/voice-games-for-parties/"],
+    ["/voice-imitation-exercises/", "https://thechoicervoicer.me/voice-imitation-exercises/"],
+    ["/voice-acting-warm-ups/", "https://thechoicervoicer.me/voice-acting-warm-ups/"],
   ];
 
   for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {
