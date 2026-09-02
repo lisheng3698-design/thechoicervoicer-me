@@ -12,11 +12,11 @@
 
 | 槽位 | 主关键词 | Web.Cafe KD | 计划 URL | 页面承诺 | 初始状态 |
 |---:|---|---:|---|---|
-| 1 | pitch matching exercises | 0.5（very easy） | `/pitch-matching-exercises/` | 不要求绝对音准的音高方向、滑音和短句轮廓练习 | 制作中 |
-| 2 | vocal timing exercises | 1.8（very easy） | `/vocal-timing-exercises/` | 起音、停顿、时长、节拍与回放的口语节奏练习 | 制作中 |
-| 3 | voice games for parties | 3.3（very easy） | `/voice-games-for-parties/` | 适合 2–4 人同室游玩的语音游戏清单与本站 Group 模式说明 | 制作中 |
-| 4 | voice imitation exercises | 9.6（very easy） | `/voice-imitation-exercises/` | 从节奏、能量、音高到角色变化的七项递进练习 | 制作中 |
-| 5 | voice acting warm up exercises | 13.6（very easy） | `/voice-acting-warm-ups/` | 约八分钟的呼吸、咬字、共鸣和舒适音域热身 | 制作中 |
+| 1 | pitch matching exercises | 0.5（very easy） | `/pitch-matching-exercises/` | 不要求绝对音准的音高方向、滑音和短句轮廓练习 | 已上线 |
+| 2 | vocal timing exercises | 1.8（very easy） | `/vocal-timing-exercises/` | 起音、停顿、时长、节拍与回放的口语节奏练习 | 已上线 |
+| 3 | voice games for parties | 3.3（very easy） | `/voice-games-for-parties/` | 适合 2–4 人同室游玩的语音游戏清单与本站 Group 模式说明 | 已上线 |
+| 4 | voice imitation exercises | 9.6（very easy） | `/voice-imitation-exercises/` | 从节奏、能量、音高到角色变化的七项递进练习 | 已上线 |
+| 5 | voice acting warm up exercises | 13.6（very easy） | `/voice-acting-warm-ups/` | 约八分钟的呼吸、咬字、共鸣和舒适音域热身 | 已上线 |
 
 ## 替补队列
 
@@ -46,3 +46,11 @@
 - 共享 broker 当前有其他项目 `running` 与 `queued`；本项目不抢占、不清队列、不启动第二个 runner。
 - 收录助手固定 `host_permissions` 仍未登记 `https://thechoicervoicer.me/*`，且此时重载扩展会干扰正在运行的其他项目，因此不修改共享扩展状态。
 - 网站构建、部署、生产 QA 与 IndexNow 可独立继续；GSC、Bing 与 GA4 Realtime 只记录实际回执。
+
+## 发布结果
+
+- 主分支提交：`73bb9f6572d02b98f006e36b0b3c7092269f6eb1`。
+- GitHub Pages 发布：`701c2de1aa015ceca04eb30880328ab3ec7ae812`。
+- 5 个英文 canonical 与 5 个中文对应页全部返回 `200`；生产桌面/手机专项 QA 20/20 通过。
+- IndexNow 对 10 个 URL 一次提交，HTTP `200`。
+- 严格评分均为 95/100；唯一缺项是 GA4 Realtime/DebugView 的账号侧可见证据，第 19 项保留 `Blocked`。
