@@ -13,11 +13,11 @@
 
 | 槽位 | 主关键词 | Web.Cafe KD | 计划 URL | 页面承诺 | 初始状态 |
 |---:|---|---:|---|---|---|
-| 1 | voice projection exercises | 1.2（极易） | `/voice-projection-exercises/` | 六步房间距离练习，强调清晰传远而非喊叫 | 制作中 |
-| 2 | voice modulation exercises | 10.3（极易） | `/voice-modulation-exercises/` | 一次只改变音高、语速、停顿、能量或重音 | 制作中 |
-| 3 | articulation exercises for voice acting | 11.4（极易） | `/articulation-exercises-for-voice-acting/` | 从音素、词尾和组合进入自然场景台词 | 制作中 |
-| 4 | character voice exercises | 11.7（极易） | `/character-voice-exercises/` | 用三项可观察变量建立可重复角色声音配方 | 制作中 |
-| 5 | breath control exercises for voice acting | 24.0（容易） | `/breath-control-exercises-for-voice-acting/` | 不强迫憋气的意群、气流和恢复换气流程 | 制作中 |
+| 1 | voice projection exercises | 1.2（极易） | `/voice-projection-exercises/` | 六步房间距离练习，强调清晰传远而非喊叫 | 已上线 |
+| 2 | voice modulation exercises | 10.3（极易） | `/voice-modulation-exercises/` | 一次只改变音高、语速、停顿、能量或重音 | 已上线 |
+| 3 | articulation exercises for voice acting | 11.4（极易） | `/articulation-exercises-for-voice-acting/` | 从音素、词尾和组合进入自然场景台词 | 已上线 |
+| 4 | character voice exercises | 11.7（极易） | `/character-voice-exercises/` | 用三项可观察变量建立可重复角色声音配方 | 已上线 |
+| 5 | breath control exercises for voice acting | 24.0（容易） | `/breath-control-exercises-for-voice-acting/` | 不强迫憋气的意群、气流和恢复换气流程 | 已上线 |
 
 ## 替补队列
 
@@ -47,3 +47,12 @@
 - 收录助手已新增 The Choicer Voicer 注册项目与固定站点权限；助手测试 82/82、并发专项 5/5 通过。
 - 共享 broker 预检时为空闲；不清理、不抢占其他项目队列。
 - GA4 Measurement ID 已由仓库核实为 `G-4SMXSDGLW2`；属性与数据流编号只采用控制台可见证据，不推测。
+
+## 发布结果
+
+- 主分支内容提交：`224bfcd`。
+- GitHub Pages 发布：`9bec137`。
+- 5 个英文 canonical 与 5 个中文对应页全部返回 `200`；生产桌面/手机专项 QA 20/20 通过。
+- IndexNow 对 10 个 URL 一次提交，HTTP `200`。
+- 10 个生产页面的 GA4 `page_view` 均发送到 `G-4SMXSDGLW2` 并返回 HTTP `204`。
+- 严格评分均为 95/100；唯一缺项是 GA4 Realtime/DebugView 的账号侧可见证据，第 19 项保留 `Blocked`。
