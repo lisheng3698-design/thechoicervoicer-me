@@ -21,6 +21,11 @@ const englishPages = [
   "voice-games-for-parties/index.html",
   "voice-imitation-exercises/index.html",
   "voice-acting-warm-ups/index.html",
+  "voice-projection-exercises/index.html",
+  "voice-modulation-exercises/index.html",
+  "articulation-exercises-for-voice-acting/index.html",
+  "character-voice-exercises/index.html",
+  "breath-control-exercises-for-voice-acting/index.html",
   "about/index.html",
   "contact/index.html",
   "privacy/index.html",
@@ -43,6 +48,11 @@ const chinesePages = [
   "zh/voice-games-for-parties/index.html",
   "zh/voice-imitation-exercises/index.html",
   "zh/voice-acting-warm-ups/index.html",
+  "zh/voice-projection-exercises/index.html",
+  "zh/voice-modulation-exercises/index.html",
+  "zh/articulation-exercises-for-voice-acting/index.html",
+  "zh/character-voice-exercises/index.html",
+  "zh/breath-control-exercises-for-voice-acting/index.html",
   "zh/about/index.html",
   "zh/contact/index.html",
   "zh/privacy/index.html",
@@ -239,7 +249,7 @@ describe("static launch source", () => {
     const robots = read("public/robots.txt");
     const sitemap = read("public/sitemap.xml");
     expect(robots).toContain("https://thechoicervoicer.me/sitemap.xml");
-    for (const route of ["games", "app", "how-to-play", "mobile", "voice-packs", "microphone-not-working", "is-it-safe", "alternatives", "gameplay", "multiplayer", "pitch-matching-exercises", "vocal-timing-exercises", "voice-games-for-parties", "voice-imitation-exercises", "voice-acting-warm-ups"]) {
+    for (const route of ["games", "app", "how-to-play", "mobile", "voice-packs", "microphone-not-working", "is-it-safe", "alternatives", "gameplay", "multiplayer", "pitch-matching-exercises", "vocal-timing-exercises", "voice-games-for-parties", "voice-imitation-exercises", "voice-acting-warm-ups", "voice-projection-exercises", "voice-modulation-exercises", "articulation-exercises-for-voice-acting", "character-voice-exercises", "breath-control-exercises-for-voice-acting"]) {
       expect(sitemap).toContain(`https://thechoicervoicer.me/${route}/`);
       expect(sitemap).toContain(`https://thechoicervoicer.me/zh/${route}/`);
     }
@@ -278,6 +288,11 @@ describe("static launch source", () => {
       ["voice-games-for-parties/index.html", "zh/voice-games-for-parties/index.html", "/zh/voice-games-for-parties/", "/voice-games-for-parties/"],
       ["voice-imitation-exercises/index.html", "zh/voice-imitation-exercises/index.html", "/zh/voice-imitation-exercises/", "/voice-imitation-exercises/"],
       ["voice-acting-warm-ups/index.html", "zh/voice-acting-warm-ups/index.html", "/zh/voice-acting-warm-ups/", "/voice-acting-warm-ups/"],
+      ["voice-projection-exercises/index.html", "zh/voice-projection-exercises/index.html", "/zh/voice-projection-exercises/", "/voice-projection-exercises/"],
+      ["voice-modulation-exercises/index.html", "zh/voice-modulation-exercises/index.html", "/zh/voice-modulation-exercises/", "/voice-modulation-exercises/"],
+      ["articulation-exercises-for-voice-acting/index.html", "zh/articulation-exercises-for-voice-acting/index.html", "/zh/articulation-exercises-for-voice-acting/", "/articulation-exercises-for-voice-acting/"],
+      ["character-voice-exercises/index.html", "zh/character-voice-exercises/index.html", "/zh/character-voice-exercises/", "/character-voice-exercises/"],
+      ["breath-control-exercises-for-voice-acting/index.html", "zh/breath-control-exercises-for-voice-acting/index.html", "/zh/breath-control-exercises-for-voice-acting/", "/breath-control-exercises-for-voice-acting/"],
       ["about/index.html", "zh/about/index.html", "/zh/about/", "/about/"],
       ["contact/index.html", "zh/contact/index.html", "/zh/contact/", "/contact/"],
       ["privacy/index.html", "zh/privacy/index.html", "/zh/privacy/", "/privacy/"],
@@ -344,7 +359,7 @@ describe("static launch source", () => {
     expect(read("zh/privacy/index.html")).toContain("由 Adsterra 提供并明确标注的第三方广告");
   });
 
-  it("publishes fifteen distinct search-intent pages with source-visible navigation", () => {
+  it("publishes twenty distinct search-intent pages with source-visible navigation", () => {
     const targets = [
       ["games/index.html", "https://thechoicervoicer.me/games/", "Voice Imitation Game", "/src/game.ts"],
       ["app/index.html", "https://thechoicervoicer.me/app/", "The Choicer Voicer App", "/src/site.ts"],
@@ -361,6 +376,11 @@ describe("static launch source", () => {
       ["voice-games-for-parties/index.html", "https://thechoicervoicer.me/voice-games-for-parties/", "Voice Games for Parties", "/src/site.ts"],
       ["voice-imitation-exercises/index.html", "https://thechoicervoicer.me/voice-imitation-exercises/", "Voice Imitation Exercises", "/src/site.ts"],
       ["voice-acting-warm-ups/index.html", "https://thechoicervoicer.me/voice-acting-warm-ups/", "Voice Acting Warm Up Exercises", "/src/site.ts"],
+      ["voice-projection-exercises/index.html", "https://thechoicervoicer.me/voice-projection-exercises/", "Voice Projection Exercises", "/src/site.ts"],
+      ["voice-modulation-exercises/index.html", "https://thechoicervoicer.me/voice-modulation-exercises/", "Voice Modulation Exercises", "/src/site.ts"],
+      ["articulation-exercises-for-voice-acting/index.html", "https://thechoicervoicer.me/articulation-exercises-for-voice-acting/", "Articulation Exercises for Voice Acting", "/src/site.ts"],
+      ["character-voice-exercises/index.html", "https://thechoicervoicer.me/character-voice-exercises/", "Character Voice Exercises", "/src/site.ts"],
+      ["breath-control-exercises-for-voice-acting/index.html", "https://thechoicervoicer.me/breath-control-exercises-for-voice-acting/", "Breath Control Exercises for Voice Acting", "/src/site.ts"],
     ];
     const home = read("index.html");
     for (const [path, canonical, titleLead, script] of targets) {
