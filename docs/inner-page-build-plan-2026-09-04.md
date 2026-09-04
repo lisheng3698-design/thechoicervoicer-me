@@ -12,11 +12,11 @@
 
 | 槽位 | 主关键词 | Web.Cafe KD | 计划 URL | 页面承诺 | 当前状态 |
 |---:|---|---:|---|---|---|
-| 1 | voice acting practice scripts | 8.7（极易） | `/voice-acting-practice-scripts/` | 8 段原创短稿、目标时长与三遍录音复盘 | 已建设，待发布 |
-| 2 | emotional voice acting exercises | 7.9（极易） | `/emotional-voice-acting-exercises/` | 用行动、关系、强度和转折训练情绪表达 | 已建设，待发布 |
-| 3 | voice acting improv exercises | 1.4（极易） | `/voice-acting-improv-exercises/` | 7 个适合单人或双人的声音即兴提示 | 已建设，待发布 |
-| 4 | voice acting audition exercises | 4.7（极易） | `/voice-acting-audition-exercises/` | 限时审稿、冷读、两遍选择与五项复盘 | 已建设，待发布 |
-| 5 | vocal cooldown exercises | 6.7（极易） | `/vocal-cooldown-exercises/` | 配音后温和回到日常说话声的六分钟流程 | 已建设，待发布 |
+| 1 | voice acting practice scripts | 8.7（极易） | `/voice-acting-practice-scripts/` | 8 段原创短稿、目标时长与三遍录音复盘 | 已上线 |
+| 2 | emotional voice acting exercises | 7.9（极易） | `/emotional-voice-acting-exercises/` | 用行动、关系、强度和转折训练情绪表达 | 已上线 |
+| 3 | voice acting improv exercises | 1.4（极易） | `/voice-acting-improv-exercises/` | 7 个适合单人或双人的声音即兴提示 | 已上线 |
+| 4 | voice acting audition exercises | 4.7（极易） | `/voice-acting-audition-exercises/` | 限时审稿、冷读、两遍选择与五项复盘 | 已上线 |
+| 5 | vocal cooldown exercises | 6.7（极易） | `/vocal-cooldown-exercises/` | 配音后温和回到日常说话声的六分钟流程 | 已上线 |
 
 ## 替补队列
 
@@ -51,3 +51,12 @@
 - 英文与中文首页需为 5 个新意图提供源 HTML 可见入口；正式 sitemap 需新增 10 个 `lastmod=2026-09-04` URL。
 - 本地 Vitest、TypeScript、构建、桌面/手机 Playwright 通过后才可发布。
 - 发布后逐 URL 检查 HTTP、canonical、H1、图片、横向溢出与控制台，并提交 IndexNow、记录 GA4 transport 与账号侧证据状态。
+
+## 发布结果
+
+- 主分支内容提交：`296a41c`。
+- GitHub Pages 发布：`e79a209`。
+- 5 个英文 canonical 与 5 个中文对应页全部返回 `200`；生产桌面/手机专项 QA 20/20 通过。
+- IndexNow 对 10 个 URL 一次提交，HTTP `200`。
+- 10 个生产页面的 GA4 `page_view` 均发送到 `G-4SMXSDGLW2` 并返回 HTTP `204`。
+- 严格评分均为 95/100；唯一缺项是 GA4 Realtime/DebugView 的正确账号侧可见证据，第 19 项保留 `Blocked`。
