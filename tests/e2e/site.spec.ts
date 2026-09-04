@@ -214,6 +214,16 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/articulation-exercises-for-voice-acting/", "https://thechoicervoicer.me/articulation-exercises-for-voice-acting/"],
     ["/character-voice-exercises/", "https://thechoicervoicer.me/character-voice-exercises/"],
     ["/breath-control-exercises-for-voice-acting/", "https://thechoicervoicer.me/breath-control-exercises-for-voice-acting/"],
+    ["/voice-acting-practice-scripts/", "https://thechoicervoicer.me/voice-acting-practice-scripts/"],
+    ["/emotional-voice-acting-exercises/", "https://thechoicervoicer.me/emotional-voice-acting-exercises/"],
+    ["/voice-acting-improv-exercises/", "https://thechoicervoicer.me/voice-acting-improv-exercises/"],
+    ["/voice-acting-audition-exercises/", "https://thechoicervoicer.me/voice-acting-audition-exercises/"],
+    ["/vocal-cooldown-exercises/", "https://thechoicervoicer.me/vocal-cooldown-exercises/"],
+    ["/zh/voice-acting-practice-scripts/", "https://thechoicervoicer.me/zh/voice-acting-practice-scripts/"],
+    ["/zh/emotional-voice-acting-exercises/", "https://thechoicervoicer.me/zh/emotional-voice-acting-exercises/"],
+    ["/zh/voice-acting-improv-exercises/", "https://thechoicervoicer.me/zh/voice-acting-improv-exercises/"],
+    ["/zh/voice-acting-audition-exercises/", "https://thechoicervoicer.me/zh/voice-acting-audition-exercises/"],
+    ["/zh/vocal-cooldown-exercises/", "https://thechoicervoicer.me/zh/vocal-cooldown-exercises/"],
   ];
 
   for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {
