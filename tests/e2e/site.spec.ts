@@ -219,11 +219,21 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/voice-acting-improv-exercises/", "https://thechoicervoicer.me/voice-acting-improv-exercises/"],
     ["/voice-acting-audition-exercises/", "https://thechoicervoicer.me/voice-acting-audition-exercises/"],
     ["/vocal-cooldown-exercises/", "https://thechoicervoicer.me/vocal-cooldown-exercises/"],
+    ["/voice-acting-script-analysis/", "https://thechoicervoicer.me/voice-acting-script-analysis/"],
+    ["/commercial-voice-acting-exercises/", "https://thechoicervoicer.me/commercial-voice-acting-exercises/"],
+    ["/voice-acting-microphone-technique/", "https://thechoicervoicer.me/voice-acting-microphone-technique/"],
+    ["/voice-acting-self-critique/", "https://thechoicervoicer.me/voice-acting-self-critique/"],
+    ["/voice-acting-listening-exercises/", "https://thechoicervoicer.me/voice-acting-listening-exercises/"],
     ["/zh/voice-acting-practice-scripts/", "https://thechoicervoicer.me/zh/voice-acting-practice-scripts/"],
     ["/zh/emotional-voice-acting-exercises/", "https://thechoicervoicer.me/zh/emotional-voice-acting-exercises/"],
     ["/zh/voice-acting-improv-exercises/", "https://thechoicervoicer.me/zh/voice-acting-improv-exercises/"],
     ["/zh/voice-acting-audition-exercises/", "https://thechoicervoicer.me/zh/voice-acting-audition-exercises/"],
     ["/zh/vocal-cooldown-exercises/", "https://thechoicervoicer.me/zh/vocal-cooldown-exercises/"],
+    ["/zh/voice-acting-script-analysis/", "https://thechoicervoicer.me/zh/voice-acting-script-analysis/"],
+    ["/zh/commercial-voice-acting-exercises/", "https://thechoicervoicer.me/zh/commercial-voice-acting-exercises/"],
+    ["/zh/voice-acting-microphone-technique/", "https://thechoicervoicer.me/zh/voice-acting-microphone-technique/"],
+    ["/zh/voice-acting-self-critique/", "https://thechoicervoicer.me/zh/voice-acting-self-critique/"],
+    ["/zh/voice-acting-listening-exercises/", "https://thechoicervoicer.me/zh/voice-acting-listening-exercises/"],
   ];
 
   for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {
