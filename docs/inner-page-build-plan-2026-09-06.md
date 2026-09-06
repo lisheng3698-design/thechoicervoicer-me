@@ -12,11 +12,11 @@
 
 | 槽位 | 主关键词 | Web.Cafe KD | 计划 URL | 页面承诺 | 当前状态 |
 |---:|---|---:|---|---|---|
-| 1 | voice acting script analysis | 21.4（容易） | `/voice-acting-script-analysis/` | 用五步标注法找出听众、目标、节拍、关键词和转折 | 制作中 |
-| 2 | commercial voice acting exercises | 3.2（极易） | `/commercial-voice-acting-exercises/` | 用原创商业短稿练受众、收益点、时长和自然表达 | 制作中 |
-| 3 | voice acting microphone technique | 1.1（极易） | `/voice-acting-microphone-technique/` | 用距离、角度、音量和爆破音测试建立稳定收音位置 | 制作中 |
-| 4 | voice acting self critique | 8.0（极易） | `/voice-acting-self-critique/` | 用五项量表复盘录音，并在下一遍只改一个变量 | 制作中 |
-| 5 | voice acting listening exercises | 1.4（极易） | `/voice-acting-listening-exercises/` | 用复述、关键词回声和线索响应训练主动聆听 | 制作中 |
+| 1 | voice acting script analysis | 21.4（容易） | `/voice-acting-script-analysis/` | 用五步标注法找出听众、目标、节拍、关键词和转折 | 已上线 |
+| 2 | commercial voice acting exercises | 3.2（极易） | `/commercial-voice-acting-exercises/` | 用原创商业短稿练受众、收益点、时长和自然表达 | 已上线 |
+| 3 | voice acting microphone technique | 1.1（极易） | `/voice-acting-microphone-technique/` | 用距离、角度、音量和爆破音测试建立稳定收音位置 | 已上线 |
+| 4 | voice acting self critique | 8.0（极易） | `/voice-acting-self-critique/` | 用五项量表复盘录音，并在下一遍只改一个变量 | 已上线 |
+| 5 | voice acting listening exercises | 1.4（极易） | `/voice-acting-listening-exercises/` | 用复述、关键词回声和线索响应训练主动聆听 | 已上线 |
 
 ## 替补队列
 
@@ -51,3 +51,12 @@
 - 英文与中文首页需为 5 个新意图提供源 HTML 可见入口；正式 sitemap 需新增 10 个 `lastmod=2026-09-06` URL。
 - 本地 Vitest、TypeScript、构建、桌面/手机 Playwright 通过后才可发布。
 - 发布后逐 URL 检查 HTTP、canonical、H1、图片、横向溢出与控制台，并提交 IndexNow、记录 GA4 transport 与账号侧证据状态。
+
+## 发布结果
+
+- 主分支内容提交：`34bc7e6`。
+- GitHub Pages 发布：`c9d0137`。
+- 5 个英文 canonical 与 5 个中文对应页全部返回 `200`；生产桌面/手机专项 QA 20/20 通过。
+- IndexNow 对 10 个 URL 一次提交，HTTP `200`。
+- 10 个生产页面的 GA4 `page_view` 均发送到 `G-4SMXSDGLW2` 并返回 HTTP `204`。
+- 严格评分均为 95/100；唯一缺项是正确 GA4 属性的 Realtime/DebugView 账号侧可见证据，第 19 项保留 `Blocked`。
