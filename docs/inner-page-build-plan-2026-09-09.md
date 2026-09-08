@@ -55,3 +55,12 @@
 - 英文与中文首页提供 5 个源 HTML 可见入口；正式 sitemap 新增 10 个 `lastmod=2026-09-09` URL。
 - Vitest、TypeScript、构建与桌面/手机 Playwright 通过后发布。
 - 生产发布后逐 URL 验证 HTTP、canonical、H1、横向溢出和控制台；随后执行 GSC/Bing/IndexNow/GA4 闭环并记录严格 20 项评分。
+
+## 发布结果
+
+- 主分支内容提交：`b0395a2`；GitHub Pages 发布：`dbf38a6`。
+- 5 个英文 canonical 与 5 个中文对应页全部生产返回 `200`；桌面/手机生产专项 QA 共 20/20 通过。
+- IndexNow 对 10 个 URL 一次提交，key 文件精确匹配，API 返回 HTTP `200`。
+- GA4 10 个生产 `page_view` 与一个固定 `guide_validation` 均发送到 `G-4SMXSDGLW2` 并返回 HTTP `204`；正确属性 `p551708268` 的 Realtime 可见活跃用户，但本批次页面标题/事件尚未出现在账号侧明细。
+- 收录助手预检保持 `queued / attempts 0`；共享 runner 未运行，且受控浏览器安全策略不允许直接打开本地扩展 runner 页面。
+- 严格评分均为 95/100；唯一缺项为第 19 项的本批次 GA4 Realtime/DebugView 明细证据。详情见 `docs/inner-page-release-ledger-2026-09-09.md`。
