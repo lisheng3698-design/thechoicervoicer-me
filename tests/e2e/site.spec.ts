@@ -224,6 +224,11 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/voice-acting-microphone-technique/", "https://thechoicervoicer.me/voice-acting-microphone-technique/"],
     ["/voice-acting-self-critique/", "https://thechoicervoicer.me/voice-acting-self-critique/"],
     ["/voice-acting-listening-exercises/", "https://thechoicervoicer.me/voice-acting-listening-exercises/"],
+    ["/voice-acting-cold-reading-exercises/", "https://thechoicervoicer.me/voice-acting-cold-reading-exercises/"],
+    ["/voice-acting-subtext-exercises/", "https://thechoicervoicer.me/voice-acting-subtext-exercises/"],
+    ["/voice-acting-line-delivery-exercises/", "https://thechoicervoicer.me/voice-acting-line-delivery-exercises/"],
+    ["/voice-acting-vocal-stamina-exercises/", "https://thechoicervoicer.me/voice-acting-vocal-stamina-exercises/"],
+    ["/voice-acting-accent-exercises/", "https://thechoicervoicer.me/voice-acting-accent-exercises/"],
     ["/zh/voice-acting-practice-scripts/", "https://thechoicervoicer.me/zh/voice-acting-practice-scripts/"],
     ["/zh/emotional-voice-acting-exercises/", "https://thechoicervoicer.me/zh/emotional-voice-acting-exercises/"],
     ["/zh/voice-acting-improv-exercises/", "https://thechoicervoicer.me/zh/voice-acting-improv-exercises/"],
@@ -234,6 +239,11 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/zh/voice-acting-microphone-technique/", "https://thechoicervoicer.me/zh/voice-acting-microphone-technique/"],
     ["/zh/voice-acting-self-critique/", "https://thechoicervoicer.me/zh/voice-acting-self-critique/"],
     ["/zh/voice-acting-listening-exercises/", "https://thechoicervoicer.me/zh/voice-acting-listening-exercises/"],
+    ["/zh/voice-acting-cold-reading-exercises/", "https://thechoicervoicer.me/zh/voice-acting-cold-reading-exercises/"],
+    ["/zh/voice-acting-subtext-exercises/", "https://thechoicervoicer.me/zh/voice-acting-subtext-exercises/"],
+    ["/zh/voice-acting-line-delivery-exercises/", "https://thechoicervoicer.me/zh/voice-acting-line-delivery-exercises/"],
+    ["/zh/voice-acting-vocal-stamina-exercises/", "https://thechoicervoicer.me/zh/voice-acting-vocal-stamina-exercises/"],
+    ["/zh/voice-acting-accent-exercises/", "https://thechoicervoicer.me/zh/voice-acting-accent-exercises/"],
   ];
 
   for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {

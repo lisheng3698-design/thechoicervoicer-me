@@ -36,6 +36,11 @@ const englishPages = [
   "voice-acting-microphone-technique/index.html",
   "voice-acting-self-critique/index.html",
   "voice-acting-listening-exercises/index.html",
+  "voice-acting-cold-reading-exercises/index.html",
+  "voice-acting-subtext-exercises/index.html",
+  "voice-acting-line-delivery-exercises/index.html",
+  "voice-acting-vocal-stamina-exercises/index.html",
+  "voice-acting-accent-exercises/index.html",
   "about/index.html",
   "contact/index.html",
   "privacy/index.html",
@@ -73,6 +78,11 @@ const chinesePages = [
   "zh/voice-acting-microphone-technique/index.html",
   "zh/voice-acting-self-critique/index.html",
   "zh/voice-acting-listening-exercises/index.html",
+  "zh/voice-acting-cold-reading-exercises/index.html",
+  "zh/voice-acting-subtext-exercises/index.html",
+  "zh/voice-acting-line-delivery-exercises/index.html",
+  "zh/voice-acting-vocal-stamina-exercises/index.html",
+  "zh/voice-acting-accent-exercises/index.html",
   "zh/about/index.html",
   "zh/contact/index.html",
   "zh/privacy/index.html",
@@ -269,7 +279,7 @@ describe("static launch source", () => {
     const robots = read("public/robots.txt");
     const sitemap = read("public/sitemap.xml");
     expect(robots).toContain("https://thechoicervoicer.me/sitemap.xml");
-    for (const route of ["games", "app", "how-to-play", "mobile", "voice-packs", "microphone-not-working", "is-it-safe", "alternatives", "gameplay", "multiplayer", "pitch-matching-exercises", "vocal-timing-exercises", "voice-games-for-parties", "voice-imitation-exercises", "voice-acting-warm-ups", "voice-projection-exercises", "voice-modulation-exercises", "articulation-exercises-for-voice-acting", "character-voice-exercises", "breath-control-exercises-for-voice-acting", "voice-acting-practice-scripts", "emotional-voice-acting-exercises", "voice-acting-improv-exercises", "voice-acting-audition-exercises", "vocal-cooldown-exercises", "voice-acting-script-analysis", "commercial-voice-acting-exercises", "voice-acting-microphone-technique", "voice-acting-self-critique", "voice-acting-listening-exercises"]) {
+    for (const route of ["games", "app", "how-to-play", "mobile", "voice-packs", "microphone-not-working", "is-it-safe", "alternatives", "gameplay", "multiplayer", "pitch-matching-exercises", "vocal-timing-exercises", "voice-games-for-parties", "voice-imitation-exercises", "voice-acting-warm-ups", "voice-projection-exercises", "voice-modulation-exercises", "articulation-exercises-for-voice-acting", "character-voice-exercises", "breath-control-exercises-for-voice-acting", "voice-acting-practice-scripts", "emotional-voice-acting-exercises", "voice-acting-improv-exercises", "voice-acting-audition-exercises", "vocal-cooldown-exercises", "voice-acting-script-analysis", "commercial-voice-acting-exercises", "voice-acting-microphone-technique", "voice-acting-self-critique", "voice-acting-listening-exercises", "voice-acting-cold-reading-exercises", "voice-acting-subtext-exercises", "voice-acting-line-delivery-exercises", "voice-acting-vocal-stamina-exercises", "voice-acting-accent-exercises"]) {
       expect(sitemap).toContain(`https://thechoicervoicer.me/${route}/`);
       expect(sitemap).toContain(`https://thechoicervoicer.me/zh/${route}/`);
     }
@@ -323,6 +333,11 @@ describe("static launch source", () => {
       ["voice-acting-microphone-technique/index.html", "zh/voice-acting-microphone-technique/index.html", "/zh/voice-acting-microphone-technique/", "/voice-acting-microphone-technique/"],
       ["voice-acting-self-critique/index.html", "zh/voice-acting-self-critique/index.html", "/zh/voice-acting-self-critique/", "/voice-acting-self-critique/"],
       ["voice-acting-listening-exercises/index.html", "zh/voice-acting-listening-exercises/index.html", "/zh/voice-acting-listening-exercises/", "/voice-acting-listening-exercises/"],
+      ["voice-acting-cold-reading-exercises/index.html", "zh/voice-acting-cold-reading-exercises/index.html", "/zh/voice-acting-cold-reading-exercises/", "/voice-acting-cold-reading-exercises/"],
+      ["voice-acting-subtext-exercises/index.html", "zh/voice-acting-subtext-exercises/index.html", "/zh/voice-acting-subtext-exercises/", "/voice-acting-subtext-exercises/"],
+      ["voice-acting-line-delivery-exercises/index.html", "zh/voice-acting-line-delivery-exercises/index.html", "/zh/voice-acting-line-delivery-exercises/", "/voice-acting-line-delivery-exercises/"],
+      ["voice-acting-vocal-stamina-exercises/index.html", "zh/voice-acting-vocal-stamina-exercises/index.html", "/zh/voice-acting-vocal-stamina-exercises/", "/voice-acting-vocal-stamina-exercises/"],
+      ["voice-acting-accent-exercises/index.html", "zh/voice-acting-accent-exercises/index.html", "/zh/voice-acting-accent-exercises/", "/voice-acting-accent-exercises/"],
       ["about/index.html", "zh/about/index.html", "/zh/about/", "/about/"],
       ["contact/index.html", "zh/contact/index.html", "/zh/contact/", "/contact/"],
       ["privacy/index.html", "zh/privacy/index.html", "/zh/privacy/", "/privacy/"],
@@ -389,7 +404,7 @@ describe("static launch source", () => {
     expect(read("zh/privacy/index.html")).toContain("由 Adsterra 提供并明确标注的第三方广告");
   });
 
-  it("publishes thirty distinct search-intent pages with source-visible navigation", () => {
+  it("publishes thirty-five distinct search-intent pages with source-visible navigation", () => {
     const targets = [
       ["games/index.html", "https://thechoicervoicer.me/games/", "Voice Imitation Game", "/src/game.ts"],
       ["app/index.html", "https://thechoicervoicer.me/app/", "The Choicer Voicer App", "/src/site.ts"],
@@ -421,6 +436,11 @@ describe("static launch source", () => {
       ["voice-acting-microphone-technique/index.html", "https://thechoicervoicer.me/voice-acting-microphone-technique/", "Voice Acting Microphone Technique", "/src/site.ts"],
       ["voice-acting-self-critique/index.html", "https://thechoicervoicer.me/voice-acting-self-critique/", "Voice Acting Self Critique", "/src/site.ts"],
       ["voice-acting-listening-exercises/index.html", "https://thechoicervoicer.me/voice-acting-listening-exercises/", "Voice Acting Listening Exercises", "/src/site.ts"],
+      ["voice-acting-cold-reading-exercises/index.html", "https://thechoicervoicer.me/voice-acting-cold-reading-exercises/", "Voice Acting Cold Reading Exercises", "/src/site.ts"],
+      ["voice-acting-subtext-exercises/index.html", "https://thechoicervoicer.me/voice-acting-subtext-exercises/", "Voice Acting Subtext Exercises", "/src/site.ts"],
+      ["voice-acting-line-delivery-exercises/index.html", "https://thechoicervoicer.me/voice-acting-line-delivery-exercises/", "Voice Acting Line Delivery Exercises", "/src/site.ts"],
+      ["voice-acting-vocal-stamina-exercises/index.html", "https://thechoicervoicer.me/voice-acting-vocal-stamina-exercises/", "Voice Acting Vocal Stamina Exercises", "/src/site.ts"],
+      ["voice-acting-accent-exercises/index.html", "https://thechoicervoicer.me/voice-acting-accent-exercises/", "Voice Acting Accent Exercises", "/src/site.ts"],
     ];
     const home = read("index.html");
     for (const [path, canonical, titleLead, script] of targets) {
