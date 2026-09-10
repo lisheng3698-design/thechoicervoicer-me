@@ -229,6 +229,11 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/voice-acting-line-delivery-exercises/", "https://thechoicervoicer.me/voice-acting-line-delivery-exercises/"],
     ["/voice-acting-vocal-stamina-exercises/", "https://thechoicervoicer.me/voice-acting-vocal-stamina-exercises/"],
     ["/voice-acting-accent-exercises/", "https://thechoicervoicer.me/voice-acting-accent-exercises/"],
+    ["/voice-acting-physicality-exercises/", "https://thechoicervoicer.me/voice-acting-physicality-exercises/"],
+    ["/voice-acting-visualization-exercises/", "https://thechoicervoicer.me/voice-acting-visualization-exercises/"],
+    ["/voice-acting-comedy-timing-exercises/", "https://thechoicervoicer.me/voice-acting-comedy-timing-exercises/"],
+    ["/voice-acting-character-switching-exercises/", "https://thechoicervoicer.me/voice-acting-character-switching-exercises/"],
+    ["/audiobook-narration-exercises/", "https://thechoicervoicer.me/audiobook-narration-exercises/"],
     ["/zh/voice-acting-practice-scripts/", "https://thechoicervoicer.me/zh/voice-acting-practice-scripts/"],
     ["/zh/emotional-voice-acting-exercises/", "https://thechoicervoicer.me/zh/emotional-voice-acting-exercises/"],
     ["/zh/voice-acting-improv-exercises/", "https://thechoicervoicer.me/zh/voice-acting-improv-exercises/"],
@@ -244,6 +249,11 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/zh/voice-acting-line-delivery-exercises/", "https://thechoicervoicer.me/zh/voice-acting-line-delivery-exercises/"],
     ["/zh/voice-acting-vocal-stamina-exercises/", "https://thechoicervoicer.me/zh/voice-acting-vocal-stamina-exercises/"],
     ["/zh/voice-acting-accent-exercises/", "https://thechoicervoicer.me/zh/voice-acting-accent-exercises/"],
+    ["/zh/voice-acting-physicality-exercises/", "https://thechoicervoicer.me/zh/voice-acting-physicality-exercises/"],
+    ["/zh/voice-acting-visualization-exercises/", "https://thechoicervoicer.me/zh/voice-acting-visualization-exercises/"],
+    ["/zh/voice-acting-comedy-timing-exercises/", "https://thechoicervoicer.me/zh/voice-acting-comedy-timing-exercises/"],
+    ["/zh/voice-acting-character-switching-exercises/", "https://thechoicervoicer.me/zh/voice-acting-character-switching-exercises/"],
+    ["/zh/audiobook-narration-exercises/", "https://thechoicervoicer.me/zh/audiobook-narration-exercises/"],
   ];
 
   for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {

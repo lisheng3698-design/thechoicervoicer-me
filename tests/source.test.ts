@@ -41,6 +41,11 @@ const englishPages = [
   "voice-acting-line-delivery-exercises/index.html",
   "voice-acting-vocal-stamina-exercises/index.html",
   "voice-acting-accent-exercises/index.html",
+  "voice-acting-physicality-exercises/index.html",
+  "voice-acting-visualization-exercises/index.html",
+  "voice-acting-comedy-timing-exercises/index.html",
+  "voice-acting-character-switching-exercises/index.html",
+  "audiobook-narration-exercises/index.html",
   "about/index.html",
   "contact/index.html",
   "privacy/index.html",
@@ -83,6 +88,11 @@ const chinesePages = [
   "zh/voice-acting-line-delivery-exercises/index.html",
   "zh/voice-acting-vocal-stamina-exercises/index.html",
   "zh/voice-acting-accent-exercises/index.html",
+  "zh/voice-acting-physicality-exercises/index.html",
+  "zh/voice-acting-visualization-exercises/index.html",
+  "zh/voice-acting-comedy-timing-exercises/index.html",
+  "zh/voice-acting-character-switching-exercises/index.html",
+  "zh/audiobook-narration-exercises/index.html",
   "zh/about/index.html",
   "zh/contact/index.html",
   "zh/privacy/index.html",
@@ -279,7 +289,7 @@ describe("static launch source", () => {
     const robots = read("public/robots.txt");
     const sitemap = read("public/sitemap.xml");
     expect(robots).toContain("https://thechoicervoicer.me/sitemap.xml");
-    for (const route of ["games", "app", "how-to-play", "mobile", "voice-packs", "microphone-not-working", "is-it-safe", "alternatives", "gameplay", "multiplayer", "pitch-matching-exercises", "vocal-timing-exercises", "voice-games-for-parties", "voice-imitation-exercises", "voice-acting-warm-ups", "voice-projection-exercises", "voice-modulation-exercises", "articulation-exercises-for-voice-acting", "character-voice-exercises", "breath-control-exercises-for-voice-acting", "voice-acting-practice-scripts", "emotional-voice-acting-exercises", "voice-acting-improv-exercises", "voice-acting-audition-exercises", "vocal-cooldown-exercises", "voice-acting-script-analysis", "commercial-voice-acting-exercises", "voice-acting-microphone-technique", "voice-acting-self-critique", "voice-acting-listening-exercises", "voice-acting-cold-reading-exercises", "voice-acting-subtext-exercises", "voice-acting-line-delivery-exercises", "voice-acting-vocal-stamina-exercises", "voice-acting-accent-exercises"]) {
+    for (const route of ["games", "app", "how-to-play", "mobile", "voice-packs", "microphone-not-working", "is-it-safe", "alternatives", "gameplay", "multiplayer", "pitch-matching-exercises", "vocal-timing-exercises", "voice-games-for-parties", "voice-imitation-exercises", "voice-acting-warm-ups", "voice-projection-exercises", "voice-modulation-exercises", "articulation-exercises-for-voice-acting", "character-voice-exercises", "breath-control-exercises-for-voice-acting", "voice-acting-practice-scripts", "emotional-voice-acting-exercises", "voice-acting-improv-exercises", "voice-acting-audition-exercises", "vocal-cooldown-exercises", "voice-acting-script-analysis", "commercial-voice-acting-exercises", "voice-acting-microphone-technique", "voice-acting-self-critique", "voice-acting-listening-exercises", "voice-acting-cold-reading-exercises", "voice-acting-subtext-exercises", "voice-acting-line-delivery-exercises", "voice-acting-vocal-stamina-exercises", "voice-acting-accent-exercises", "voice-acting-physicality-exercises", "voice-acting-visualization-exercises", "voice-acting-comedy-timing-exercises", "voice-acting-character-switching-exercises", "audiobook-narration-exercises"]) {
       expect(sitemap).toContain(`https://thechoicervoicer.me/${route}/`);
       expect(sitemap).toContain(`https://thechoicervoicer.me/zh/${route}/`);
     }
@@ -338,6 +348,11 @@ describe("static launch source", () => {
       ["voice-acting-line-delivery-exercises/index.html", "zh/voice-acting-line-delivery-exercises/index.html", "/zh/voice-acting-line-delivery-exercises/", "/voice-acting-line-delivery-exercises/"],
       ["voice-acting-vocal-stamina-exercises/index.html", "zh/voice-acting-vocal-stamina-exercises/index.html", "/zh/voice-acting-vocal-stamina-exercises/", "/voice-acting-vocal-stamina-exercises/"],
       ["voice-acting-accent-exercises/index.html", "zh/voice-acting-accent-exercises/index.html", "/zh/voice-acting-accent-exercises/", "/voice-acting-accent-exercises/"],
+      ["voice-acting-physicality-exercises/index.html", "zh/voice-acting-physicality-exercises/index.html", "/zh/voice-acting-physicality-exercises/", "/voice-acting-physicality-exercises/"],
+      ["voice-acting-visualization-exercises/index.html", "zh/voice-acting-visualization-exercises/index.html", "/zh/voice-acting-visualization-exercises/", "/voice-acting-visualization-exercises/"],
+      ["voice-acting-comedy-timing-exercises/index.html", "zh/voice-acting-comedy-timing-exercises/index.html", "/zh/voice-acting-comedy-timing-exercises/", "/voice-acting-comedy-timing-exercises/"],
+      ["voice-acting-character-switching-exercises/index.html", "zh/voice-acting-character-switching-exercises/index.html", "/zh/voice-acting-character-switching-exercises/", "/voice-acting-character-switching-exercises/"],
+      ["audiobook-narration-exercises/index.html", "zh/audiobook-narration-exercises/index.html", "/zh/audiobook-narration-exercises/", "/audiobook-narration-exercises/"],
       ["about/index.html", "zh/about/index.html", "/zh/about/", "/about/"],
       ["contact/index.html", "zh/contact/index.html", "/zh/contact/", "/contact/"],
       ["privacy/index.html", "zh/privacy/index.html", "/zh/privacy/", "/privacy/"],
