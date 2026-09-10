@@ -364,6 +364,8 @@ describe("static launch source", () => {
     expect(game).toContain("Five computer judges");
     expect(game).toContain("absolute 6/5");
     expect(site).toContain('const DEFAULT_GA_MEASUREMENT_ID = "G-4SMXSDGLW2"');
+    expect(read("index.html")).toContain('<meta name="google-analytics-measurement-id" content="G-4SMXSDGLW2" />');
+    expect(read("zh/index.html")).toContain('<meta name="google-analytics-measurement-id" content="G-4SMXSDGLW2" />');
     expect(site).toContain('analytics_storage: consent ?? "denied"');
     expect(site).toContain('ad_personalization: "denied"');
     expect(site).toContain('trackSiteEvent("language_switch"');
