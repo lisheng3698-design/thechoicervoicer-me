@@ -12,11 +12,11 @@
 
 | 槽位 | 主关键词 | Web.Cafe KD | 计划 URL | 页面承诺 | 当前状态 |
 |---:|---|---:|---|---|---|
-| 1 | voice acting physicality exercises | 8.6（极易） | `/voice-acting-physicality-exercises/` | 用姿态、重心、手势与距离变化生成可听差异，再去除多余动作 | 本地完成 |
-| 2 | voice acting visualization exercises | 0.1（极易） | `/voice-acting-visualization-exercises/` | 用空间、物体、感官事实与目标听众建立具体想象 | 本地完成 |
-| 3 | voice acting comedy timing exercises | 16.2（极易） | `/voice-acting-comedy-timing-exercises/` | 分离铺垫、停顿、转折、笑点与反应，不把“搞笑声音”当技巧 | 本地完成 |
-| 4 | voice acting character switching exercises | 10.0（极易） | `/voice-acting-character-switching-exercises/` | 用锚点、重置句、对比矩阵与盲测稳定切换两个角色 | 本地完成 |
-| 5 | audiobook narration exercises | 10.2（极易） | `/audiobook-narration-exercises/` | 分离旁白与人物、追踪段落转折并维持章节连续性 | 本地完成 |
+| 1 | voice acting physicality exercises | 8.6（极易） | `/voice-acting-physicality-exercises/` | 用姿态、重心、手势与距离变化生成可听差异，再去除多余动作 | 已上线（100/100） |
+| 2 | voice acting visualization exercises | 0.1（极易） | `/voice-acting-visualization-exercises/` | 用空间、物体、感官事实与目标听众建立具体想象 | 已上线（100/100） |
+| 3 | voice acting comedy timing exercises | 16.2（极易） | `/voice-acting-comedy-timing-exercises/` | 分离铺垫、停顿、转折、笑点与反应，不把“搞笑声音”当技巧 | 已上线（100/100） |
+| 4 | voice acting character switching exercises | 10.0（极易） | `/voice-acting-character-switching-exercises/` | 用锚点、重置句、对比矩阵与盲测稳定切换两个角色 | 已上线（100/100） |
+| 5 | audiobook narration exercises | 10.2（极易） | `/audiobook-narration-exercises/` | 分离旁白与人物、追踪段落转折并维持章节连续性 | 已上线（100/100） |
 
 ## 替补队列
 
@@ -55,4 +55,5 @@
 - 英文与中文首页提供 5 个源 HTML 可见入口；正式 sitemap 新增 10 个 `lastmod=2026-09-10` URL。
 - 本地 QA 已完成：Vitest 20/20；TypeScript 与 Vite 构建通过；Playwright 桌面/手机回归 14 通过、2 跳过；10 个新页面的 metadata、canonical、schema 与唯一 H1 检查全部通过；英文首页正文 1798 词，仍在 1200–1800 的既定范围内。
 - 首轮唯一回归为英文首页正文从 1800 增至 1829 词；通过压缩既有导航说明降至 1798 词，未放宽质量阈值。
-- 生产发布后逐 URL 验证 HTTP、canonical、H1、横向溢出和控制台；随后执行 GSC/Bing/IndexNow/GA4 闭环并记录严格 20 项评分。
+- 生产发布 `0ad5917` 已逐 URL 验证：10 个 URL × 桌面/手机共 20 次检查无失败，20 张全页截图已保存；36 个唯一站内目标均返回 200；Title 与 Description 各 10/10 唯一。
+- 五页严格评分均为 100/100。GSC sitemap 已提交且 5/5 URL Inspection 显示 `URL is on Google`；中英文 IndexNow 均 HTTP 200；GA4 collect 5/5 HTTP 204 且 Realtime 匹配 5/5。Bing 控制台字段首次加载超时，系统恢复批次 `thechoicervoicer-20260910-five-final-v1.retry-1` 仍为 queued，独立记录为 `needs-recheck`，不伪造成功。
