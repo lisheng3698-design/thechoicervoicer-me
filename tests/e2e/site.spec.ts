@@ -193,6 +193,7 @@ test("homepage exposes real game controls in representative first viewports", as
 });
 
 test("new search-intent guides render without errors on desktop and mobile", async ({ page }) => {
+  test.setTimeout(60_000);
   const routes = [
     ["/games/", "https://thechoicervoicer.me/games/"],
     ["/app/", "https://thechoicervoicer.me/app/"],
@@ -234,6 +235,11 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/voice-acting-comedy-timing-exercises/", "https://thechoicervoicer.me/voice-acting-comedy-timing-exercises/"],
     ["/voice-acting-character-switching-exercises/", "https://thechoicervoicer.me/voice-acting-character-switching-exercises/"],
     ["/audiobook-narration-exercises/", "https://thechoicervoicer.me/audiobook-narration-exercises/"],
+    ["/voice-acting-status-exercises/", "https://thechoicervoicer.me/voice-acting-status-exercises/"],
+    ["/voice-acting-memory-exercises/", "https://thechoicervoicer.me/voice-acting-memory-exercises/"],
+    ["/voice-acting-character-relationship-exercises/", "https://thechoicervoicer.me/voice-acting-character-relationship-exercises/"],
+    ["/voice-acting-reaction-exercises/", "https://thechoicervoicer.me/voice-acting-reaction-exercises/"],
+    ["/voice-acting-effort-sounds-exercises/", "https://thechoicervoicer.me/voice-acting-effort-sounds-exercises/"],
     ["/zh/voice-acting-practice-scripts/", "https://thechoicervoicer.me/zh/voice-acting-practice-scripts/"],
     ["/zh/emotional-voice-acting-exercises/", "https://thechoicervoicer.me/zh/emotional-voice-acting-exercises/"],
     ["/zh/voice-acting-improv-exercises/", "https://thechoicervoicer.me/zh/voice-acting-improv-exercises/"],
@@ -254,6 +260,11 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/zh/voice-acting-comedy-timing-exercises/", "https://thechoicervoicer.me/zh/voice-acting-comedy-timing-exercises/"],
     ["/zh/voice-acting-character-switching-exercises/", "https://thechoicervoicer.me/zh/voice-acting-character-switching-exercises/"],
     ["/zh/audiobook-narration-exercises/", "https://thechoicervoicer.me/zh/audiobook-narration-exercises/"],
+    ["/zh/voice-acting-status-exercises/", "https://thechoicervoicer.me/zh/voice-acting-status-exercises/"],
+    ["/zh/voice-acting-memory-exercises/", "https://thechoicervoicer.me/zh/voice-acting-memory-exercises/"],
+    ["/zh/voice-acting-character-relationship-exercises/", "https://thechoicervoicer.me/zh/voice-acting-character-relationship-exercises/"],
+    ["/zh/voice-acting-reaction-exercises/", "https://thechoicervoicer.me/zh/voice-acting-reaction-exercises/"],
+    ["/zh/voice-acting-effort-sounds-exercises/", "https://thechoicervoicer.me/zh/voice-acting-effort-sounds-exercises/"],
   ];
 
   for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {
