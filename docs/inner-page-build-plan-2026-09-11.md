@@ -11,11 +11,11 @@
 
 | 槽位 | 主关键词 | Web.Cafe KD | 计划 URL | 页面承诺 | 当前状态 |
 |---:|---|---:|---|---|---|
-| 1 | voice acting status exercises | 9.4（极易） | `/voice-acting-status-exercises/` | 用许可、时间占有、打断与转折让关系权力可听见，不把高低地位等同音量或身份 | 本地候选版通过 |
-| 2 | voice acting memory exercises | 14.2（极易） | `/voice-acting-memory-exercises/` | 训练事件、提示词、选择、补录与隔日连续性，并强制对照来源核验文字 | 本地候选版通过 |
-| 3 | voice acting character relationship exercises | 13.0（极易） | `/voice-acting-character-relationship-exercises/` | 用共同历史、距离、共享秘密、信任与伙伴行为建立具体连接 | 本地候选版通过 |
-| 4 | voice acting reaction exercises | 17.9（极易） | `/voice-acting-reaction-exercises/` | 分离预期、事件、处理延迟和后果，避免自动叹气或倒吸气 | 本地候选版通过 |
-| 5 | voice acting effort sounds exercises | 24.2（容易，API 标记 brand） | `/voice-acting-effort-sounds-exercises/` | 在低强度和明确停止规则下训练抬举、转向、落地、轻冲击提示与恢复 | 本地候选版通过 |
+| 1 | voice acting status exercises | 9.4（极易） | `/voice-acting-status-exercises/` | 用许可、时间占有、打断与转折让关系权力可听见，不把高低地位等同音量或身份 | 生产 200；100/100 |
+| 2 | voice acting memory exercises | 14.2（极易） | `/voice-acting-memory-exercises/` | 训练事件、提示词、选择、补录与隔日连续性，并强制对照来源核验文字 | 生产 200；100/100 |
+| 3 | voice acting character relationship exercises | 13.0（极易） | `/voice-acting-character-relationship-exercises/` | 用共同历史、距离、共享秘密、信任与伙伴行为建立具体连接 | 生产 200；100/100 |
+| 4 | voice acting reaction exercises | 17.9（极易） | `/voice-acting-reaction-exercises/` | 分离预期、事件、处理延迟和后果，避免自动叹气或倒吸气 | 生产 200；100/100 |
+| 5 | voice acting effort sounds exercises | 24.2（容易，API 标记 brand） | `/voice-acting-effort-sounds-exercises/` | 在低强度和明确停止规则下训练抬举、转向、落地、轻冲击提示与恢复 | 生产 200；100/100 |
 
 ## 替补队列
 
@@ -42,10 +42,11 @@
 
 ## 外部闭环诊断
 
-- 先核对昨日幂等恢复批次 `thechoicervoicer-20260910-five-final-v1.retry-1`：截至今日早晨仍为 `queued / attempts=0`；同一 FIFO 中另有两个到期任务也未认领。
-- broker `/health` 正常，保留原始队列、命令与结果；Chrome 在运行；安装的收录助手 2.0.2 已启用，manifest 含 `thechoicervoicer.me` 必需 host permission 与 alarms 权限。
-- 现象指向扩展 service worker / persistent runner 未唤醒，不是页面、项目身份或 broker 数据缺陷。没有杀 broker、没有重复入队、没有重复成功的 GSC / IndexNow / GA4 动作。
-- 浏览器安全策略拒绝只读打开扩展管理页，未使用 extension URL、CDP 或其他绕行。今天的最终外部闭环只有在原队列恢复并通过新的精确 preflight 后才能记为完成；否则按 adapter blocker 如实封账。
+- 昨日幂等恢复链已被原 runner 继续认领；`retry-1` 仍因 Bing URL field unavailable 阻塞，系统保留成功证据并创建 `retry-2`，未复制任务或重复成功动作。
+- 今日精确 preflight `thechoicervoicer-20260911-five-preflight-v1` 已返回 `ready`：5 个英文 canonical 与 sitemap 完全匹配，IndexNow key live，GSC、Bing、GA4 均 authenticated，代理 healthy，GA4 身份为 `thechoicervoicer.me / p551708268 / G-4SMXSDGLW2`。
+- 最终批次 `thechoicervoicer-20260911-five-final-v1` 已验证 5/5 生产资格；英文 5 URL 的 IndexNow 为 HTTP 200，GA4 `g/collect` 为 5/5 HTTP 204。中文 5 个镜像随后用同一生产 key 精确提交，IndexNow 亦为 HTTP 200。
+- GSC Sitemap 未在超时内确认，Bing Sitemap / URL Submission 字段未被适配器定位，GA4 Realtime 定向复查遇到临时标签关闭；这些状态分别记录为 `needs-recheck`，原幂等恢复链已排队，未把超时写成成功。
+- 浏览器安全策略拒绝读取扩展管理页，未使用 extension URL、CDP 或其他绕行；当前阻塞属于外部控制台适配器，不是页面、项目身份、生产资格、IndexNow 或 GA4 transport 缺陷。
 
 ## 本地候选版门禁
 
@@ -54,7 +55,8 @@
 - Vitest 20/20；TypeScript 与 Vite 构建通过；10 个新页面的 JSON-LD 与 sitemap XML 解析通过；英文首页正文 1798 词，仍在既定 1200–1800 范围内。
 - Playwright 首轮为 12 passed、2 failed、2 skipped：一个既有桌面音频流程等待参考音频时偶发超时；新增路由后移动端全量导览超过原 30 秒预算。保持断言不变，把全量导览预算调整为 60 秒；两个失败用例定向重跑通过，随后单 worker 完整回归 14 passed、2 skipped。
 
-## 发布后要求
+## 发布后结论
 
-- 首轮生产候选版逐 URL 验证后，再用已保存的 Web.Cafe 意图、页型、KD 与内容角度做 post-live GeFei 复核。
-- 五页分别跑 20 项评分，低于 100/100 就自动修正、重测、重发；只有生产 URL 返回 200、得分 100、外部状态分栏落盘后才计入今日最终五页。
+- 10 个生产 URL 已在桌面与手机各验证一次，共 20/20 检查通过；20 张全页截图保存在本地测试产物目录。
+- Post-live GeFei 复核确认 5 个页面仍分别匹配地位、记忆、角色关系、反应和低强度用力声意图，不需换词、改页型或合并 canonical。
+- 五个英文主页面逐页评分均为 100/100；生产、索引提交和统计状态已分栏写入发布台账，外部控制台超时保持 `needs-recheck`。
