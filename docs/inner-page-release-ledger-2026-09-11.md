@@ -66,13 +66,13 @@
 |---|---|---|
 | 昨日 Bing 恢复 | Needs recheck / retry-2 running | 原 `retry-1` 今日被同一 runner 认领，仍因 Bing URL field unavailable 阻塞；成功的 GSC / IndexNow / GA4 未重复；系统生成的 `retry-2` 于 `2026-09-11 08:43:11 CST` 被认领。 |
 | 今日精确 preflight | Ready | `thechoicervoicer-20260911-five-preflight-v1`：精确 canonical 5/5，sitemap match，key live，GSC/Bing/GA4 authenticated，proxy healthy，GA4 identity 正确。 |
-| GSC sitemap | Needs recheck / retry-1 queued | `thechoicervoicer-20260911-five-final-v1` 在等待控制台确认时超时；生产 sitemap 已含 10 个新 URL，未把 timeout 记为 accepted。 |
-| GSC URL Inspection | Needs recheck / retry-1 queued | 本次 Sitemap 门禁未确认，未伪造逐 URL indexed/requested 结果。 |
-| Bing sitemap | Needs recheck / retry-1 queued | 控制台 sitemap field unavailable；未把 timeout 记为 accepted。 |
-| Bing URL Submission | Needs recheck / retry-1 queued | 控制台 URL field unavailable；因 Bing sitemap 尚无本批成功回执，暂不写 `not-required-indexnow`。 |
+| 最终恢复批次 | Completed | `thechoicervoicer-20260911-five-final-v1.retry-2` 完成即时提交闭环 20/20；保留此前成功证据，没有重复 IndexNow 或 GA4 collect。 |
+| GSC sitemap | Submitted | 恢复批次明确返回 `GSC sitemap submitted`。 |
+| GSC URL Inspection | Indexed 5/5 | 五个英文 canonical 均由恢复批次明确记录为 `indexed`；不是由请求状态推断。 |
+| Bing sitemap / URL | Submitted 5/5 | 恢复账本将五页逐项记录为 `submitted`；恢复步骤因已有逐 URL 回执而跳过重复 sitemap 提交。 |
 | IndexNow | Accepted | 生产 key HTTP 200 且正文精确匹配；英文 5 URL 由最终批次提交 HTTP 200，中文 5 镜像精确提交 HTTP 200。 |
 | GA4 transport | Collect verified | 正确 Measurement ID `G-4SMXSDGLW2`，5/5 页面真实 `g/collect` 均为 HTTP 204。 |
-| GA4 Realtime | Needs recheck / retry queued | 定向复查跳过已有 10/10 初始化与 page_view 证据，未重复浏览；控制台临时标签关闭导致 `No tab with id`，没有把超时写成可见成功。 |
+| GA4 Realtime | Needs recheck | 三次定向恢复均复用已有 collect/page_view 证据而未重复浏览；最终仍未在报表时限内匹配 5 个标题，保持独立 `needs-recheck`。 |
 
 ## 修正历史
 

@@ -240,6 +240,11 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/voice-acting-character-relationship-exercises/", "https://thechoicervoicer.me/voice-acting-character-relationship-exercises/"],
     ["/voice-acting-reaction-exercises/", "https://thechoicervoicer.me/voice-acting-reaction-exercises/"],
     ["/voice-acting-effort-sounds-exercises/", "https://thechoicervoicer.me/voice-acting-effort-sounds-exercises/"],
+    ["/voice-acting-objective-exercises/", "https://thechoicervoicer.me/voice-acting-objective-exercises/"],
+    ["/voice-acting-stakes-exercises/", "https://thechoicervoicer.me/voice-acting-stakes-exercises/"],
+    ["/voice-acting-taking-direction-exercises/", "https://thechoicervoicer.me/voice-acting-taking-direction-exercises/"],
+    ["/adr-voice-acting-exercises/", "https://thechoicervoicer.me/adr-voice-acting-exercises/"],
+    ["/e-learning-narration-exercises/", "https://thechoicervoicer.me/e-learning-narration-exercises/"],
     ["/zh/voice-acting-practice-scripts/", "https://thechoicervoicer.me/zh/voice-acting-practice-scripts/"],
     ["/zh/emotional-voice-acting-exercises/", "https://thechoicervoicer.me/zh/emotional-voice-acting-exercises/"],
     ["/zh/voice-acting-improv-exercises/", "https://thechoicervoicer.me/zh/voice-acting-improv-exercises/"],
@@ -265,6 +270,11 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/zh/voice-acting-character-relationship-exercises/", "https://thechoicervoicer.me/zh/voice-acting-character-relationship-exercises/"],
     ["/zh/voice-acting-reaction-exercises/", "https://thechoicervoicer.me/zh/voice-acting-reaction-exercises/"],
     ["/zh/voice-acting-effort-sounds-exercises/", "https://thechoicervoicer.me/zh/voice-acting-effort-sounds-exercises/"],
+    ["/zh/voice-acting-objective-exercises/", "https://thechoicervoicer.me/zh/voice-acting-objective-exercises/"],
+    ["/zh/voice-acting-stakes-exercises/", "https://thechoicervoicer.me/zh/voice-acting-stakes-exercises/"],
+    ["/zh/voice-acting-taking-direction-exercises/", "https://thechoicervoicer.me/zh/voice-acting-taking-direction-exercises/"],
+    ["/zh/adr-voice-acting-exercises/", "https://thechoicervoicer.me/zh/adr-voice-acting-exercises/"],
+    ["/zh/e-learning-narration-exercises/", "https://thechoicervoicer.me/zh/e-learning-narration-exercises/"],
   ];
 
   for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {

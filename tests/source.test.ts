@@ -51,6 +51,11 @@ const englishPages = [
   "voice-acting-character-relationship-exercises/index.html",
   "voice-acting-reaction-exercises/index.html",
   "voice-acting-effort-sounds-exercises/index.html",
+  "voice-acting-objective-exercises/index.html",
+  "voice-acting-stakes-exercises/index.html",
+  "voice-acting-taking-direction-exercises/index.html",
+  "adr-voice-acting-exercises/index.html",
+  "e-learning-narration-exercises/index.html",
   "about/index.html",
   "contact/index.html",
   "privacy/index.html",
@@ -103,6 +108,11 @@ const chinesePages = [
   "zh/voice-acting-character-relationship-exercises/index.html",
   "zh/voice-acting-reaction-exercises/index.html",
   "zh/voice-acting-effort-sounds-exercises/index.html",
+  "zh/voice-acting-objective-exercises/index.html",
+  "zh/voice-acting-stakes-exercises/index.html",
+  "zh/voice-acting-taking-direction-exercises/index.html",
+  "zh/adr-voice-acting-exercises/index.html",
+  "zh/e-learning-narration-exercises/index.html",
   "zh/about/index.html",
   "zh/contact/index.html",
   "zh/privacy/index.html",
@@ -299,7 +309,7 @@ describe("static launch source", () => {
     const robots = read("public/robots.txt");
     const sitemap = read("public/sitemap.xml");
     expect(robots).toContain("https://thechoicervoicer.me/sitemap.xml");
-    for (const route of ["games", "app", "how-to-play", "mobile", "voice-packs", "microphone-not-working", "is-it-safe", "alternatives", "gameplay", "multiplayer", "pitch-matching-exercises", "vocal-timing-exercises", "voice-games-for-parties", "voice-imitation-exercises", "voice-acting-warm-ups", "voice-projection-exercises", "voice-modulation-exercises", "articulation-exercises-for-voice-acting", "character-voice-exercises", "breath-control-exercises-for-voice-acting", "voice-acting-practice-scripts", "emotional-voice-acting-exercises", "voice-acting-improv-exercises", "voice-acting-audition-exercises", "vocal-cooldown-exercises", "voice-acting-script-analysis", "commercial-voice-acting-exercises", "voice-acting-microphone-technique", "voice-acting-self-critique", "voice-acting-listening-exercises", "voice-acting-cold-reading-exercises", "voice-acting-subtext-exercises", "voice-acting-line-delivery-exercises", "voice-acting-vocal-stamina-exercises", "voice-acting-accent-exercises", "voice-acting-physicality-exercises", "voice-acting-visualization-exercises", "voice-acting-comedy-timing-exercises", "voice-acting-character-switching-exercises", "audiobook-narration-exercises", "voice-acting-status-exercises", "voice-acting-memory-exercises", "voice-acting-character-relationship-exercises", "voice-acting-reaction-exercises", "voice-acting-effort-sounds-exercises"]) {
+    for (const route of ["games", "app", "how-to-play", "mobile", "voice-packs", "microphone-not-working", "is-it-safe", "alternatives", "gameplay", "multiplayer", "pitch-matching-exercises", "vocal-timing-exercises", "voice-games-for-parties", "voice-imitation-exercises", "voice-acting-warm-ups", "voice-projection-exercises", "voice-modulation-exercises", "articulation-exercises-for-voice-acting", "character-voice-exercises", "breath-control-exercises-for-voice-acting", "voice-acting-practice-scripts", "emotional-voice-acting-exercises", "voice-acting-improv-exercises", "voice-acting-audition-exercises", "vocal-cooldown-exercises", "voice-acting-script-analysis", "commercial-voice-acting-exercises", "voice-acting-microphone-technique", "voice-acting-self-critique", "voice-acting-listening-exercises", "voice-acting-cold-reading-exercises", "voice-acting-subtext-exercises", "voice-acting-line-delivery-exercises", "voice-acting-vocal-stamina-exercises", "voice-acting-accent-exercises", "voice-acting-physicality-exercises", "voice-acting-visualization-exercises", "voice-acting-comedy-timing-exercises", "voice-acting-character-switching-exercises", "audiobook-narration-exercises", "voice-acting-status-exercises", "voice-acting-memory-exercises", "voice-acting-character-relationship-exercises", "voice-acting-reaction-exercises", "voice-acting-effort-sounds-exercises", "voice-acting-objective-exercises", "voice-acting-stakes-exercises", "voice-acting-taking-direction-exercises", "adr-voice-acting-exercises", "e-learning-narration-exercises"]) {
       expect(sitemap).toContain(`https://thechoicervoicer.me/${route}/`);
       expect(sitemap).toContain(`https://thechoicervoicer.me/zh/${route}/`);
     }
@@ -368,6 +378,11 @@ describe("static launch source", () => {
       ["voice-acting-character-relationship-exercises/index.html", "zh/voice-acting-character-relationship-exercises/index.html", "/zh/voice-acting-character-relationship-exercises/", "/voice-acting-character-relationship-exercises/"],
       ["voice-acting-reaction-exercises/index.html", "zh/voice-acting-reaction-exercises/index.html", "/zh/voice-acting-reaction-exercises/", "/voice-acting-reaction-exercises/"],
       ["voice-acting-effort-sounds-exercises/index.html", "zh/voice-acting-effort-sounds-exercises/index.html", "/zh/voice-acting-effort-sounds-exercises/", "/voice-acting-effort-sounds-exercises/"],
+      ["voice-acting-objective-exercises/index.html", "zh/voice-acting-objective-exercises/index.html", "/zh/voice-acting-objective-exercises/", "/voice-acting-objective-exercises/"],
+      ["voice-acting-stakes-exercises/index.html", "zh/voice-acting-stakes-exercises/index.html", "/zh/voice-acting-stakes-exercises/", "/voice-acting-stakes-exercises/"],
+      ["voice-acting-taking-direction-exercises/index.html", "zh/voice-acting-taking-direction-exercises/index.html", "/zh/voice-acting-taking-direction-exercises/", "/voice-acting-taking-direction-exercises/"],
+      ["adr-voice-acting-exercises/index.html", "zh/adr-voice-acting-exercises/index.html", "/zh/adr-voice-acting-exercises/", "/adr-voice-acting-exercises/"],
+      ["e-learning-narration-exercises/index.html", "zh/e-learning-narration-exercises/index.html", "/zh/e-learning-narration-exercises/", "/e-learning-narration-exercises/"],
       ["about/index.html", "zh/about/index.html", "/zh/about/", "/about/"],
       ["contact/index.html", "zh/contact/index.html", "/zh/contact/", "/contact/"],
       ["privacy/index.html", "zh/privacy/index.html", "/zh/privacy/", "/privacy/"],
@@ -483,6 +498,11 @@ describe("static launch source", () => {
       ["voice-acting-character-relationship-exercises/index.html", "https://thechoicervoicer.me/voice-acting-character-relationship-exercises/", "Voice Acting Character Relationship Exercises", "/src/site.ts"],
       ["voice-acting-reaction-exercises/index.html", "https://thechoicervoicer.me/voice-acting-reaction-exercises/", "Voice Acting Reaction Exercises", "/src/site.ts"],
       ["voice-acting-effort-sounds-exercises/index.html", "https://thechoicervoicer.me/voice-acting-effort-sounds-exercises/", "Voice Acting Effort Sounds Exercises", "/src/site.ts"],
+      ["voice-acting-objective-exercises/index.html", "https://thechoicervoicer.me/voice-acting-objective-exercises/", "Voice Acting Objective Exercises", "/src/site.ts"],
+      ["voice-acting-stakes-exercises/index.html", "https://thechoicervoicer.me/voice-acting-stakes-exercises/", "Voice Acting Stakes Exercises", "/src/site.ts"],
+      ["voice-acting-taking-direction-exercises/index.html", "https://thechoicervoicer.me/voice-acting-taking-direction-exercises/", "Voice Acting Taking Direction Exercises", "/src/site.ts"],
+      ["adr-voice-acting-exercises/index.html", "https://thechoicervoicer.me/adr-voice-acting-exercises/", "ADR Voice Acting Exercises", "/src/site.ts"],
+      ["e-learning-narration-exercises/index.html", "https://thechoicervoicer.me/e-learning-narration-exercises/", "E-Learning Narration Exercises", "/src/site.ts"],
     ];
     const home = read("index.html");
     for (const [path, canonical, titleLead, script] of targets) {
