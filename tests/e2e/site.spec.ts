@@ -245,6 +245,11 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/voice-acting-taking-direction-exercises/", "https://thechoicervoicer.me/voice-acting-taking-direction-exercises/"],
     ["/adr-voice-acting-exercises/", "https://thechoicervoicer.me/adr-voice-acting-exercises/"],
     ["/e-learning-narration-exercises/", "https://thechoicervoicer.me/e-learning-narration-exercises/"],
+    ["/medical-voice-over-exercises/", "https://thechoicervoicer.me/medical-voice-over-exercises/"],
+    ["/explainer-video-voice-over-exercises/", "https://thechoicervoicer.me/explainer-video-voice-over-exercises/"],
+    ["/video-game-voice-acting-exercises/", "https://thechoicervoicer.me/video-game-voice-acting-exercises/"],
+    ["/documentary-narration-exercises/", "https://thechoicervoicer.me/documentary-narration-exercises/"],
+    ["/sports-commentary-voice-exercises/", "https://thechoicervoicer.me/sports-commentary-voice-exercises/"],
     ["/zh/voice-acting-practice-scripts/", "https://thechoicervoicer.me/zh/voice-acting-practice-scripts/"],
     ["/zh/emotional-voice-acting-exercises/", "https://thechoicervoicer.me/zh/emotional-voice-acting-exercises/"],
     ["/zh/voice-acting-improv-exercises/", "https://thechoicervoicer.me/zh/voice-acting-improv-exercises/"],
@@ -275,6 +280,11 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/zh/voice-acting-taking-direction-exercises/", "https://thechoicervoicer.me/zh/voice-acting-taking-direction-exercises/"],
     ["/zh/adr-voice-acting-exercises/", "https://thechoicervoicer.me/zh/adr-voice-acting-exercises/"],
     ["/zh/e-learning-narration-exercises/", "https://thechoicervoicer.me/zh/e-learning-narration-exercises/"],
+    ["/zh/medical-voice-over-exercises/", "https://thechoicervoicer.me/zh/medical-voice-over-exercises/"],
+    ["/zh/explainer-video-voice-over-exercises/", "https://thechoicervoicer.me/zh/explainer-video-voice-over-exercises/"],
+    ["/zh/video-game-voice-acting-exercises/", "https://thechoicervoicer.me/zh/video-game-voice-acting-exercises/"],
+    ["/zh/documentary-narration-exercises/", "https://thechoicervoicer.me/zh/documentary-narration-exercises/"],
+    ["/zh/sports-commentary-voice-exercises/", "https://thechoicervoicer.me/zh/sports-commentary-voice-exercises/"],
   ];
 
   for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {
