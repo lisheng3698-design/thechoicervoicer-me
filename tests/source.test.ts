@@ -61,6 +61,11 @@ const englishPages = [
   "video-game-voice-acting-exercises/index.html",
   "documentary-narration-exercises/index.html",
   "sports-commentary-voice-exercises/index.html",
+  "corporate-narration-exercises/index.html",
+  "announcer-voice-exercises/index.html",
+  "podcast-voice-exercises/index.html",
+  "voice-acting-mouth-noise-exercises/index.html",
+  "radio-drama-voice-acting-exercises/index.html",
   "about/index.html",
   "contact/index.html",
   "privacy/index.html",
@@ -123,6 +128,11 @@ const chinesePages = [
   "zh/video-game-voice-acting-exercises/index.html",
   "zh/documentary-narration-exercises/index.html",
   "zh/sports-commentary-voice-exercises/index.html",
+  "zh/corporate-narration-exercises/index.html",
+  "zh/announcer-voice-exercises/index.html",
+  "zh/podcast-voice-exercises/index.html",
+  "zh/voice-acting-mouth-noise-exercises/index.html",
+  "zh/radio-drama-voice-acting-exercises/index.html",
   "zh/about/index.html",
   "zh/contact/index.html",
   "zh/privacy/index.html",
@@ -319,7 +329,7 @@ describe("static launch source", () => {
     const robots = read("public/robots.txt");
     const sitemap = read("public/sitemap.xml");
     expect(robots).toContain("https://thechoicervoicer.me/sitemap.xml");
-    for (const route of ["games", "app", "how-to-play", "mobile", "voice-packs", "microphone-not-working", "is-it-safe", "alternatives", "gameplay", "multiplayer", "pitch-matching-exercises", "vocal-timing-exercises", "voice-games-for-parties", "voice-imitation-exercises", "voice-acting-warm-ups", "voice-projection-exercises", "voice-modulation-exercises", "articulation-exercises-for-voice-acting", "character-voice-exercises", "breath-control-exercises-for-voice-acting", "voice-acting-practice-scripts", "emotional-voice-acting-exercises", "voice-acting-improv-exercises", "voice-acting-audition-exercises", "vocal-cooldown-exercises", "voice-acting-script-analysis", "commercial-voice-acting-exercises", "voice-acting-microphone-technique", "voice-acting-self-critique", "voice-acting-listening-exercises", "voice-acting-cold-reading-exercises", "voice-acting-subtext-exercises", "voice-acting-line-delivery-exercises", "voice-acting-vocal-stamina-exercises", "voice-acting-accent-exercises", "voice-acting-physicality-exercises", "voice-acting-visualization-exercises", "voice-acting-comedy-timing-exercises", "voice-acting-character-switching-exercises", "audiobook-narration-exercises", "voice-acting-status-exercises", "voice-acting-memory-exercises", "voice-acting-character-relationship-exercises", "voice-acting-reaction-exercises", "voice-acting-effort-sounds-exercises", "voice-acting-objective-exercises", "voice-acting-stakes-exercises", "voice-acting-taking-direction-exercises", "adr-voice-acting-exercises", "e-learning-narration-exercises", "medical-voice-over-exercises", "explainer-video-voice-over-exercises", "video-game-voice-acting-exercises", "documentary-narration-exercises", "sports-commentary-voice-exercises"]) {
+    for (const route of ["games", "app", "how-to-play", "mobile", "voice-packs", "microphone-not-working", "is-it-safe", "alternatives", "gameplay", "multiplayer", "pitch-matching-exercises", "vocal-timing-exercises", "voice-games-for-parties", "voice-imitation-exercises", "voice-acting-warm-ups", "voice-projection-exercises", "voice-modulation-exercises", "articulation-exercises-for-voice-acting", "character-voice-exercises", "breath-control-exercises-for-voice-acting", "voice-acting-practice-scripts", "emotional-voice-acting-exercises", "voice-acting-improv-exercises", "voice-acting-audition-exercises", "vocal-cooldown-exercises", "voice-acting-script-analysis", "commercial-voice-acting-exercises", "voice-acting-microphone-technique", "voice-acting-self-critique", "voice-acting-listening-exercises", "voice-acting-cold-reading-exercises", "voice-acting-subtext-exercises", "voice-acting-line-delivery-exercises", "voice-acting-vocal-stamina-exercises", "voice-acting-accent-exercises", "voice-acting-physicality-exercises", "voice-acting-visualization-exercises", "voice-acting-comedy-timing-exercises", "voice-acting-character-switching-exercises", "audiobook-narration-exercises", "voice-acting-status-exercises", "voice-acting-memory-exercises", "voice-acting-character-relationship-exercises", "voice-acting-reaction-exercises", "voice-acting-effort-sounds-exercises", "voice-acting-objective-exercises", "voice-acting-stakes-exercises", "voice-acting-taking-direction-exercises", "adr-voice-acting-exercises", "e-learning-narration-exercises", "medical-voice-over-exercises", "explainer-video-voice-over-exercises", "video-game-voice-acting-exercises", "documentary-narration-exercises", "sports-commentary-voice-exercises", "corporate-narration-exercises", "announcer-voice-exercises", "podcast-voice-exercises", "voice-acting-mouth-noise-exercises", "radio-drama-voice-acting-exercises"]) {
       expect(sitemap).toContain(`https://thechoicervoicer.me/${route}/`);
       expect(sitemap).toContain(`https://thechoicervoicer.me/zh/${route}/`);
     }
@@ -398,6 +408,11 @@ describe("static launch source", () => {
       ["video-game-voice-acting-exercises/index.html", "zh/video-game-voice-acting-exercises/index.html", "/zh/video-game-voice-acting-exercises/", "/video-game-voice-acting-exercises/"],
       ["documentary-narration-exercises/index.html", "zh/documentary-narration-exercises/index.html", "/zh/documentary-narration-exercises/", "/documentary-narration-exercises/"],
       ["sports-commentary-voice-exercises/index.html", "zh/sports-commentary-voice-exercises/index.html", "/zh/sports-commentary-voice-exercises/", "/sports-commentary-voice-exercises/"],
+      ["corporate-narration-exercises/index.html", "zh/corporate-narration-exercises/index.html", "/zh/corporate-narration-exercises/", "/corporate-narration-exercises/"],
+      ["announcer-voice-exercises/index.html", "zh/announcer-voice-exercises/index.html", "/zh/announcer-voice-exercises/", "/announcer-voice-exercises/"],
+      ["podcast-voice-exercises/index.html", "zh/podcast-voice-exercises/index.html", "/zh/podcast-voice-exercises/", "/podcast-voice-exercises/"],
+      ["voice-acting-mouth-noise-exercises/index.html", "zh/voice-acting-mouth-noise-exercises/index.html", "/zh/voice-acting-mouth-noise-exercises/", "/voice-acting-mouth-noise-exercises/"],
+      ["radio-drama-voice-acting-exercises/index.html", "zh/radio-drama-voice-acting-exercises/index.html", "/zh/radio-drama-voice-acting-exercises/", "/radio-drama-voice-acting-exercises/"],
       ["about/index.html", "zh/about/index.html", "/zh/about/", "/about/"],
       ["contact/index.html", "zh/contact/index.html", "/zh/contact/", "/contact/"],
       ["privacy/index.html", "zh/privacy/index.html", "/zh/privacy/", "/privacy/"],
@@ -523,6 +538,11 @@ describe("static launch source", () => {
       ["video-game-voice-acting-exercises/index.html", "https://thechoicervoicer.me/video-game-voice-acting-exercises/", "Video Game Voice Acting Exercises", "/src/site.ts"],
       ["documentary-narration-exercises/index.html", "https://thechoicervoicer.me/documentary-narration-exercises/", "Documentary Narration Exercises", "/src/site.ts"],
       ["sports-commentary-voice-exercises/index.html", "https://thechoicervoicer.me/sports-commentary-voice-exercises/", "Sports Commentary Voice Exercises", "/src/site.ts"],
+      ["corporate-narration-exercises/index.html", "https://thechoicervoicer.me/corporate-narration-exercises/", "Corporate Narration Exercises", "/src/site.ts"],
+      ["announcer-voice-exercises/index.html", "https://thechoicervoicer.me/announcer-voice-exercises/", "Announcer Voice Exercises", "/src/site.ts"],
+      ["podcast-voice-exercises/index.html", "https://thechoicervoicer.me/podcast-voice-exercises/", "Podcast Voice Exercises", "/src/site.ts"],
+      ["voice-acting-mouth-noise-exercises/index.html", "https://thechoicervoicer.me/voice-acting-mouth-noise-exercises/", "Voice Acting Mouth Noise Exercises", "/src/site.ts"],
+      ["radio-drama-voice-acting-exercises/index.html", "https://thechoicervoicer.me/radio-drama-voice-acting-exercises/", "Radio Drama Voice Acting Exercises", "/src/site.ts"],
     ];
     const home = read("index.html");
     for (const [path, canonical, titleLead, script] of targets) {

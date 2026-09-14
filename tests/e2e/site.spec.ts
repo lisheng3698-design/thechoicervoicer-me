@@ -250,6 +250,11 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/video-game-voice-acting-exercises/", "https://thechoicervoicer.me/video-game-voice-acting-exercises/"],
     ["/documentary-narration-exercises/", "https://thechoicervoicer.me/documentary-narration-exercises/"],
     ["/sports-commentary-voice-exercises/", "https://thechoicervoicer.me/sports-commentary-voice-exercises/"],
+    ["/corporate-narration-exercises/", "https://thechoicervoicer.me/corporate-narration-exercises/"],
+    ["/announcer-voice-exercises/", "https://thechoicervoicer.me/announcer-voice-exercises/"],
+    ["/podcast-voice-exercises/", "https://thechoicervoicer.me/podcast-voice-exercises/"],
+    ["/voice-acting-mouth-noise-exercises/", "https://thechoicervoicer.me/voice-acting-mouth-noise-exercises/"],
+    ["/radio-drama-voice-acting-exercises/", "https://thechoicervoicer.me/radio-drama-voice-acting-exercises/"],
     ["/zh/voice-acting-practice-scripts/", "https://thechoicervoicer.me/zh/voice-acting-practice-scripts/"],
     ["/zh/emotional-voice-acting-exercises/", "https://thechoicervoicer.me/zh/emotional-voice-acting-exercises/"],
     ["/zh/voice-acting-improv-exercises/", "https://thechoicervoicer.me/zh/voice-acting-improv-exercises/"],
@@ -285,6 +290,11 @@ test("new search-intent guides render without errors on desktop and mobile", asy
     ["/zh/video-game-voice-acting-exercises/", "https://thechoicervoicer.me/zh/video-game-voice-acting-exercises/"],
     ["/zh/documentary-narration-exercises/", "https://thechoicervoicer.me/zh/documentary-narration-exercises/"],
     ["/zh/sports-commentary-voice-exercises/", "https://thechoicervoicer.me/zh/sports-commentary-voice-exercises/"],
+    ["/zh/corporate-narration-exercises/", "https://thechoicervoicer.me/zh/corporate-narration-exercises/"],
+    ["/zh/announcer-voice-exercises/", "https://thechoicervoicer.me/zh/announcer-voice-exercises/"],
+    ["/zh/podcast-voice-exercises/", "https://thechoicervoicer.me/zh/podcast-voice-exercises/"],
+    ["/zh/voice-acting-mouth-noise-exercises/", "https://thechoicervoicer.me/zh/voice-acting-mouth-noise-exercises/"],
+    ["/zh/radio-drama-voice-acting-exercises/", "https://thechoicervoicer.me/zh/radio-drama-voice-acting-exercises/"],
   ];
 
   for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {
