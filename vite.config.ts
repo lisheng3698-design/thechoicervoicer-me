@@ -5,6 +5,9 @@ import { defineConfig } from "vite";
 const projectRoot = fileURLToPath(new URL(".", import.meta.url));
 
 export default defineConfig({
+  server: {
+    watch: { ignored: ["**/artifacts/**"] },
+  },
   build: {
     rollupOptions: {
       input: {
