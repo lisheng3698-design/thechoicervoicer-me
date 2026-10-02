@@ -1,0 +1,67 @@
+[
+  {
+    "status": "queued",
+    "duplicate": false,
+    "position": 9,
+    "batchId": "thechoicervoicer-20261002-15-final-preflight-v1",
+    "fingerprint": "e920229eeb85d5b4f8e74e4636cc8bc7d385f82fbcb0d953fff52b3514be4b2b",
+    "schemaVersion": 2,
+    "scenario": "daily-pages",
+    "mode": "preflight",
+    "siteUrl": "https://thechoicervoicer.me/",
+    "urls": 30,
+    "indexNowKey": true
+  },
+  {
+    "status": "queued",
+    "duplicate": false,
+    "position": 10,
+    "batchId": "thechoicervoicer-20261002-15-ga4-realtime-v1",
+    "fingerprint": "02be81e761430209c848c9afec466d49d308a6ddca3947080dba8fe074b388a4",
+    "schemaVersion": 2,
+    "scenario": "daily-pages",
+    "mode": "ga4-realtime-recheck",
+    "siteUrl": "https://thechoicervoicer.me/",
+    "urls": 30,
+    "indexNowKey": true
+  },
+  {
+    "status": "queued",
+    "duplicate": false,
+    "position": 11,
+    "batchId": "thechoicervoicer-20261002-15-gsc-urls-v1",
+    "fingerprint": "d2d30a505227a4ef86f823f361ae264a9d441abe8f43038e9771491dad428f5d",
+    "schemaVersion": 2,
+    "scenario": "daily-pages",
+    "mode": "gsc-url-recheck",
+    "siteUrl": "https://thechoicervoicer.me/",
+    "urls": 30,
+    "indexNowKey": true
+  },
+  {
+    "status": "queued",
+    "duplicate": false,
+    "position": 12,
+    "batchId": "thechoicervoicer-20261002-sitemap-gsc-v1",
+    "fingerprint": "17e4d5f466cdf8653828688f74ac5f0d0b0e1e273eae775bfbfcc80f04e13add",
+    "schemaVersion": 2,
+    "scenario": "daily-pages",
+    "mode": "gsc-sitemap-recheck",
+    "siteUrl": "https://thechoicervoicer.me/",
+    "urls": 30,
+    "indexNowKey": true
+  },
+  {
+    "status": "queued",
+    "duplicate": false,
+    "position": 13,
+    "batchId": "thechoicervoicer-20261002-sitemap-bing-v1",
+    "fingerprint": "8360341c02245be555b571aa0ab0624f7acc4f3c8fec5902dd9564879e02897c",
+    "schemaVersion": 2,
+    "scenario": "daily-pages",
+    "mode": "bing-sitemap-recheck",
+    "siteUrl": "https://thechoicervoicer.me/",
+    "urls": 30,
+    "indexNowKey": true
+  }
+]

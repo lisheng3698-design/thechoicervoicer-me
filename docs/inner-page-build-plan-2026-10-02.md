@@ -32,3 +32,7 @@
 今日无 2026-10-01 或 2026-09-25 发布批次；历史收录结果从 helper evidence-v2.json 导入并保留原日期，不把旧结果称为今天重新核验。
 20 项评分使用既定每项 5 分的标准，未检查/Blocked 为 0，不把 GA4 transport 充当 Realtime/DebugView。
 全站 GSC 表 docs/seo/GSC_INNER_PAGE_STATUS.csv；待提交队列 docs/seo/GSC_URL_SUBMISSION_BACKLOG.csv；历史证据 docs/seo/GSC_URL_INSPECTION_LEDGER.csv。
+
+## 当前结果
+
+建设发布 15/15；严格最终成功 0/15（95/100，第 19 项 GA4 后台证据受阻）。独立 IndexNow 30 URL HTTP 200；GSC/Bing queued、0 次实际尝试。详见当日发布台账。

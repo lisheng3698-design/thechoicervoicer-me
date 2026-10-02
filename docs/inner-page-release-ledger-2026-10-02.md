@@ -1,0 +1,62 @@
+# The Choicer Voicer 内页发布台账（2026-10-02）
+
+15 个英文独立主题与 15 个完整中文镜像已建设、发布并通过生产页面检查。每日自动化目标从 5 改为 15，时间 02:00（Asia/Shanghai）、PAUSED 状态保持。
+**建设与发布：15/15；严格 100 分最终闭环：0/15。** 每页 95/100，唯一 Blocked 项为 19：GA4 Realtime/DebugView 后台证据。GSC/Bing 是独立未取得回执的外部状态，不从 IndexNow 或 GA4 transport 推断收录。
+
+## 今日线上页面
+
+| # | 主题 | 英文 URL | 中文镜像 | 分数 |
+|---:|---|---|---|---:|
+| 1 | 预告片旁白练习 | [英文](https://thechoicervoicer.me/trailer-narration-exercises/) | [中文](https://thechoicervoicer.me/zh/trailer-narration-exercises/) | 95/100 |
+| 2 | 引导冥想旁白练习 | [英文](https://thechoicervoicer.me/guided-meditation-voice-exercises/) | [中文](https://thechoicervoicer.me/zh/guided-meditation-voice-exercises/) | 95/100 |
+| 3 | 音频描述配音练习 | [英文](https://thechoicervoicer.me/audio-description-voice-over-exercises/) | [中文](https://thechoicervoicer.me/zh/audio-description-voice-over-exercises/) | 95/100 |
+| 4 | IVR 语音菜单配音练习 | [英文](https://thechoicervoicer.me/ivr-voice-over-exercises/) | [中文](https://thechoicervoicer.me/zh/ivr-voice-over-exercises/) | 95/100 |
+| 5 | 语音信箱问候练习 | [英文](https://thechoicervoicer.me/voicemail-greeting-voice-exercises/) | [中文](https://thechoicervoicer.me/zh/voicemail-greeting-voice-exercises/) | 95/100 |
+| 6 | 博物馆语音导览练习 | [英文](https://thechoicervoicer.me/museum-audio-guide-narration-exercises/) | [中文](https://thechoicervoicer.me/zh/museum-audio-guide-narration-exercises/) | 95/100 |
+| 7 | 新闻朗读声音练习 | [英文](https://thechoicervoicer.me/news-reading-voice-exercises/) | [中文](https://thechoicervoicer.me/zh/news-reading-voice-exercises/) | 95/100 |
+| 8 | 木偶配音练习 | [英文](https://thechoicervoicer.me/puppet-voice-acting-exercises/) | [中文](https://thechoicervoicer.me/zh/puppet-voice-acting-exercises/) | 95/100 |
+| 9 | 现场讲故事声音练习 | [英文](https://thechoicervoicer.me/storytelling-voice-exercises/) | [中文](https://thechoicervoicer.me/zh/storytelling-voice-exercises/) | 95/100 |
+| 10 | 诗歌朗读声音练习 | [英文](https://thechoicervoicer.me/poetry-reading-voice-exercises/) | [中文](https://thechoicervoicer.me/zh/poetry-reading-voice-exercises/) | 95/100 |
+| 11 | 配音爆破气流练习 | [英文](https://thechoicervoicer.me/voice-acting-plosive-exercises/) | [中文](https://thechoicervoicer.me/zh/voice-acting-plosive-exercises/) | 95/100 |
+| 12 | 配音齿音录音练习 | [英文](https://thechoicervoicer.me/voice-acting-sibilance-exercises/) | [中文](https://thechoicervoicer.me/zh/voice-acting-sibilance-exercises/) | 95/100 |
+| 13 | 旁白补录练习 | [英文](https://thechoicervoicer.me/voice-over-pickup-exercises/) | [中文](https://thechoicervoicer.me/zh/voice-over-pickup-exercises/) | 95/100 |
+| 14 | 现场导游声音练习 | [英文](https://thechoicervoicer.me/tour-guide-voice-exercises/) | [中文](https://thechoicervoicer.me/zh/tour-guide-voice-exercises/) | 95/100 |
+| 15 | 电话场景表演练习 | [英文](https://thechoicervoicer.me/telephone-acting-exercises/) | [中文](https://thechoicervoicer.me/zh/telephone-acting-exercises/) | 95/100 |
+
+## 发布与验证
+
+- 内容提交：`8fd70304eb32ecea7aa71a02724a7ca649074455`；最终页面源码提交：`c02b3a5aef801bc03147f0b6a9dcfc5db84c9111`。
+- GitHub Pages 最终发布提交：`7eb775b8afcdab7e2b3826e4162d7707111b42c4`；官方 API 确认 `built` 且 commit 一致。
+- 生产站点：https://thechoicervoicer.me；Pages 项目/仓库 `lisheng3698-design/thechoicervoicer-me`，发布分支 `gh-pages`。
+- Vitest：20/20；TypeScript 与 Vite 构建通过。Playwright 首轮 78 passed、2 failed、2 skipped；两项超时分别独立重跑通过，最终 80 个可执行用例有通过证据。没有关闭检查、改评分标准或扩大超时掩盖错误。
+- 第一轮生产：30 URL × 桌面 1440×900 / 手机 390×844 = 60/60；checkbox、reset、locale progress 实测通过；源码/结构化数据/首页内链/78 个唯一站内目标均通过。
+- 中文 H1 在桌面出现孤字换行后，已采用中文专属字号和均衡换行修正并部署；最终中文 30 次布局复验见 `artifacts/production-layout-v4-20261002.json`。
+- 截图：`artifacts/production-20261002/` 与最终中文 `artifacts/production-20261002-v4/`。原始 HTML QA：`artifacts/production-source-audit-20261002-v4.json`。
+- 保存所有旧发布资源，无文件/目录批量删除；构建使用新目录与 `--emptyOutDir false`。
+
+## 外部状态
+
+| 平台 | 当前真实状态 |
+|---|---|
+| IndexNow | 30 个精确双语 URL，HTTP 200，公开 key 文件线上一致；`docs/seo/indexnow-2026-10-02.json`；已接受不等于已收录 |
+| GSC sitemap | 幂等 batch 已排队，attempts=0，无提交成功回执 |
+| GSC 每 URL | 30 URL 的独立 inspection/request batch 已排队，attempts=0；没有把队列记为请求成功 |
+| Google 实际收录 | 今天新增 30 URL unknown；历史 30 URL 的已收录证据保留原日期，未称今天复查结果 |
+| Bing sitemap | batch queued / attempts=0；未声称提交或收录成功 |
+| Bing URL | 等 sitemap 回执；只有 sitemap accepted 后，才能与 IndexNow 200 合并使用非 .cc 的 not-required-indexnow 状态 |
+| GA4 transport | 全部 30 URL 有真实 G-4SMXSDGLW2 g/collect HTTP 204；共 60 次视口检查，61 条响应事件 |
+| GA4 后台 | Realtime/DebugView 专项 batch queued / attempts=0；未取得后台证据，因此第 19 项 0 分 |
+| 外部执行连接 | broker 在线但没有执行租约，本项目 batch queued；Chrome 控制连接超时。已请求用户确认收录助手启用并打开；不是已验证的登录/额度问题 |
+
+GA4 证据阻塞是共享外部渠道问题，三个替补也依赖同一渠道；增建替补不能修复该门禁。页面功能和代码验证已完成，保留现有 15 个主题等待缺失证据，不为凑 100 分换薄页或改评分。GSC/Bing/IndexNow 分别处理，独立成功动作不重复。
+
+## 持久化账本与复查
+
+- 关键词池：`docs/keyword-pool.csv`；今日 15 主词、3 已查询替补、12 未验证观察词，总滚动队列 30；观察词不标 ready。
+- 原始词证据：`docs/keyword-research/web-cafe-kd-2026-10-02-a.json`、`-b.json`；18 查询成功、18 fresh/API computed、0 cached=true；月量/趋势 unavailable；Ahrefs 默认跳过。
+- 全内页 GSC 表：`docs/seo/GSC_INNER_PAGE_STATUS.csv`；150 URL；0 request-confirmed；30 历史 already-indexed；120 无明确成功请求/收录回执。
+- GSC 待提交队列：`docs/seo/GSC_URL_SUBMISSION_BACKLOG.csv`；120 URL，最早记录 2026-10-02（不是发布日期）；原历史成功行保留在全表、排除在 backlog 外。
+- 历史 GSC 证据：`docs/seo/GSC_URL_INSPECTION_LEDGER.csv`；今天实际 inspection/request 尝试 0 次。
+- 逐项评分：`docs/seo/seo-scorecards-2026-10-02.csv`；每 URL 20 项，Pass=5、Blocked=0；全部当前 95/100。
+- 下一次外部恢复/收录检查：2026-10-03；7 日效果复查：2026-10-09。自动化仍 PAUSED，这些日期是台账计划，不声称已有自动执行成功。
+- 若 Chrome 执行连接恢复，先让原幂等队列完成，读取本项目每 URL 的显式 GSC 回执并更新表，再核对 GA4 后台；不要复制另一站的结果或重复 IndexNow。
