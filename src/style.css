@@ -3514,3 +3514,4 @@ h3 {
 .practice-page .section--ink .section-heading p { color: #526369; }
 .practice-page .breadcrumb { color: #526369; }
 .practice-page main a:not(.button) { color: #12656b; }
+.practice-page:lang(zh-CN) .page-hero h1 { max-width: 16em; text-wrap: balance; font-size: clamp(2.6rem, 6vw, 4.8rem); }
