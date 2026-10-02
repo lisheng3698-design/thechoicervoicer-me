@@ -3507,3 +3507,10 @@ h3 {
 .reference-table tbody tr:last-child td {
   border-bottom: 0;
 }
+.practice-check { display: flex; align-items: flex-start; gap: .6rem; margin-top: 1rem; font-size: .9rem; cursor: pointer; }
+.practice-check input { width: 1.2rem; height: 1.2rem; flex-shrink: 0; accent-color: #008b91; }
+.practice-progress { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
+.practice-progress output { max-width: 100%; overflow-wrap: anywhere; }
+.practice-page .section--ink .section-heading p { color: #526369; }
+.practice-page .breadcrumb { color: #526369; }
+.practice-page main a:not(.button) { color: #12656b; }

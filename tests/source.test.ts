@@ -5,6 +5,22 @@ import { describe, expect, it } from "vitest";
 const project = resolve(import.meta.dirname, "..");
 const read = (path: string) => readFileSync(resolve(project, path), "utf8");
 const englishPages = [
+  "trailer-narration-exercises/index.html",
+  "guided-meditation-voice-exercises/index.html",
+  "audio-description-voice-over-exercises/index.html",
+  "ivr-voice-over-exercises/index.html",
+  "voicemail-greeting-voice-exercises/index.html",
+  "museum-audio-guide-narration-exercises/index.html",
+  "news-reading-voice-exercises/index.html",
+  "puppet-voice-acting-exercises/index.html",
+  "storytelling-voice-exercises/index.html",
+  "poetry-reading-voice-exercises/index.html",
+  "voice-acting-plosive-exercises/index.html",
+  "voice-acting-sibilance-exercises/index.html",
+  "voice-over-pickup-exercises/index.html",
+  "tour-guide-voice-exercises/index.html",
+  "telephone-acting-exercises/index.html",
+
   "index.html",
   "games/index.html",
   "app/index.html",
@@ -72,6 +88,22 @@ const englishPages = [
   "terms/index.html",
 ];
 const chinesePages = [
+  "zh/trailer-narration-exercises/index.html",
+  "zh/guided-meditation-voice-exercises/index.html",
+  "zh/audio-description-voice-over-exercises/index.html",
+  "zh/ivr-voice-over-exercises/index.html",
+  "zh/voicemail-greeting-voice-exercises/index.html",
+  "zh/museum-audio-guide-narration-exercises/index.html",
+  "zh/news-reading-voice-exercises/index.html",
+  "zh/puppet-voice-acting-exercises/index.html",
+  "zh/storytelling-voice-exercises/index.html",
+  "zh/poetry-reading-voice-exercises/index.html",
+  "zh/voice-acting-plosive-exercises/index.html",
+  "zh/voice-acting-sibilance-exercises/index.html",
+  "zh/voice-over-pickup-exercises/index.html",
+  "zh/tour-guide-voice-exercises/index.html",
+  "zh/telephone-acting-exercises/index.html",
+
   "zh/index.html",
   "zh/games/index.html",
   "zh/app/index.html",
