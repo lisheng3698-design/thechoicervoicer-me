@@ -29,3 +29,6 @@ inspection_date,canonical,status,detail,request_action,source
 2026-09-13T01:28:11.066Z,https://thechoicervoicer.me/zh/sports-commentary-voice-exercises/,indexed,URL is on Google,not-needed,historical indexing-assistant/evidence-v2.json; imported 2026-10-02
 2026-09-13T01:28:06.723Z,https://thechoicervoicer.me/zh/video-game-voice-acting-exercises/,indexed,URL is on Google,not-needed,historical indexing-assistant/evidence-v2.json; imported 2026-10-02
 2026-09-14T01:42:43.171Z,https://thechoicervoicer.me/zh/voice-acting-mouth-noise-exercises/,indexed,URL is on Google,not-needed,historical indexing-assistant/evidence-v2.json; imported 2026-10-02
+2026-10-02T13:36:03.939Z,https://thechoicervoicer.me/trailer-narration-exercises/,timeout,GSC 未进入精确 URL 检查路由,not-issued; inspection route failed,indexing-assistant results/thechoicervoicer-20261002-15-gsc-urls-v1.json
+2026-10-02T14:12:44.182Z,https://thechoicervoicer.me/trailer-narration-exercises/,timeout,GSC 未进入精确 URL 检查路由,not-issued; inspection route failed,indexing-assistant results/thechoicervoicer-20261002-15-gsc-urls-v1.retry-1.json
+2026-10-02T14:51:02.943Z,https://thechoicervoicer.me/trailer-narration-exercises/,timeout,GSC 未进入精确 URL 检查路由,not-issued; inspection route failed,indexing-assistant results/thechoicervoicer-20261002-15-gsc-urls-v1.retry-2.json

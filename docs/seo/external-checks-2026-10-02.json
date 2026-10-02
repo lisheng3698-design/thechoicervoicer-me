@@ -1,67 +1,376 @@
-[
-  {
-    "status": "queued",
-    "duplicate": false,
-    "position": 9,
-    "batchId": "thechoicervoicer-20261002-15-final-preflight-v1",
-    "fingerprint": "e920229eeb85d5b4f8e74e4636cc8bc7d385f82fbcb0d953fff52b3514be4b2b",
-    "schemaVersion": 2,
-    "scenario": "daily-pages",
-    "mode": "preflight",
-    "siteUrl": "https://thechoicervoicer.me/",
-    "urls": 30,
-    "indexNowKey": true
+{
+  "checkedAt": "2026-10-02T15:02:33.354525+00:00",
+  "siteUrl": "https://thechoicervoicer.me/",
+  "diskAvailableBytes": 23817138176,
+  "terminalResults": [
+    {
+      "batchId": "thechoicervoicer-20261002-15-final-preflight-v1",
+      "status": "ready",
+      "mode": "preflight",
+      "receivedAt": "2026-10-02T13:30:45.546Z",
+      "error": null,
+      "steps": [],
+      "urlResults": []
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-ga4-realtime-v1",
+      "status": "blocked",
+      "mode": "ga4-realtime-recheck",
+      "receivedAt": "2026-10-02T13:34:49.134Z",
+      "error": "GA4 Realtime 未在时限内匹配完整最终页面集（0/30）",
+      "steps": [
+        {
+          "at": "2026-10-02T13:30:46.251Z",
+          "name": "GA4 安全页面浏览",
+          "status": "skipped",
+          "detail": "已有 10/10 gtag 初始化与 page_view 证据，不重复产生"
+        },
+        {
+          "at": "2026-10-02T13:30:46.256Z",
+          "name": "GA4 Realtime",
+          "status": "running",
+          "detail": "thechoicervoicer.me / p551708268 / G-4SMXSDGLW2"
+        },
+        {
+          "at": "2026-10-02T13:34:49.087Z",
+          "name": "GA4 Realtime",
+          "status": "needs-recheck",
+          "detail": "GA4 Realtime 未在时限内匹配完整最终页面集（0/30）",
+          "actualUrl": "https://analytics.google.com/analytics/web/#/",
+          "matchedUrls": [],
+          "unmatchedCount": 30
+        }
+      ],
+      "urlResults": []
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-ga4-realtime-v1.retry-1",
+      "status": "blocked",
+      "mode": "ga4-realtime-recheck",
+      "receivedAt": "2026-10-02T14:11:26.793Z",
+      "error": "GA4 Realtime 未在时限内匹配完整最终页面集（0/30）",
+      "steps": [
+        {
+          "at": "2026-10-02T14:07:24.128Z",
+          "name": "GA4 安全页面浏览",
+          "status": "skipped",
+          "detail": "自动恢复先复核现有 Realtime 证据，不重复产生 page_view"
+        },
+        {
+          "at": "2026-10-02T14:07:24.134Z",
+          "name": "GA4 Realtime",
+          "status": "running",
+          "detail": "thechoicervoicer.me / p551708268 / G-4SMXSDGLW2"
+        },
+        {
+          "at": "2026-10-02T14:11:26.750Z",
+          "name": "GA4 Realtime",
+          "status": "needs-recheck",
+          "detail": "GA4 Realtime 未在时限内匹配完整最终页面集（0/30）",
+          "actualUrl": "https://analytics.google.com/analytics/web/#/",
+          "matchedUrls": [],
+          "unmatchedCount": 30
+        }
+      ],
+      "urlResults": []
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-ga4-realtime-v1.retry-2",
+      "status": "blocked",
+      "mode": "ga4-realtime-recheck",
+      "receivedAt": "2026-10-02T14:49:41.957Z",
+      "error": "GA4 Realtime 未在时限内匹配完整最终页面集（0/30）",
+      "steps": [
+        {
+          "at": "2026-10-02T14:45:36.560Z",
+          "name": "GA4 安全页面浏览",
+          "status": "skipped",
+          "detail": "自动恢复先复核现有 Realtime 证据，不重复产生 page_view"
+        },
+        {
+          "at": "2026-10-02T14:45:36.568Z",
+          "name": "GA4 Realtime",
+          "status": "running",
+          "detail": "thechoicervoicer.me / p551708268 / G-4SMXSDGLW2"
+        },
+        {
+          "at": "2026-10-02T14:49:41.868Z",
+          "name": "GA4 Realtime",
+          "status": "needs-recheck",
+          "detail": "GA4 Realtime 未在时限内匹配完整最终页面集（0/30）",
+          "actualUrl": "https://analytics.google.com/analytics/web/#/",
+          "matchedUrls": [],
+          "unmatchedCount": 30
+        }
+      ],
+      "urlResults": []
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-gsc-urls-v1",
+      "status": "blocked",
+      "mode": "gsc-url-recheck",
+      "receivedAt": "2026-10-02T13:36:04.007Z",
+      "error": "https://thechoicervoicer.me/trailer-narration-exercises/：GSC 未进入精确 URL 检查路由",
+      "steps": [
+        {
+          "at": "2026-10-02T13:36:03.953Z",
+          "name": "GSC URL 1/30",
+          "status": "timeout",
+          "detail": "https://thechoicervoicer.me/trailer-narration-exercises/：GSC 未进入精确 URL 检查路由"
+        }
+      ],
+      "urlResults": [
+        {
+          "at": "2026-10-02T13:36:03.939Z",
+          "detail": "GSC 未进入精确 URL 检查路由",
+          "ok": false,
+          "status": "timeout",
+          "system": "gsc",
+          "url": "https://thechoicervoicer.me/trailer-narration-exercises/"
+        }
+      ]
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-gsc-urls-v1.retry-1",
+      "status": "blocked",
+      "mode": "gsc-url-recheck",
+      "receivedAt": "2026-10-02T14:12:44.235Z",
+      "error": "https://thechoicervoicer.me/trailer-narration-exercises/：GSC 未进入精确 URL 检查路由",
+      "steps": [
+        {
+          "at": "2026-10-02T14:12:44.195Z",
+          "name": "GSC URL 1/30",
+          "status": "timeout",
+          "detail": "https://thechoicervoicer.me/trailer-narration-exercises/：GSC 未进入精确 URL 检查路由"
+        }
+      ],
+      "urlResults": [
+        {
+          "at": "2026-10-02T14:12:44.182Z",
+          "detail": "GSC 未进入精确 URL 检查路由",
+          "ok": false,
+          "status": "timeout",
+          "system": "gsc",
+          "url": "https://thechoicervoicer.me/trailer-narration-exercises/"
+        }
+      ]
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-gsc-urls-v1.retry-2",
+      "status": "blocked",
+      "mode": "gsc-url-recheck",
+      "receivedAt": "2026-10-02T14:51:03.119Z",
+      "error": "https://thechoicervoicer.me/trailer-narration-exercises/：GSC 未进入精确 URL 检查路由",
+      "steps": [
+        {
+          "at": "2026-10-02T14:51:02.962Z",
+          "name": "GSC URL 1/30",
+          "status": "timeout",
+          "detail": "https://thechoicervoicer.me/trailer-narration-exercises/：GSC 未进入精确 URL 检查路由"
+        }
+      ],
+      "urlResults": [
+        {
+          "at": "2026-10-02T14:51:02.943Z",
+          "detail": "GSC 未进入精确 URL 检查路由",
+          "ok": false,
+          "status": "timeout",
+          "system": "gsc",
+          "url": "https://thechoicervoicer.me/trailer-narration-exercises/"
+        }
+      ]
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-capability-preflight-v1",
+      "status": "ready",
+      "mode": "preflight",
+      "receivedAt": "2026-10-02T13:23:01.188Z",
+      "error": null,
+      "steps": [],
+      "urlResults": []
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-sitemap-bing-v1",
+      "status": "blocked",
+      "mode": "bing-sitemap-recheck",
+      "receivedAt": "2026-10-02T13:39:44.892Z",
+      "error": "Bing sitemap field was not available",
+      "steps": [
+        {
+          "at": "2026-10-02T13:37:51.739Z",
+          "name": "BING Sitemap 定向复查",
+          "status": "running",
+          "detail": "https://thechoicervoicer.me/sitemap.xml"
+        },
+        {
+          "at": "2026-10-02T13:39:44.857Z",
+          "name": "BING Sitemap 定向复查",
+          "status": "timeout",
+          "detail": "Bing sitemap field was not available"
+        }
+      ],
+      "urlResults": []
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-sitemap-gsc-v1",
+      "status": "blocked",
+      "mode": "gsc-sitemap-recheck",
+      "receivedAt": "2026-10-02T13:37:27.216Z",
+      "error": "GSC did not confirm sitemap submission",
+      "steps": [
+        {
+          "at": "2026-10-02T13:36:38.952Z",
+          "name": "GSC Sitemap 定向复查",
+          "status": "running",
+          "detail": "https://thechoicervoicer.me/sitemap.xml"
+        },
+        {
+          "at": "2026-10-02T13:37:27.175Z",
+          "name": "GSC Sitemap 定向复查",
+          "status": "timeout",
+          "detail": "GSC did not confirm sitemap submission"
+        }
+      ],
+      "urlResults": []
+    }
+  ],
+  "queue": [
+    {
+      "batchId": "thechoicervoicer-20261002-capability-preflight-v1",
+      "status": "ready",
+      "attempts": 1,
+      "finishedAt": 1790947381188,
+      "notBefore": null
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-final-preflight-v1",
+      "status": "ready",
+      "attempts": 1,
+      "finishedAt": 1790947845546,
+      "notBefore": null
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-ga4-realtime-v1",
+      "status": "blocked",
+      "attempts": 1,
+      "finishedAt": 1790948089134,
+      "notBefore": null
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-gsc-urls-v1",
+      "status": "blocked",
+      "attempts": 1,
+      "finishedAt": 1790948164007,
+      "notBefore": null
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-sitemap-gsc-v1",
+      "status": "blocked",
+      "attempts": 1,
+      "finishedAt": 1790948247216,
+      "notBefore": null
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-sitemap-bing-v1",
+      "status": "blocked",
+      "attempts": 1,
+      "finishedAt": 1790948384892,
+      "notBefore": null
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-ga4-realtime-v1.retry-1",
+      "status": "blocked",
+      "attempts": 1,
+      "finishedAt": 1790950286793,
+      "notBefore": 1790947845809
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-gsc-urls-v1.retry-1",
+      "status": "blocked",
+      "attempts": 1,
+      "finishedAt": 1790950364235,
+      "notBefore": 1790948089501
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-ga4-realtime-v1.retry-2",
+      "status": "blocked",
+      "attempts": 1,
+      "finishedAt": 1790952581957,
+      "notBefore": 1790950043672
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-gsc-urls-v1.retry-2",
+      "status": "blocked",
+      "attempts": 1,
+      "finishedAt": 1790952663119,
+      "notBefore": 1790950287293
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-ga4-realtime-v1.retry-3",
+      "status": "queued",
+      "attempts": 0,
+      "finishedAt": null,
+      "notBefore": 1790952336131
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-gsc-urls-v1.retry-3",
+      "status": "queued",
+      "attempts": 0,
+      "finishedAt": null,
+      "notBefore": 1790952582341
+    },
+    {
+      "batchId": "thechoicervoicer-20261002-15-ga4-route-repair-v2",
+      "status": "queued",
+      "attempts": 0,
+      "finishedAt": null,
+      "notBefore": null
+    }
+  ],
+  "repair": {
+    "ga4Url": "https://analytics.google.com/analytics/web/#/a400013765p551708268/reports/intelligenthome",
+    "sourceHashes": {
+      "extension/service-worker.js": "267feafef814b19248437520e9afc2dc1368ec7c7aa6dd05767d9b90cf0de830",
+      "extension/ga4-observability.js": "825032bd3b18da77c7f14a256dcbb29f1b79fb8dbce8351719e094151bbbca27",
+      "extension/page-automation.js": "9228ea6482a346a0095b86de40167ca694473041e9a1e230797eca9e5c350e1a",
+      "tests/ga4-observability.test.mjs": "635a2a63f8b88694461525debae3831fdd540fc5092d72b28fe2219c9ae11e83",
+      "tests/gsc-url-binding.test.mjs": "4e47258e04e95881f534f5bc296adf741629934efc37f3de3686afd3541f03a5"
+    },
+    "tests": "34 passed; syntax checks passed",
+    "runtime": "Pending extension reload and targeted live receipt"
   },
-  {
-    "status": "queued",
-    "duplicate": false,
-    "position": 10,
-    "batchId": "thechoicervoicer-20261002-15-ga4-realtime-v1",
-    "fingerprint": "02be81e761430209c848c9afec466d49d308a6ddca3947080dba8fe074b388a4",
-    "schemaVersion": 2,
-    "scenario": "daily-pages",
-    "mode": "ga4-realtime-recheck",
-    "siteUrl": "https://thechoicervoicer.me/",
-    "urls": 30,
-    "indexNowKey": true
-  },
-  {
-    "status": "queued",
-    "duplicate": false,
-    "position": 11,
-    "batchId": "thechoicervoicer-20261002-15-gsc-urls-v1",
-    "fingerprint": "d2d30a505227a4ef86f823f361ae264a9d441abe8f43038e9771491dad428f5d",
-    "schemaVersion": 2,
-    "scenario": "daily-pages",
-    "mode": "gsc-url-recheck",
-    "siteUrl": "https://thechoicervoicer.me/",
-    "urls": 30,
-    "indexNowKey": true
-  },
-  {
-    "status": "queued",
-    "duplicate": false,
-    "position": 12,
-    "batchId": "thechoicervoicer-20261002-sitemap-gsc-v1",
-    "fingerprint": "17e4d5f466cdf8653828688f74ac5f0d0b0e1e273eae775bfbfcc80f04e13add",
-    "schemaVersion": 2,
-    "scenario": "daily-pages",
-    "mode": "gsc-sitemap-recheck",
-    "siteUrl": "https://thechoicervoicer.me/",
-    "urls": 30,
-    "indexNowKey": true
-  },
-  {
-    "status": "queued",
-    "duplicate": false,
-    "position": 13,
-    "batchId": "thechoicervoicer-20261002-sitemap-bing-v1",
-    "fingerprint": "8360341c02245be555b571aa0ab0624f7acc4f3c8fec5902dd9564879e02897c",
-    "schemaVersion": 2,
-    "scenario": "daily-pages",
-    "mode": "bing-sitemap-recheck",
-    "siteUrl": "https://thechoicervoicer.me/",
-    "urls": 30,
-    "indexNowKey": true
-  }
-]
+  "indexNow": "Previously accepted 30 URLs; not repeated",
+  "note": "Only exact terminal URL results count as GSC attempts. GA4 route or transport alone is not backend evidence.",
+  "finalCanonicalSet": [
+    "https://thechoicervoicer.me/trailer-narration-exercises/",
+    "https://thechoicervoicer.me/zh/trailer-narration-exercises/",
+    "https://thechoicervoicer.me/guided-meditation-voice-exercises/",
+    "https://thechoicervoicer.me/zh/guided-meditation-voice-exercises/",
+    "https://thechoicervoicer.me/audio-description-voice-over-exercises/",
+    "https://thechoicervoicer.me/zh/audio-description-voice-over-exercises/",
+    "https://thechoicervoicer.me/ivr-voice-over-exercises/",
+    "https://thechoicervoicer.me/zh/ivr-voice-over-exercises/",
+    "https://thechoicervoicer.me/voicemail-greeting-voice-exercises/",
+    "https://thechoicervoicer.me/zh/voicemail-greeting-voice-exercises/",
+    "https://thechoicervoicer.me/museum-audio-guide-narration-exercises/",
+    "https://thechoicervoicer.me/zh/museum-audio-guide-narration-exercises/",
+    "https://thechoicervoicer.me/news-reading-voice-exercises/",
+    "https://thechoicervoicer.me/zh/news-reading-voice-exercises/",
+    "https://thechoicervoicer.me/puppet-voice-acting-exercises/",
+    "https://thechoicervoicer.me/zh/puppet-voice-acting-exercises/",
+    "https://thechoicervoicer.me/storytelling-voice-exercises/",
+    "https://thechoicervoicer.me/zh/storytelling-voice-exercises/",
+    "https://thechoicervoicer.me/poetry-reading-voice-exercises/",
+    "https://thechoicervoicer.me/zh/poetry-reading-voice-exercises/",
+    "https://thechoicervoicer.me/voice-acting-plosive-exercises/",
+    "https://thechoicervoicer.me/zh/voice-acting-plosive-exercises/",
+    "https://thechoicervoicer.me/voice-acting-sibilance-exercises/",
+    "https://thechoicervoicer.me/zh/voice-acting-sibilance-exercises/",
+    "https://thechoicervoicer.me/voice-over-pickup-exercises/",
+    "https://thechoicervoicer.me/zh/voice-over-pickup-exercises/",
+    "https://thechoicervoicer.me/tour-guide-voice-exercises/",
+    "https://thechoicervoicer.me/zh/tour-guide-voice-exercises/",
+    "https://thechoicervoicer.me/telephone-acting-exercises/",
+    "https://thechoicervoicer.me/zh/telephone-acting-exercises/"
+  ]
+}

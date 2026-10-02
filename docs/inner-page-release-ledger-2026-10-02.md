@@ -39,14 +39,14 @@
 | 平台 | 当前真实状态 |
 |---|---|
 | IndexNow | 30 个精确双语 URL，HTTP 200，公开 key 文件线上一致；`docs/seo/indexnow-2026-10-02.json`；已接受不等于已收录 |
-| GSC sitemap | 幂等 batch 已排队，attempts=0，无提交成功回执 |
-| GSC 每 URL | 30 URL 的独立 inspection/request batch 已排队，attempts=0；没有把队列记为请求成功 |
+| GSC sitemap | 原 batch 已执行一次，终态 timeout：GSC did not confirm sitemap submission；未取得成功回执 |
+| GSC 每 URL | 原 batch 与 retry-1、retry-2 均在第 1 个 URL 检查路由超时；实际 3 次、仅 1 个 canonical，未发出索引请求；其余 29 个未实际检查，retry-3 按原队列保留 |
 | Google 实际收录 | 今天新增 30 URL unknown；历史 30 URL 的已收录证据保留原日期，未称今天复查结果 |
-| Bing sitemap | batch queued / attempts=0；未声称提交或收录成功 |
+| Bing sitemap | 原 batch 已执行一次，终态 timeout：Bing sitemap field was not available；未取得成功回执 |
 | Bing URL | 等 sitemap 回执；只有 sitemap accepted 后，才能与 IndexNow 200 合并使用非 .cc 的 not-required-indexnow 状态 |
 | GA4 transport | 全部 30 URL 有真实 G-4SMXSDGLW2 g/collect HTTP 204；共 60 次视口检查，61 条响应事件 |
-| GA4 后台 | Realtime/DebugView 专项 batch queued / attempts=0；未取得后台证据，因此第 19 项 0 分 |
-| 外部执行连接 | broker 在线但没有执行租约，本项目 batch queued；Chrome 控制连接超时。已请求用户确认收录助手启用并打开；不是已验证的登录/额度问题 |
+| GA4 后台 | 原检查与 retry-1、retry-2 均未匹配页面（0/30），实际后台地址离开目标属性；第 19 项仍为 0 分。正确地址的定向任务已排队，尚无成功证据 |
+| 外部执行连接 | Chrome 收录助手已能领取原队列，broker 正常；已保存助手路由/分页/检查触发修复并通过 34 项针对性测试。需助手空闲时重新加载扩展，使运行实例加载修复；未中断、清空或重排共享任务 |
 
 GA4 证据阻塞是共享外部渠道问题，三个替补也依赖同一渠道；增建替补不能修复该门禁。页面功能和代码验证已完成，保留现有 15 个主题等待缺失证据，不为凑 100 分换薄页或改评分。GSC/Bing/IndexNow 分别处理，独立成功动作不重复。
 
@@ -56,13 +56,15 @@ GA4 证据阻塞是共享外部渠道问题，三个替补也依赖同一渠道�
 - 原始词证据：`docs/keyword-research/web-cafe-kd-2026-10-02-a.json`、`-b.json`；18 查询成功、18 fresh/API computed、0 cached=true；月量/趋势 unavailable；Ahrefs 默认跳过。
 - 全内页 GSC 表：`docs/seo/GSC_INNER_PAGE_STATUS.csv`；150 URL；0 request-confirmed；30 历史 already-indexed；120 无明确成功请求/收录回执。
 - GSC 待提交队列：`docs/seo/GSC_URL_SUBMISSION_BACKLOG.csv`；120 URL，最早记录 2026-10-02（不是发布日期）；原历史成功行保留在全表、排除在 backlog 外。
-- 历史 GSC 证据：`docs/seo/GSC_URL_INSPECTION_LEDGER.csv`；今天实际 inspection/request 尝试 0 次。
+- GSC 检查证据：`docs/seo/GSC_URL_INSPECTION_LEDGER.csv`；保留 30 条历史 indexed 证据，并追加今天第一个 canonical 的 3 条路由 timeout；实际 request 0 次。
 - 逐项评分：`docs/seo/seo-scorecards-2026-10-02.csv`；每 URL 20 项，Pass=5、Blocked=0；全部当前 95/100。
 - 下一次外部恢复/收录检查：2026-10-03；7 日效果复查：2026-10-09。自动化仍 PAUSED，这些日期是台账计划，不声称已有自动执行成功。
-- 若 Chrome 执行连接恢复，先让原幂等队列完成，读取本项目每 URL 的显式 GSC 回执并更新表，再核对 GA4 后台；不要复制另一站的结果或重复 IndexNow。
+- 原幂等队列保持。GA4 修复任务为 `thechoicervoicer-20261002-15-ga4-route-repair-v2`，仅验证分析渠道，不执行 IndexNow。每 URL 后台和 GSC 回执仍需逐项核对；不要复制另一站的结果。
 
 ## 最后复核补充
 
 开发服务器先前监听 artifacts 中生成的 trace HTML，可能触发测试页面重载；已在 vite.config.ts 的 server.watch 排除该目录。针对性验证：写入一份测试 HTML 产物后页面重载 0 次，练习进度保持，TypeScript 通过。这是开发环境配置修复，生产构建字节无相应变更，因此没有制造重部署。
 
-结束时本机磁盘可用空间约 109 MB，出现过 shell 临时文件写入失败。发布、Git 推送与台账已持久化；后续批次需要用户手动腾出空间，未执行批量删除。
+前一轮结束时磁盘仅余约 109 MB；用户清理后本轮起始约 27 GiB，本轮后续再查约 22 GiB。文件写入恢复，未执行文件/目录删除。
+
+助手修复和后续唯一操作见 `docs/seo/external-channel-repair-2026-10-02.md`。严格最终成功数暂时保持 0/15，直到真实 GA4 后台证据使各页达到 100/100。
