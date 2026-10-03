@@ -1,0 +1,22 @@
+{
+  "taskDate": "2026-10-03",
+  "reconciledAt": "2026-10-03T16:28:11.497390+00:00",
+  "knownInnerUrls": 182,
+  "requestConfirmed": 0,
+  "googleIndexed": 30,
+  "unresolvedBacklog": 152,
+  "newUrls": 32,
+  "importedActualGscResults": [
+    {
+      "batchId": "thechoicervoicer-20261002-15-gsc-urls-v1.retry-3",
+      "url": "https://thechoicervoicer.me/trailer-narration-exercises/",
+      "at": "2026-10-02T15:10:51.674Z",
+      "status": "timeout",
+      "detail": "GSC 未进入精确 URL 检查路由; batch thechoicervoicer-20261002-15-gsc-urls-v1.retry-3",
+      "request_action": "not-requested"
+    }
+  ],
+  "todayGscRequests": 0,
+  "dueByCurrentDate": 120,
+  "oldestUnresolvedTrackedDate": "2026-10-02"
+}

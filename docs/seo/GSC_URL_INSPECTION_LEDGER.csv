@@ -32,3 +32,4 @@ inspection_date,canonical,status,detail,request_action,source
 2026-10-02T13:36:03.939Z,https://thechoicervoicer.me/trailer-narration-exercises/,timeout,GSC 未进入精确 URL 检查路由,not-issued; inspection route failed,indexing-assistant results/thechoicervoicer-20261002-15-gsc-urls-v1.json
 2026-10-02T14:12:44.182Z,https://thechoicervoicer.me/trailer-narration-exercises/,timeout,GSC 未进入精确 URL 检查路由,not-issued; inspection route failed,indexing-assistant results/thechoicervoicer-20261002-15-gsc-urls-v1.retry-1.json
 2026-10-02T14:51:02.943Z,https://thechoicervoicer.me/trailer-narration-exercises/,timeout,GSC 未进入精确 URL 检查路由,not-issued; inspection route failed,indexing-assistant results/thechoicervoicer-20261002-15-gsc-urls-v1.retry-2.json
+2026-10-02T15:10:51.674Z,https://thechoicervoicer.me/trailer-narration-exercises/,timeout,GSC 未进入精确 URL 检查路由; batch thechoicervoicer-20261002-15-gsc-urls-v1.retry-3,not-requested,

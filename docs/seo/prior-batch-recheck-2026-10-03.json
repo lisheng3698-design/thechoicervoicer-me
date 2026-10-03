@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-10-04 Asia/Shanghai",
+  "batchId": "thechoicervoicer-20261002-15-ga4-route-repair-v2",
+  "historicalReceivedAt": "2026-10-02T15:49:57.681Z",
+  "status": "blocked",
+  "ga4MatchedHistorical": [
+    {
+      "title": "Trailer Narration Exercises — 6 Practical Drills",
+      "url": "https://thechoicervoicer.me/trailer-narration-exercises/"
+    },
+    {
+      "title": "Audio Description Voice Over Exercises — 6 Practical Drills",
+      "url": "https://thechoicervoicer.me/audio-description-voice-over-exercises/"
+    },
+    {
+      "title": "IVR 语音菜单配音练习 — 六项原创练习与回听标准",
+      "url": "https://thechoicervoicer.me/zh/ivr-voice-over-exercises/"
+    },
+    {
+      "title": "Museum Audio Guide Narration Exercises — 6 Practical Drills",
+      "url": "https://thechoicervoicer.me/museum-audio-guide-narration-exercises/"
+    },
+    {
+      "title": "News Reading Voice Exercises — 6 Practical Drills",
+      "url": "https://thechoicervoicer.me/news-reading-voice-exercises/"
+    },
+    {
+      "title": "Puppet Voice Acting Exercises — 6 Practical Drills",
+      "url": "https://thechoicervoicer.me/puppet-voice-acting-exercises/"
+    }
+  ],
+  "note": "Historical six-title evidence is preserved at its original receipt date; later retries still did not confirm the full 30 URL set. No current-day backend result or GSC request is inferred."
+}

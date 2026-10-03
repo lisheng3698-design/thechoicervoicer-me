@@ -1,0 +1,65 @@
+{
+  "taskDate": "2026-10-03",
+  "checkedAt": "2026-10-03T16:39:47.846210+00:00",
+  "deployment": {
+    "hosting": "GitHub Pages",
+    "sourceCommit": "06b17136f91fea1ffaeee948165c0c405de57a0f",
+    "deploymentCommit": "7b941f4962cd4bddd1e1c6ea002e62ab97c3f6d7",
+    "worktree": "/private/tmp/thechoicervoicer-20261003-pages-81ok1yn8",
+    "artifact": "/Users/a1-6/Documents/ChatGPT/The Choicer Voicer/artifacts/release-20261003-v2",
+    "copiedFiles": 255,
+    "noFilesDeleted": true
+  },
+  "productionQa": {
+    "pages": 30,
+    "viewportChecks": 60,
+    "passed": 60,
+    "ga4TransportPassed": 60,
+    "backendConfirmed": 0
+  },
+  "queue": [
+    {
+      "batchId": "thechoicervoicer-20261003-capability-preflight-v1",
+      "siteUrl": "https://thechoicervoicer.me/",
+      "status": "queued",
+      "attempts": 0,
+      "enqueuedAt": 1791043143152,
+      "finishedAt": null,
+      "notBefore": null
+    },
+    {
+      "batchId": "thechoicervoicer-20261003-15-ga4-verify-v1",
+      "siteUrl": "https://thechoicervoicer.me/",
+      "status": "queued",
+      "attempts": 0,
+      "enqueuedAt": 1791044960176,
+      "finishedAt": null,
+      "notBefore": null
+    }
+  ],
+  "gsc": {
+    "perUrlAttemptsThisRun": 0,
+    "requestReceiptsThisRun": 0,
+    "status": "queued preflight; not inspected"
+  },
+  "bing": {
+    "status": "not submitted; final-100 gate pending"
+  },
+  "indexnow": {
+    "status": "prepared-not-submitted",
+    "urlCount": 30
+  },
+  "ga4": {
+    "measurementId": "G-4SMXSDGLW2",
+    "propertyId": "551708268",
+    "streamId": "15504292780",
+    "realtimeUrl": "https://analytics.google.com/analytics/web/#/a400013765p551708268/realtime/overview",
+    "status": "transport verified; backend queued"
+  },
+  "workflow": "No indexing actions before final 100. Shared broker preserves FIFO and sole active lease; no other project run interrupted.",
+  "hubQa": {
+    "checks": 4,
+    "passed": 4,
+    "evidence": "artifacts/hub-qa-20261003.json"
+  }
+}
