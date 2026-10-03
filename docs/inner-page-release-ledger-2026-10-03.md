@@ -56,3 +56,11 @@
 - 生产证据 artifacts/production-source-audit-20261003.json、production-qa-20261003.json、production-20261003/；外部队列快照 docs/seo/external-checks-2026-10-03.json。
 - 下一次外部核验与收录检查计划 2026-10-05；实际发布后的 7 日效果复查 2026-10-11。既有自动化设置不变，计划日期不证明执行。
 - 内容研究参考：[Voice Acting Club demo guide](https://voiceactingclub.com/demo/)、[Voices recording-session guide](https://www.voices.com/help/beginners-guide-to-voice-acting/attending-a-recording-session)、[StudioBinder V.O. format](https://www.studiobinder.com/blog/voice-over-montage-screenplay-format/)。所有案例与步骤为独立写作；不复制原文。
+
+## 本批一次性接续
+
+`scripts/continue-inner-page-20261003.mjs` 已启动，读取共享 broker 的本批 GA4 结果及其定向重试，最长运行 12 小时。只有正确属性中精确 30 URL 均有后台匹配，且线上 HTML 与本次产物 SHA-256 一致时，才将第 19 项升为 Pass。随后独立核对公开 IndexNow key、提交精确 payload，排入 GSC/Bing sitemap；GSC 每次仅一个 canonical，保存真实终态到 ledger、全表和 backlog 后才处理下一个。单次会话门禁停止后续 GSC，未执行页不增加尝试数。
+
+接续程序不启动新的浏览器执行通道；仍经共享 FIFO / 单 lease。每个新索引命令耗尽自动重试预算，避免会话失败后由 helper 再盲目重复；这不是 GSC 实际尝试数，实际数量只取逐 URL 结果。已通过 JavaScript 语法、内嵌 Python 语法与精确 30 URL 的无副作用检查；外部路径尚未执行，不能称外部整合通过。
+
+当前状态文件 `docs/seo/continuation-state-2026-10-03.json`，执行输出 `artifacts/continuation-20261003.log`。后台真实回执到达后会更新评分、关键词池和 GSC 表；初始发布台账保留历史状态，并附接续终态。此为当前批次的有限接续，不会另建每日批次。
