@@ -3,6 +3,7 @@ import { resolve } from "node:path";
 
 const root = resolve(import.meta.dirname, "..");
 const date = process.argv[2] || "2026-10-02";
+const publishDate = process.argv[3] || date;
 const pages = JSON.parse(readFileSync(resolve(root, `docs/content/practice-pages-${date}.json`), "utf8"));
 const origin = "https://thechoicervoicer.me";
 const escape = (value) => String(value).replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
@@ -18,13 +19,13 @@ for (const page of pages) {
     const intro = chinese ? page.zhintro : page.intro;
     const review = chinese ? page.zhreview : page.review;
     const limit = chinese ? page.zhlimit : page.limit;
-    const description = chinese ? `${page.zh}：六项原创练习、示例文本、回听标准与进度自查。${page.zhintro}` : `Practice six ${page.keyword} with original prompts, playback checks, clear limits, and a local progress checklist.`;
+    const description = chinese ? `${page.zh}：六项原创练习、示例文本、回听标准与进度自查。${page.zhintro}` : `${page.unit === "step" ? "Follow six practical steps for" : "Practice six"} ${page.keyword} with an original example, review criteria, clear limits, and a local progress checklist.`;
     const questions = [
       [chinese ? `${page.zh}怎样算完成？` : `How should I review ${page.keyword}?`, review],
       [chinese ? `这套${page.zh}有哪些边界？` : `What are the limits of ${page.keyword}?`, limit],
     ];
     const graph = { "@context": "https://schema.org", "@graph": [
-      { "@type": "Article", headline: title, description, inLanguage: chinese ? "zh-Hans" : "en", mainEntityOfPage: canonical, datePublished: date, dateModified: date },
+      { "@type": "Article", headline: title, description, inLanguage: chinese ? "zh-Hans" : "en", mainEntityOfPage: canonical, datePublished: publishDate, dateModified: publishDate },
       { "@type": "BreadcrumbList", itemListElement: [
         { "@type": "ListItem", position: 1, name: "The Choicer Voicer", item: origin + prefix },
         { "@type": "ListItem", position: 2, name: title, item: canonical },
@@ -33,7 +34,10 @@ for (const page of pages) {
     ] };
     const related = page.related.map((slug) => {
       const sibling = pages.find((entry) => entry.slug === slug);
-      return `<a href="${prefix}${slug}/">${escape(chinese ? sibling?.zh || ({'commercial-voice-acting-exercises':'商业配音练习','voice-acting-stakes-exercises':'角色风险练习','podcast-voice-exercises':'播客声音练习','breath-control-exercises-for-voice-acting':'配音呼吸练习','documentary-narration-exercises':'纪录片旁白练习','explainer-video-voice-over-exercises':'说明视频旁白练习','announcer-voice-exercises':'播音声音练习','character-voice-exercises':'角色声音练习','voice-acting-physicality-exercises':'配音身体动作练习','audiobook-narration-exercises':'有声书旁白练习','voice-acting-improv-exercises':'配音即兴练习','voice-acting-script-analysis':'配音文本分析','voice-acting-microphone-technique':'配音麦克风技巧','voice-acting-mouth-noise-exercises':'配音口腔杂音练习','adr-voice-acting-exercises':'ADR 配音练习','voice-projection-exercises':'声音投射练习','voice-acting-listening-exercises':'配音倾听练习','voice-acting-reaction-exercises':'配音反应练习'}[slug]) : name(slug.replaceAll('-', ' ')))}</a>`;
+      const existingHeading = !sibling && chinese
+        ? readFileSync(resolve(root, `zh/${slug}/index.html`), "utf8").match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]+>/g, "")
+        : null;
+      return `<a href="${prefix}${slug}/">${escape(chinese ? sibling?.zh || existingHeading || ({'commercial-voice-acting-exercises':'商业配音练习','voice-acting-stakes-exercises':'角色风险练习','podcast-voice-exercises':'播客声音练习','breath-control-exercises-for-voice-acting':'配音呼吸练习','documentary-narration-exercises':'纪录片旁白练习','explainer-video-voice-over-exercises':'说明视频旁白练习','announcer-voice-exercises':'播音声音练习','character-voice-exercises':'角色声音练习','voice-acting-physicality-exercises':'配音身体动作练习','audiobook-narration-exercises':'有声书旁白练习','voice-acting-improv-exercises':'配音即兴练习','voice-acting-script-analysis':'配音文本分析','voice-acting-microphone-technique':'配音麦克风技巧','voice-acting-mouth-noise-exercises':'配音口腔杂音练习','adr-voice-acting-exercises':'ADR 配音练习','voice-projection-exercises':'声音投射练习','voice-acting-listening-exercises':'配音倾听练习','voice-acting-reaction-exercises':'配音反应练习'}[slug]) : name(slug.replaceAll('-', ' ')))}</a>`;
     }).join(chinese ? "、" : " and ");
     const html = `<!doctype html>
 <html lang="${chinese ? "zh-CN" : "en"}">
@@ -65,7 +69,30 @@ for (const page of pages) {
 `;
     const directory = resolve(root, route.slice(1));
     mkdirSync(directory, { recursive: true });
-    writeFileSync(resolve(directory, "index.html"), html);
+    let output = html;
+    if (page.unit === "step") {
+      output = output.replaceAll("drill", "step").replaceAll("Drill", "Step")
+        .replace('data-practice-routine>', 'data-practice-routine data-practice-unit="step">')
+        .replaceAll("6 steps · Original prompts · Playback review", "6 steps · Original example · Review criteria")
+        .replaceAll("六项练习 · 原创示例 · 自主回听", "六项步骤 · 原创示例 · 自主核对")
+        .replaceAll("开始六项练习", "开始六项步骤")
+        .replaceAll("已完成 0 / 6 项练习", "已完成 0 / 6 项步骤")
+        .replaceAll("重置练习", "重置步骤")
+        .replaceAll("六项原创练习与回听标准", "六项实用步骤与自查标准")
+        .replaceAll("六项原创练习、示例文本、回听标准与进度自查", "六项实用步骤、原创示例、自查标准与进度记录")
+        .replaceAll("Judge the result on playback.", "Check the result against the criteria.")
+        .replaceAll("用结果检查练习。", "按标准核对实际结果。")
+        .replaceAll("Read the example and limits before starting, keep a baseline, and work through the six steps above. Make two takes with a recording device you control and note the specific change privately. On playback, check that information remains intact before judging expressive choices. Stop if uncomfortable; no audio upload is needed.", "Read the original example and limits, then work through the six steps using your own notes and any equipment required by the task. Keep a baseline or current version and check the stated result before marking a step complete. The checklist records your progress locally; it does not inspect files, judge audio, or perform the task for you.")
+        .replaceAll("先读示例与边界，保留基准录音，再完成上方六项。用自己控制的录音设备录两次，把改变的位置写在个人笔记里。回听先检查信息是否完整，再判断表达选择。若有不适，立即停止；不需要上传任何音频。", "先读原创示例与使用边界，再用自己的笔记和任务所需设备完成六项步骤。保留基准或当前版本，核对专属结果后再勾选。清单仅在本地记录进度，不检测文件、评价音频或自动代做任务。");
+    }
+    if (page.unit === "step") {
+      output = output.replace('<div class="faq-grid">', `<p><a href="${prefix}voice-work-guides/">${chinese ? "查看全部配音工作指南" : "Explore all voice work guides"}</a></p><div class="faq-grid">`);
+    }
+    if (page.extra) {
+      const extra = chinese ? page.extra.zh : page.extra.en;
+      output = output.replace('<section class="section section--ink">', `<section class="section container"><h2>${escape(extra.heading)}</h2><p>${escape(extra.body)}</p><pre><code>${escape(extra.example)}</code></pre><p><a href="${page.extra.source}">${chinese ? "参考：StudioBinder 的 V.O. 格式说明" : "Reference: StudioBinder on V.O. formatting"}</a></p></section><section class="section section--ink">`);
+    }
+    writeFileSync(resolve(directory, "index.html"), output);
   }
 }
 console.log(`Generated ${pages.length} English practice guides and ${pages.length} complete Chinese mirrors.`);

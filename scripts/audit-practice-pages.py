@@ -12,11 +12,12 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--artifact', default='artifacts/release-20261002')
 parser.add_argument('--live', action='store_true')
 parser.add_argument('--output', required=True)
+parser.add_argument('--date', default='2026-10-02')
 args = parser.parse_args()
 root = Path(__file__).resolve().parent.parent
 artifact = root / args.artifact
 origin = 'https://thechoicervoicer.me'
-pages = json.loads((root / 'docs/content/practice-pages-2026-10-02.json').read_text())
+pages = json.loads((root / f'docs/content/practice-pages-{args.date}.json').read_text())
 
 def read(route):
     if args.live:
@@ -31,7 +32,7 @@ sitemap = read('/sitemap.xml')[1]
 xml = ET.fromstring(sitemap)
 urls = {e.text for e in xml.findall('{*}url/{*}loc')}
 robots = read('/robots.txt')[1]
-homes = {False: read('/')[1], True: read('/zh/')[1]}
+homes = {False: read('/voice-work-guides/' if args.date == '2026-10-03' else '/')[1], True: read('/zh/voice-work-guides/' if args.date == '2026-10-03' else '/zh/')[1]}
 results = []
 links = set()
 titles = set()

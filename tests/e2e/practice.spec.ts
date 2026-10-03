@@ -1,7 +1,8 @@
 import { expect, test } from "@playwright/test";
 import { readFileSync } from "node:fs";
 
-const pages: { slug: string; keyword: string; zh: string }[] = JSON.parse(readFileSync(new URL("../../docs/content/practice-pages-2026-10-02.json", import.meta.url), "utf8"));
+const batchDate = process.env.PRACTICE_BATCH_DATE || "2026-10-02";
+const pages: { slug: string; keyword: string; zh: string; unit?: string }[] = JSON.parse(readFileSync(new URL(`../../docs/content/practice-pages-${batchDate}.json`, import.meta.url), "utf8"));
 for (const guide of pages) {
   for (const chinese of [false, true]) {
     const route = `${chinese ? "/zh/" : "/"}${guide.slug}/`;
@@ -16,12 +17,13 @@ for (const guide of pages) {
       await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
       await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", `https://thechoicervoicer.me${route}`);
       await expect(page.locator(".step-card h3")).toHaveCount(6);
-      await page.getByRole("link", { name: chinese ? "开始六项练习" : "Start the six-drill routine", exact: true }).click();
+      const steps = guide.unit === "step";
+      await page.getByRole("link", { name: chinese ? (steps ? "开始六项步骤" : "开始六项练习") : (steps ? "Start the six-step routine" : "Start the six-drill routine"), exact: true }).click();
       expect(new URL(page.url()).hash).toBe("#routine");
       const checks = page.locator("[data-practice-check]");
       await checks.first().check();
       await expect(page.getByRole("status")).toContainText(chinese ? "已完成 1 / 6" : "1 of 6");
-      await page.getByRole("button", { name: chinese ? "重置练习" : "Reset routine", exact: true }).click();
+      await page.getByRole("button", { name: chinese ? (steps ? "重置步骤" : "重置练习") : "Reset routine", exact: true }).click();
       await expect(checks.first()).not.toBeChecked();
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
       expect(await page.locator('img').evaluateAll((images) => images.every((image) => image.hasAttribute('alt')))).toBe(true);

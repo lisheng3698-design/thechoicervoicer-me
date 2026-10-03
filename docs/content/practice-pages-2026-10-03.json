@@ -1,0 +1,1065 @@
+[
+  {
+    "slug": "bilingual-voice-acting-exercises",
+    "keyword": "bilingual voice acting exercises",
+    "zh": "双语配音练习",
+    "intro": "Keep a character intention recognizable across two languages. Compare meaning, register, names, and scene timing with a paired English and Chinese practice card, rather than treating literal translation as a finished performance.",
+    "zhintro": "让同一角色意图在两种语言中都清楚成立。使用成对的中英文练习卡，比较含义、语体、人名与场景时长；逐字翻译不是完整的角色表演。",
+    "drills": [
+      [
+        "Intent before translation",
+        "Write who is speaking, to whom, and what they need. Keep these three facts identical in both versions even when sentence order changes."
+      ],
+      [
+        "Meaning units",
+        "Divide each line into action, destination, and deadline. Check both versions preserve all three before recording."
+      ],
+      [
+        "Register pair",
+        "Read one friendly and one formal version in each language. Match social distance, not the exact pitch of individual words."
+      ],
+      [
+        "Name consistency",
+        "Choose one approved pronunciation for the invented place name and repeat it in both takes. Keep a small personal pronunciation note."
+      ],
+      [
+        "Timing budget",
+        "Record each version at a comfortable pace and note its duration. If one is too long for a scene, revise the adaptation before rushing it."
+      ],
+      [
+        "Independent listener check",
+        "Ask a competent speaker of each language to describe the request and relationship. Rework any mismatch and retain the two-language pair."
+      ]
+    ],
+    "zhdrills": [
+      [
+        "先定角色意图",
+        "写清谁在说、对谁说、需要什么。两种版本保留相同事实，允许调整句子顺序。"
+      ],
+      [
+        "核对意义单元",
+        "把台词拆成动作、目的地和期限，录音前确认两个版本都没有遗漏。"
+      ],
+      [
+        "比较语体",
+        "分别用亲切和正式语气朗读两种语言。匹配人物之间的距离，不机械复制每个词的音高。"
+      ],
+      [
+        "统一名称",
+        "为虚构地名确定一个经认可的读法，在两个版本中一致使用，并留下个人发音备注。"
+      ],
+      [
+        "核对时长",
+        "以舒适速度录制两种版本并记录时长。若超出场景预算，先改编文本，再考虑节奏。"
+      ],
+      [
+        "独立听者核对",
+        "请熟悉各语言的听者复述请求和关系，修正不一致后保存成对版本。"
+      ]
+    ],
+    "sample": "English: Please bring the blue folder to Luma Station before noon. Chinese: 请在中午前把蓝色文件夹送到卢玛站。Context: two colleagues coordinating a handover; urgency is practical, not threatening.",
+    "zhsample": "英文：Please bring the blue folder to Luma Station before noon. 中文：请在中午前把蓝色文件夹送到卢玛站。情境：两位同事协调交接；着急是因为时间要求，并非威胁。",
+    "review": "Both listeners should identify the same object, location, deadline, and relationship. Different word counts and natural prosody are acceptable; a lost deadline or accidental change in politeness is not.",
+    "zhreview": "两位听者应复述相同物品、地点、期限和人物关系。字数和自然韵律可以不同，不能遗漏期限或无意改变礼貌程度。",
+    "limit": "This routine does not certify language proficiency or provide automatic translation, accent scoring, or pronunciation recognition. Use languages you can evaluate and obtain qualified review for professional localization.",
+    "zhlimit": "这套步骤不认证语言能力，也不提供自动翻译、口音评分或发音识别。练习你能够判断的语言，专业本地化需由胜任的人员核对。",
+    "related": [
+      "voice-acting-accent-exercises",
+      "voice-acting-script-analysis"
+    ],
+    "unit": "step"
+  },
+  {
+    "slug": "voice-over-demo-reel-exercises",
+    "keyword": "voice over demo reel exercises",
+    "zh": "配音样片练习",
+    "intro": "Build and review a small rehearsal sequence that shows distinct performance choices. Use original scenes, clear transitions, and honest labels; the checklist prepares material for review and does not produce a mixed demo file.",
+    "zhintro": "用小型排练片段展示不同的表演选择。使用原创场景、清晰转场和真实标注；本清单帮助整理待评审材料，不会自动混音或生成样片。",
+    "drills": [
+      [
+        "Choose one audience",
+        "Define a character, commercial, or narration reel before choosing scenes. Do not mix unrelated work simply to make the reel longer."
+      ],
+      [
+        "Lead with a repeatable choice",
+        "Record a short opening that fits your comfortable voice and a specific relationship. Confirm you can repeat it without forcing a sound."
+      ],
+      [
+        "Contrast the second scene",
+        "Change the objective and listener rather than only changing pitch. Compare a reassuring colleague with a suspicious gatekeeper."
+      ],
+      [
+        "Remove redundant spots",
+        "Listen to two adjacent clips without looking at their labels. Keep both only when the performances reveal different useful capabilities."
+      ],
+      [
+        "Review clean transitions",
+        "Assemble a private rehearsal version in your own editor. Check starts, endings, and level changes without using music to conceal weak dialogue."
+      ],
+      [
+        "Label and get feedback",
+        "Mark the file as a rehearsal, identify original or permitted scripts, and ask reviewers what each scene communicates before making a public reel."
+      ]
+    ],
+    "zhdrills": [
+      [
+        "先定目标听者",
+        "先选角色、商业或旁白方向，再挑场景，不为延长时长而混入无关作品。"
+      ],
+      [
+        "用可重复选择开场",
+        "以舒适声音和明确人物关系录短开场，确认不用强迫发声也能重复。"
+      ],
+      [
+        "第二段建立对比",
+        "改变目标和听者，而不只是换音高。对比安慰同事和怀疑来访者的守门人。"
+      ],
+      [
+        "删去重复片段",
+        "不看标签听相邻两段，只有展现不同有效能力时才同时保留。"
+      ],
+      [
+        "检查干净转场",
+        "在自己的编辑器中拼排练版，核对开头、结尾和电平，不用音乐掩盖台词问题。"
+      ],
+      [
+        "标注并征求反馈",
+        "明确这是排练样片，注明原创或获许可文本，请听者复述各段场景后再制作公开样片。"
+      ]
+    ],
+    "sample": "Scene A: You made it. I kept the last seat for you. Scene B: The gate opens at sunrise. Until then, nobody enters. Give each scene a different listener and objective; these are original rehearsal lines.",
+    "zhsample": "场景 A：你终于来了，最后一个座位我给你留着。场景 B：大门日出才开，在那之前谁都不能进去。为两段分别设置不同听者与目标；这些是原创排练台词。",
+    "review": "A reviewer should distinguish the two relationships before reading your notes. Each retained spot must be understandable on its own, repeatable, and free of a distracting edit at the boundary.",
+    "zhreview": "听者在看备注前就应区分两段关系。保留的片段要单独可理解、可重复，边界处没有干扰听感的剪辑。",
+    "limit": "This is a rehearsal workflow, not professional demo production, casting representation, or a guaranteed booking strategy. Do not publish scripts or music without permission, or advertise a voice you cannot comfortably reproduce.",
+    "zhlimit": "这是排练流程，不是专业样片制作、选角代理或接单保证。未经许可不要发布文本或音乐，也不要展示无法舒适重复的声音。",
+    "related": [
+      "voice-acting-audition-exercises",
+      "voice-acting-character-relationship-exercises"
+    ],
+    "unit": "step"
+  },
+  {
+    "slug": "voice-acting-vocal-texture-exercises",
+    "keyword": "voice acting vocal texture exercises",
+    "zh": "配音声音质感练习",
+    "intro": "Explore descriptive character qualities through comfortable speech, word choice, pace, and phrasing. Compare light, steady, and playful impressions without manufacturing rasp, growls, or throat tension.",
+    "zhintro": "通过舒适说话、措辞、节奏和句式探索角色质感。比较轻巧、稳重和活泼的印象，不制造沙哑、嘶吼或喉部紧张。",
+    "drills": [
+      [
+        "Neutral baseline",
+        "Read the sample in your ordinary comfortable speaking voice. Save that take so every comparison has a stable reference."
+      ],
+      [
+        "Light through phrasing",
+        "Give the greeting a brief upbeat opening and shorter phrase endings. Keep the same comfortable volume rather than adding breath leakage."
+      ],
+      [
+        "Steady through pacing",
+        "Use evenly spaced words and a deliberate final phrase. Compare whether steadiness comes across without pressing the voice downward."
+      ],
+      [
+        "Playful through emphasis",
+        "Choose one unexpected word to emphasize and keep the rest plain. Let the contrast imply character instead of tightening the throat."
+      ],
+      [
+        "Describe the listener impression",
+        "Ask a listener to select a descriptive word and quote the moment that caused it. A label without an audible example is insufficient feedback."
+      ],
+      [
+        "Return and repeat",
+        "Read the neutral baseline again. Keep only choices you can repeat easily; end the exercise if comfort changes."
+      ]
+    ],
+    "zhdrills": [
+      [
+        "保存中性基准",
+        "用平时舒适的说话声音朗读示例，保存录音作为稳定参照。"
+      ],
+      [
+        "用句式表现轻巧",
+        "让问候开头简短明快、句尾收得短一些，保持舒适音量，不故意增加漏气。"
+      ],
+      [
+        "用节奏表现稳重",
+        "均匀安排词语，让末句从容结束，不通过压低声音制造稳重。"
+      ],
+      [
+        "用重音表现活泼",
+        "选一个意外词加重，其余保持平实，用对比体现角色，不收紧喉咙。"
+      ],
+      [
+        "记录听者印象",
+        "请听者选一个描述词，并指出产生印象的具体时刻；只给标签不够。"
+      ],
+      [
+        "回到基准再复现",
+        "再次读中性基准，只保留容易重复的选择；舒适度改变就结束。"
+      ]
+    ],
+    "sample": "Welcome to the night library. Your map is waiting beside the green lamp. Compare the same sentence as an ordinary welcome, a measured instruction, and a small pleasant surprise.",
+    "zhsample": "欢迎来到夜间图书馆。你的地图放在绿色台灯旁。用同一句分别表达普通欢迎、从容说明和小小惊喜。",
+    "review": "Keep words and recording position constant. The listener should point to phrasing or emphasis that creates the impression, while you remain able to return to ordinary comfortable speech.",
+    "zhreview": "固定文字和录音位置。听者应指出造成印象的句式或重音，你也应能轻松回到日常说话。",
+    "limit": "No rasp, vocal fry, growl, scream, or altered vocal mechanism is taught or measured here. The routine cannot diagnose vocal conditions or certify a safe specialized technique; stop at discomfort and seek appropriate qualified help for persistent problems.",
+    "zhlimit": "本页不教授或测量沙哑、气泡音、吼声、尖叫或特殊发声机制，也不诊断嗓音状况或认证技巧安全性。不适时停止，持续问题应寻求相应专业帮助。",
+    "related": [
+      "character-voice-exercises",
+      "voice-modulation-exercises"
+    ],
+    "unit": "step"
+  },
+  {
+    "slug": "voice-over-equipment-setup",
+    "keyword": "voice over equipment setup",
+    "zh": "配音设备连接设置",
+    "intro": "Check the recording signal path you already own before a session. Trace microphone, interface or USB input, recording application, monitoring, and a saved test file; this is a practical setup check, not a shopping list.",
+    "zhintro": "录音前检查现有设备的信号路径，依次核对麦克风、接口或 USB 输入、录音软件、监听和保存的测试文件；这是连接检查，不是采购清单。",
+    "drills": [
+      [
+        "Map the signal path",
+        "Write microphone → input device → recording application → file. Identify whether your microphone connects through USB or an audio interface before changing settings."
+      ],
+      [
+        "Select the actual input",
+        "Choose the named device in your recording application. Make a short speaking test and confirm the meter responds to that microphone rather than a laptop input."
+      ],
+      [
+        "Check the required power safely",
+        "Consult the microphone and interface manuals before enabling any power option. Do not guess from a connector shape or copy another microphone setup."
+      ],
+      [
+        "Set a comfortable test level",
+        "Record ordinary and more animated lines. Inspect the application meter for clipping and revise gain before applying processing."
+      ],
+      [
+        "Monitor without a loop",
+        "Use headphones and verify the monitoring path does not feed the output back into the input. Check for echo or doubled speech in the recorded file."
+      ],
+      [
+        "Save and reopen",
+        "Export a short test to the agreed folder, close the editor, and reopen the file. Confirm that it contains the intended microphone and the full sentence."
+      ]
+    ],
+    "zhdrills": [
+      [
+        "画出信号路径",
+        "写下麦克风→输入设备→录音软件→文件，先分清 USB 连接还是音频接口，再改设置。"
+      ],
+      [
+        "选择真实输入",
+        "在软件里选择设备名称，说一小段并确认是目标麦克风的电平在变化，而非笔记本输入。"
+      ],
+      [
+        "按说明核对供电",
+        "开启任何供电选项前阅读麦克风和接口说明，不凭插头外形或别人配置猜测。"
+      ],
+      [
+        "测试舒适电平",
+        "录普通和较活跃的两种台词，检查软件电平是否削波，先调增益再考虑处理。"
+      ],
+      [
+        "避免监听回路",
+        "使用耳机，确认输出不会回送输入，并回听文件是否有回声或重叠。"
+      ],
+      [
+        "保存后重新打开",
+        "导出短测试到指定文件夹，关闭编辑器后重新打开，确认录到目标麦克风和完整句子。"
+      ]
+    ],
+    "sample": "Test card: Input = my selected microphone; application = my recorder; folder = my private test folder. Spoken line: This is my setup test, followed by a quiet pause. Write the actual device names privately.",
+    "zhsample": "测试卡：输入＝已选择的麦克风；软件＝使用中的录音软件；文件夹＝个人测试目录。台词：这是我的设备测试，接下来留一段安静停顿。设备实名记在个人笔记里。",
+    "review": "The reopened file must play the full line without clipping, echo, or an unintended input. A moving input meter alone does not prove that a usable file was saved.",
+    "zhreview": "重新打开的文件应有完整台词，没有削波、回声或误用输入。仅看到输入电平变化不能证明文件已正确保存。",
+    "limit": "The page does not detect devices, set electrical power, record audio, or repair drivers. Hardware instructions and client requirements take precedence; no equipment purchase is required to use the checklist.",
+    "zhlimit": "网页不检测设备、控制供电、录音或修复驱动。硬件说明和客户要求优先；使用清单不需要购买设备。",
+    "related": [
+      "voice-acting-microphone-technique",
+      "microphone-not-working"
+    ],
+    "unit": "step"
+  },
+  {
+    "slug": "voice-acting-remote-session-checklist",
+    "keyword": "voice acting remote session checklist",
+    "zh": "远程配音录音检查清单",
+    "intro": "Prepare the connection, local recording, script version, and handoff for a directed remote session. Keep the conversation channel separate from the recording deliverable and rehearse a connection failure before the appointment.",
+    "zhintro": "为远程指导录音准备连接、本地录音、脚本版本和交付。区分通话渠道与正式录音文件，并在预约前演练断线恢复。",
+    "drills": [
+      [
+        "Confirm session identity",
+        "Check the time zone, contact, link, and expected connection tool in the invitation. Resolve a time-zone mismatch before the session starts."
+      ],
+      [
+        "Freeze the script version",
+        "Write the file name and revision on your private session notes. Confirm the director is looking at the same line numbers."
+      ],
+      [
+        "Test call and recording separately",
+        "Join a test call, then save a local recording. Verify both paths work; hearing you on the call does not establish that the local recorder is running."
+      ],
+      [
+        "Agree take labels",
+        "Ask how takes and pickups should be identified. Rehearse one slate and check that the label appears in the file or session log."
+      ],
+      [
+        "Rehearse a disconnect",
+        "Agree who reconnects, how the last complete take is identified, and whether local recording continues. Do not guess during a real outage."
+      ],
+      [
+        "Verify the handoff",
+        "Save the required files, reopen one, and use the agreed private delivery channel. Confirm receipt and retain the local copy according to the project agreement."
+      ]
+    ],
+    "zhdrills": [
+      [
+        "核对会话身份",
+        "确认时区、联系人、链接和指定通话工具；开始前解决时区不一致。"
+      ],
+      [
+        "固定脚本版本",
+        "在个人会话笔记写文件名和修订号，确认导演看到相同行号。"
+      ],
+      [
+        "分别测试通话与录音",
+        "先测试通话，再保存本地录音。对方听得到你，不代表本地录音已开始。"
+      ],
+      [
+        "约定 take 标注",
+        "询问 take 和补录命名方式，演练一次报号并确认文件或日志能对应。"
+      ],
+      [
+        "演练断线",
+        "约定谁重连、最后完整 take 如何识别、本地录音是否继续，不在真实断线时猜。"
+      ],
+      [
+        "核对交付",
+        "保存指定文件并重新打开一个，使用约定的私密交付渠道，确认收到并按项目约定保留本地副本。"
+      ]
+    ],
+    "sample": "Fictional rehearsal: session 09:00 UTC; script Lantern v3; line 12; take 02. If the call drops after line 12, reconnect and identify whether take 02 completed before continuing.",
+    "zhsample": "虚构演练：会话 09:00 UTC；脚本 Lantern v3；第 12 行；take 02。若第 12 行后断线，重连时先确认 take 02 是否完整，再继续。",
+    "review": "A successful rehearsal has matching versions, a playable local file, an unambiguous take label, and an agreed reconnect action. Neither a green call icon nor a checked box proves delivery.",
+    "zhreview": "演练通过需有一致版本、可播放本地文件、明确 take 标注和约定重连动作。通话绿灯或勾选本身不证明交付完成。",
+    "limit": "This checklist does not join calls, provide a remote recording service, store credentials, or upload files. Use the tool and security requirements specified by the session organizer.",
+    "zhlimit": "清单不加入通话、提供远程录音服务、保存凭据或上传文件。使用组织者指定的工具和安全要求。",
+    "related": [
+      "voice-over-equipment-setup",
+      "voice-acting-director-communication"
+    ],
+    "unit": "step"
+  },
+  {
+    "slug": "voice-over-script-formatting",
+    "keyword": "voice over script formatting",
+    "zh": "配音脚本格式整理",
+    "intro": "Prepare a readable voice-over script with stable line IDs, separate spoken copy and directions, and a visible revision. The six checks help a performer and director discuss the same line without accidentally reading production notes aloud.",
+    "zhintro": "用稳定行号、分开的台词与指令、明确修订号整理配音脚本。六项检查帮助配音员和导演讨论同一句，避免把制作备注读成台词。",
+    "drills": [
+      [
+        "Create stable line IDs",
+        "Assign one ID to each spoken unit. Keep that ID during revisions so a pickup request can still refer to the intended line."
+      ],
+      [
+        "Separate direction from speech",
+        "Put production directions in a visibly distinct label or column. Read the page once and identify exactly what should and should not be spoken."
+      ],
+      [
+        "Mark pronunciation notes",
+        "Place an approved pronunciation beside its first occurrence and in a separate note. Never silently change a proper name to make it easier."
+      ],
+      [
+        "Expose the revision",
+        "Add the project, revision, and date to the header. Give changed lines a clear marker without overwriting the previous file."
+      ],
+      [
+        "Check the actual reading view",
+        "Open the file on the screen or print layout used during recording. Check that small text, page breaks, and hidden columns do not split an important unit."
+      ],
+      [
+        "Dry-run a pickup",
+        "Ask someone to request line 02 in revision 3. Confirm you find the same spoken text and the current direction before treating the format as usable."
+      ]
+    ],
+    "zhdrills": [
+      [
+        "设置稳定行号",
+        "每个台词单元分配一个编号，修订时保留，使补录请求始终指向同一句。"
+      ],
+      [
+        "分开指令与台词",
+        "将制作指令放在明显独立的标签或列，通读后明确哪些字需要朗读。"
+      ],
+      [
+        "标注发音",
+        "首次出现名称时附上已确认读法并另存备注，不为方便而悄悄改专名。"
+      ],
+      [
+        "展示修订号",
+        "页眉写项目、版本和日期，清楚标出变化行，保留旧文件。"
+      ],
+      [
+        "检查实际阅读视图",
+        "在录音时使用的屏幕或打印布局打开，确认小字、分页和隐藏列没有拆断重要单元。"
+      ],
+      [
+        "演练补录定位",
+        "请他人指定第 3 版的 02 行，确认双方找到相同台词和当前指令。"
+      ]
+    ],
+    "sample": "Lantern / revision 3 / rehearsal. ID 01 | Direction: warmly, to one visitor | Spoken: Your room is ready. ID 02 | Direction: practical, no urgency | Spoken: Please collect your key at the blue desk.",
+    "zhsample": "Lantern／第 3 版／排练。01 行｜指令：温和，对一位访客｜台词：你的房间准备好了。02 行｜指令：实用说明，不急迫｜台词：请到蓝色柜台领取钥匙。",
+    "review": "A reader should locate an ID without searching by sentence fragments and should never confuse a direction with spoken words. Confirm the same revision on both ends of a handoff.",
+    "zhreview": "阅读者应能按编号定位，无需搜索零碎句子；指令不能被误当台词。交接双方须确认同一修订版。",
+    "limit": "This is a manual formatting guide, not a document converter or script editor. Follow the receiving studio template when supplied; IDs are organizational aids, not automatic synchronization.",
+    "zhlimit": "这是手动格式指南，不是文档转换器或脚本编辑器。若接收方提供模板，以其为准；行号只帮助组织，不自动同步。",
+    "related": [
+      "voice-acting-script-analysis",
+      "voice-acting-remote-session-checklist"
+    ],
+    "unit": "step",
+    "extra": {
+      "source": "https://www.studiobinder.com/blog/voice-over-montage-screenplay-format/",
+      "en": {
+        "heading": "Screenplay V.O. or a recording sheet?",
+        "body": "For screenplay narration, place (V.O.) with the character name and keep the spoken line in its dialogue block. A studio recording sheet instead uses stable line IDs and separate directions. Preserve the original screenplay version when preparing the recording sheet. Here is an original example of the two representations.",
+        "example": "Screenplay: MARA (V.O.)\nThe lantern waits at the east gate.\n\nRecording sheet: L01 | MARA | narration | The lantern waits at the east gate."
+      },
+      "zh": {
+        "heading": "剧本 V.O. 标注还是录音台词表？",
+        "body": "影视剧本中的画外旁白可在角色名旁标 (V.O.)，台词保留在对白块。录音台词表则使用稳定行号并分离指令。整理录音表时保留原剧本版本，以下原创例子展示同一句的两种形式。",
+        "example": "剧本：MARA (V.O.)\n灯笼在东门等候。\n\n录音表：L01｜MARA｜旁白｜灯笼在东门等候。"
+      }
+    }
+  },
+  {
+    "slug": "voice-acting-director-communication",
+    "keyword": "voice acting director communication",
+    "zh": "配音导演沟通练习",
+    "intro": "Turn a direction into a specific, testable next take. Practice clarifying an ambiguous note, repeating the agreed change, and checking the result while preserving the director’s scene objective.",
+    "zhintro": "把导演意见变成具体、可比较的下一次表演。练习澄清模糊指令、复述约定变化并核对结果，同时保留场景目标。",
+    "drills": [
+      [
+        "Listen through the note",
+        "Write the exact requested change privately before responding. Separate a scene intention from a technical recording instruction."
+      ],
+      [
+        "Clarify one ambiguous word",
+        "If the note is brighter, ask whether it means reassurance, faster pacing, or a different relationship. Use one concise question rather than proposing many unrelated options."
+      ],
+      [
+        "Repeat the agreed action",
+        "State the next change in one sentence: I will keep the pace and make the invitation more welcoming. Allow correction before recording."
+      ],
+      [
+        "Change only the agreed variable",
+        "Record the same words with the confirmed choice. Do not also rewrite the line or change microphone position unless requested."
+      ],
+      [
+        "Compare the result",
+        "Play the original and revised takes with their labels. Ask which version better communicates the agreed objective, not which voice sounds prettier."
+      ],
+      [
+        "Confirm and log",
+        "Write the approved take and the direction used. Distinguish an approval from a suggestion for another attempt."
+      ]
+    ],
+    "zhdrills": [
+      [
+        "听完意见",
+        "回应前在个人笔记记下具体变化，区分场景意图与录音技术要求。"
+      ],
+      [
+        "澄清一个模糊词",
+        "若意见是更明亮，询问是更安心、更快，还是改变关系；用简洁问题，不堆无关选项。"
+      ],
+      [
+        "复述约定动作",
+        "一句话说明下一次变化：保持速度，让邀请更亲切。录音前允许对方纠正。"
+      ],
+      [
+        "只改约定变量",
+        "用同样文字录下确认的选择，不额外改台词或麦克风位置，除非被要求。"
+      ],
+      [
+        "比较结果",
+        "按标号播放原版和改版，判断哪个更符合目标，不只比较声音好不好听。"
+      ],
+      [
+        "确认并记录",
+        "记下获批 take 及所用指令，区分正式认可和建议再试。"
+      ]
+    ],
+    "sample": "Director: Make “We have a place for you” brighter. Performer: Do you mean a more welcoming relationship while keeping this pace? Agreed next take: a clear invitation to one unsure newcomer.",
+    "zhsample": "导演：把“我们为你留了位置”读得更明亮。配音员：是保持速度，让关系更欢迎对方吗？约定下一次：向一位犹豫的新来者发出明确邀请。",
+    "review": "The revised take should preserve words and pace while changing the agreed relationship. The final log must identify who approved which take; a friendly comment is not an approval record.",
+    "zhreview": "改版应保留文字和速度，改变约定的人物关系。记录需明确谁批准了哪个 take；友好评价不等于批准。",
+    "limit": "The routine cannot interpret a real director’s intent or replace a working agreement. It provides a rehearsal conversation and local checklist; no messages are sent to anyone.",
+    "zhlimit": "本流程不能自动理解真实导演意图或替代工作约定，只提供演练对话与本地清单，不向任何人发送消息。",
+    "related": [
+      "voice-acting-taking-direction-exercises",
+      "voice-acting-remote-session-checklist"
+    ],
+    "unit": "step"
+  },
+  {
+    "slug": "audio-drama-casting-exercises",
+    "keyword": "audio drama casting exercises",
+    "zh": "广播剧选角试听练习",
+    "intro": "Compare roles by scene objectives and relationships rather than surface voice novelty. Use an original two-person audio scene to prepare matching audition sides and a repeatable listening rubric for a small casting rehearsal.",
+    "zhintro": "按场景目标和关系比较角色，不只追求奇特声线。用原创双人声音场景准备一致试听片段与可重复评审标准，完成小型选角演练。",
+    "drills": [
+      [
+        "Write the role needs",
+        "Define each character’s objective, listener, and practical constraints. Avoid requirements that the script cannot demonstrate."
+      ],
+      [
+        "Use the same audition side",
+        "Give every rehearsal reader the same lines and context. Keep direction and text version consistent so comparisons are fair."
+      ],
+      [
+        "Test a contrasting relationship",
+        "Read the scene once as colleagues and once as strangers. Listen for an audible change in trust rather than a cosmetic pitch shift."
+      ],
+      [
+        "Assess without seeing names",
+        "Label rehearsal files A and B for an initial listening pass. Record intelligibility, intention, and response to new information before discussing preference."
+      ],
+      [
+        "Test a callback note",
+        "Give one specific direction and record a second take. Check whether the reader can apply it while retaining the scene facts."
+      ],
+      [
+        "Review the pairing",
+        "Listen to the two roles in sequence. Verify distinct intentions, coherent responses, and consistent names before selecting a rehearsal pairing."
+      ]
+    ],
+    "zhdrills": [
+      [
+        "写清角色需求",
+        "定义目标、听者和实际限制，不加入脚本无法验证的要求。"
+      ],
+      [
+        "统一试听片段",
+        "给每位演练者相同台词与背景，保留同一指令和文本版本，便于公平比较。"
+      ],
+      [
+        "对比人物关系",
+        "先按同事、再按陌生人读，听信任关系是否变化，而不只是音高不同。"
+      ],
+      [
+        "先匿名回听",
+        "先把演练文件标 A、B，记录清晰度、意图和对新信息的反应，再讨论偏好。"
+      ],
+      [
+        "试一次复试指令",
+        "给一条具体意见再录，确认能应用变化且保留场景事实。"
+      ],
+      [
+        "核对角色配对",
+        "顺序播放两角色，确认意图有别、回应连贯、名称一致，再选排练组合。"
+      ]
+    ],
+    "sample": "Keeper: The lantern is missing. Courier: I left it beside the east door. Keeper: Then someone moved it after you arrived. Context: the keeper needs the truth; the courier needs to avoid a false accusation.",
+    "zhsample": "管理员：灯笼不见了。送信人：我把它放在东门旁。管理员：那就是你到达后有人移动过。情境：管理员要弄清事实，送信人希望避免被误会。",
+    "review": "The listener should track who needs what and hear the response to the new fact. Compare readers on the stated role needs; an unusual voice alone does not establish a fit.",
+    "zhreview": "听者应追踪双方诉求，并听出对新事实的反应。按事先角色需求比较，特别声线本身不证明适合。",
+    "limit": "This is a casting rehearsal, not an audition marketplace or employment decision system. Obtain permission before sharing recordings and use actual production requirements for real casting.",
+    "zhlimit": "这是选角演练，不是试音平台或用工决策系统。分享录音前取得许可，真实选角以制作要求为准。",
+    "related": [
+      "radio-drama-voice-acting-exercises",
+      "voice-acting-audition-exercises"
+    ],
+    "unit": "step"
+  },
+  {
+    "slug": "voice-acting-continuity-exercises",
+    "keyword": "voice acting continuity exercises",
+    "zh": "配音表演连续性练习",
+    "intro": "Reconstruct a character performance after a break or out-of-order recording. Keep a private reference for relationship, pace, energy, and recording position so a later take belongs to the same scene.",
+    "zhintro": "在中断或乱序录音后还原角色表演。保存人物关系、节奏、能量和录音位置的个人参照，让后录的 take 属于同一场景。",
+    "drills": [
+      [
+        "Make a continuity card",
+        "Note listener, objective, emotional starting point, and recording position for the sample. Use observable details rather than only the word intense."
+      ],
+      [
+        "Save the anchor take",
+        "Record the first line and a brief lead-in. Keep this reference available for a later session instead of relying on memory."
+      ],
+      [
+        "Resume after a short break",
+        "Step away briefly, replay the anchor, and record the next line. Compare phrase endings and energy before changing anything."
+      ],
+      [
+        "Record out of order",
+        "Record the last line first, then the middle line. Use the card to reconstruct the starting state of each line."
+      ],
+      [
+        "Assemble the sequence",
+        "Play the three lines in story order. Identify any sudden change in relationship, distance, or pace that the scene does not justify."
+      ],
+      [
+        "Repair one mismatch",
+        "Rerecord only the line with a documented mismatch. Compare it against both neighboring lines, then update the continuity note."
+      ]
+    ],
+    "zhdrills": [
+      [
+        "建立连续性卡",
+        "记录听者、目标、情绪起点和录音位置，用可观察细节，不只写强烈。"
+      ],
+      [
+        "保存锚点 take",
+        "录第一句和简短前导，保留为后续参照，不依赖记忆。"
+      ],
+      [
+        "短暂停顿后续录",
+        "离开片刻，回放锚点再录下一句，先比较句尾和能量。"
+      ],
+      [
+        "乱序录制",
+        "先录末句再录中句，用卡片还原每句起始状态。"
+      ],
+      [
+        "按故事顺序回听",
+        "依次播放三句，找到场景没有理由解释的关系、距离或节奏突变。"
+      ],
+      [
+        "修正一处失配",
+        "只重录已有记录的失配句，与前后两句比较后更新备注。"
+      ]
+    ],
+    "sample": "Line 1: The bridge is still closed. Line 2: We can wait beside the marker. Line 3: When the signal changes, we move together. One companion reassures another; the relationship remains steady across all three lines.",
+    "zhsample": "第 1 句：桥还没开。第 2 句：我们可以在标记旁等。第 3 句：信号变化时，我们一起走。一位同伴安慰另一位，三句话的关系保持稳定。",
+    "review": "In a blind playback, a listener should not detect a session break from an unexplained character or recording change. Intentional story changes should remain audible and be documented separately.",
+    "zhreview": "不看备注回听时，听者不应从无理由的角色或录音变化识别中断。有意的剧情变化应可听见并单独记录。",
+    "limit": "The checklist does not automatically compare waveforms, match voices, or repair edits. It targets scene continuity; exact pickup audio specifications need a separate technical check.",
+    "zhlimit": "清单不自动比较波形、匹配声音或修复剪辑。它检查场景连续性；精确补录音频规格需另做技术核对。",
+    "related": [
+      "voice-over-pickup-exercises",
+      "voice-acting-character-relationship-exercises"
+    ],
+    "unit": "step"
+  },
+  {
+    "slug": "voice-over-technical-specification-checklist",
+    "keyword": "voice over technical specification checklist",
+    "zh": "配音文件交付规格清单",
+    "intro": "Turn a supplied delivery brief into six verifiable file checks. Inspect format, sample rate, bit depth, channel count, processing, file names, and receipt in your own audio software; there is no universal client specification.",
+    "zhintro": "把客户交付说明拆成六项可核验检查，在自己的音频软件中核对格式、采样率、位深、声道、处理方式、命名和收件；不存在适用所有客户的统一规格。",
+    "drills": [
+      [
+        "Copy the exact brief",
+        "Write the required format, sample rate, bit depth, channels, and processing policy. Mark any omitted value as a question rather than filling it from a preset."
+      ],
+      [
+        "Inspect file properties",
+        "Check the exported file, not just the recording project settings. Compare each actual property with the written brief."
+      ],
+      [
+        "Check channel content",
+        "Listen to and inspect every channel. A stereo container is not proof that two intentional channels are present."
+      ],
+      [
+        "Review processing policy",
+        "Compare the brief with the exported file for normalization, compression, noise reduction, and leading or trailing silence. Ask before applying unrequested processing."
+      ],
+      [
+        "Match naming and boundaries",
+        "Verify line or take IDs, file naming, and complete beginnings and endings. Reopen one file from the actual delivery folder."
+      ],
+      [
+        "Test delivery and receipt",
+        "Send a permitted test through the agreed private channel. Ask the receiver to open it and confirm the specification before preparing the final batch."
+      ]
+    ],
+    "zhdrills": [
+      [
+        "抄录精确要求",
+        "写下格式、采样率、位深、声道和处理政策，遗漏项写为待问，不用预设补空。"
+      ],
+      [
+        "检查导出文件属性",
+        "核对导出文件，而非只看工程设置，逐项对照说明。"
+      ],
+      [
+        "检查声道内容",
+        "回听并查看每个声道，立体声容器不证明两个声道都有预期内容。"
+      ],
+      [
+        "核对处理要求",
+        "确认归一化、压缩、降噪与首尾静音是否符合说明，未要求的处理先询问。"
+      ],
+      [
+        "核对命名与边界",
+        "检查行号、take 编号、文件名和完整首尾，从真实交付目录重新打开一个文件。"
+      ],
+      [
+        "测试交付与接收",
+        "通过约定私密渠道发送获许可测试，请接收方打开并确认规格后再准备最终批次。"
+      ]
+    ],
+    "sample": "Fictional brief: WAV; 48 kHz; 24-bit; mono; unprocessed; one file per line; Lantern_L02_T03.wav. This is a worked example, not a default recommendation. An omitted loudness target remains unresolved.",
+    "zhsample": "虚构说明：WAV；48 kHz；24-bit；单声道；不处理；每行一个文件；Lantern_L02_T03.wav。这是演示，不是默认推荐。未写明的响度目标仍为待确认。",
+    "review": "Every written requirement needs an actual file-property or listening result. A saved preset, filename extension, or green checklist cannot substitute for opening the delivered file.",
+    "zhreview": "每条书面要求都需有实际属性或回听结果，保存的预设、扩展名和勾选都不能替代打开交付文件。",
+    "limit": "The page does not inspect, upload, encode, or certify audio files. The example values are fictional; client and platform specifications control real delivery.",
+    "zhlimit": "网页不检测、上传、编码或认证音频文件。示例数值是虚构的，实际交付按客户与平台规格执行。",
+    "related": [
+      "voice-over-equipment-setup",
+      "voice-acting-remote-session-checklist"
+    ],
+    "unit": "step"
+  },
+  {
+    "slug": "voice-acting-portfolio-checklist",
+    "keyword": "voice acting portfolio checklist",
+    "zh": "配音作品集检查清单",
+    "intro": "Check whether a listener can find your relevant samples, understand your role, and contact you. Organize an honest voice-acting portfolio with working media, permission notes, and one clear next action instead of an unexplained gallery.",
+    "zhintro": "检查听者能否找到相关样本、了解你的具体工作并联系你。用可播放媒体、许可说明和明确下一步组织真实作品集，而不是缺少说明的图库。",
+    "drills": [
+      [
+        "Define the target work",
+        "Name the work you want to show: character acting, narration, or commercial reads. Choose samples that demonstrate that task."
+      ],
+      [
+        "Label your contribution",
+        "State what you performed and whether the piece is commissioned work or a personal rehearsal. Separate performance from editing or production credits."
+      ],
+      [
+        "Verify permission",
+        "Check whether each script, music bed, artwork, and client clip may be published. Leave uncertain material private until permission is resolved."
+      ],
+      [
+        "Open every media item",
+        "Test the actual public playback link on desktop and phone. Confirm it works without the viewer needing your private account."
+      ],
+      [
+        "Check contact and context",
+        "Provide a working contact path and concise relevant context. Keep private addresses and unpublished client information out of public notes."
+      ],
+      [
+        "Run a first-visitor test",
+        "Ask a listener to find one suitable sample and the contact route without instructions. Repair the point where they become lost."
+      ]
+    ],
+    "zhdrills": [
+      [
+        "明确目标工作",
+        "写清展示角色、旁白还是商业朗读，选能体现该任务的样本。"
+      ],
+      [
+        "标注具体贡献",
+        "说明你表演了什么、是委托作品还是个人排练，把表演和剪辑制作署名分开。"
+      ],
+      [
+        "核对发布许可",
+        "分别核对文本、配乐、美术和客户片段能否公开，不确定的材料先保持私密。"
+      ],
+      [
+        "打开全部媒体",
+        "在桌面和手机测试真实公开播放链接，确认听者无需使用你的私密账号。"
+      ],
+      [
+        "核对联系与背景",
+        "提供有效联系路径和相关简短背景，不公开私人地址或未发布客户信息。"
+      ],
+      [
+        "测试首次访问",
+        "请听者无提示找到合适样本与联系入口，修正卡住的位置。"
+      ]
+    ],
+    "sample": "Portfolio card example: Lantern Keeper — original character rehearsal — performer: you — 25-second sample — context: a careful invitation to a traveler. Status: private review until all publication permissions are confirmed.",
+    "zhsample": "作品卡示例：灯塔管理员——原创角色排练——表演者：你——25 秒样本——情境：谨慎邀请旅行者。状态：全部公开许可确认前仅供私密评审。",
+    "review": "The visitor should identify your performance, play a relevant sample, and find the contact path. Record failed links or unclear credits as incomplete even when the page looks polished.",
+    "zhreview": "访问者应辨认你的表演、播放相关样本并找到联系路径。链接失败或署名不清时，即使视觉精美也算未完成。",
+    "limit": "This page does not host a portfolio, verify copyright ownership, contact clients, or promise bookings. The example is a planning card; publish only material you have permission to share.",
+    "zhlimit": "网页不托管作品集、核验版权归属、联系客户或保证接单。示例只是规划卡，公开前确认有权分享。",
+    "related": [
+      "voice-over-demo-reel-exercises",
+      "voice-acting-audition-exercises"
+    ],
+    "unit": "step"
+  },
+  {
+    "slug": "voice-over-pronunciation-guide",
+    "keyword": "voice over pronunciation guide",
+    "zh": "配音发音核对指南",
+    "intro": "Create a small approved pronunciation sheet for names, abbreviations, numbers, and specialist terms in a recording script. Track the source and decision so a later pickup repeats the intended reading rather than an unverified guess.",
+    "zhintro": "为脚本中的人名、缩写、数字和专门术语建立已确认读法表。记录来源与决定，让后续补录复现预期读法，而非沿用未经核验的猜测。",
+    "drills": [
+      [
+        "Extract uncertain tokens",
+        "List the exact names, abbreviations, numbers, and terms that could have more than one reading. Preserve capitalization and surrounding context."
+      ],
+      [
+        "Find the responsible source",
+        "Ask the client or appropriate language specialist for the preferred reading. Separate an approved name preference from a general dictionary entry."
+      ],
+      [
+        "Record an approved reference",
+        "Save a permitted audio reference or clear written notation privately. Record the approver and revision so the choice can be traced."
+      ],
+      [
+        "Read in the sentence",
+        "Practice the term within its actual phrase. Confirm that stress and joining do not change the meaning or make the term unintelligible."
+      ],
+      [
+        "Check repeated occurrences",
+        "Read each occurrence in the script and verify the same intended name. Flag places where context changes the reading of a number or abbreviation."
+      ],
+      [
+        "Recheck before pickups",
+        "Compare the current pronunciation sheet with the latest script. Ask again when a new name or changed context is introduced."
+      ]
+    ],
+    "zhdrills": [
+      [
+        "提取不确定项",
+        "逐项列出可能有多种读法的专名、缩写、数字和术语，保留大小写及上下文。"
+      ],
+      [
+        "找到负责来源",
+        "询问客户或胜任的语言人员，区分名称持有者认可的读法和普通词典读音。"
+      ],
+      [
+        "保存认可参照",
+        "在私密笔记保存获许可音频或明确文字记法，记录确认者与版本。"
+      ],
+      [
+        "放回完整句子",
+        "在实际句子里练习，确认重音和连接没有改变含义或影响辨认。"
+      ],
+      [
+        "核对重复位置",
+        "读每次出现并保持目标读法，标出上下文使数字或缩写读法变化的地方。"
+      ],
+      [
+        "补录前再核对",
+        "将当前读法表与最新脚本对照，新名称或新语境出现时重新询问。"
+      ]
+    ],
+    "sample": "Fictional pronunciation sheet: Luma = LOO-muh, approved only for this rehearsal; code A12 = letter A, number twelve; date 04/05 = unresolved until the client confirms the date convention. Read: Meet the Luma team at gate A12.",
+    "zhsample": "虚构读法表：Luma＝LOO-muh，仅用于本次演练；代码 A12＝字母 A 加数字十二；日期 04/05＝客户确认日期制式前待定。台词：在 A12 门与 Luma 团队碰面。",
+    "review": "The listener should identify the correct entity and number, and the sheet should explain where each decision came from. An ambiguous date cannot pass by sounding fluent.",
+    "zhreview": "听者应辨认正确实体和数字，表格能说明每项决定的来源。日期仍有歧义时，朗读流畅也不算通过。",
+    "limit": "This guide does not recognize speech or provide authoritative pronunciations for real people or brands. Its invented example is not a dictionary entry; unresolved terms require a responsible source.",
+    "zhlimit": "本指南不识别语音，也不为真实人名或品牌提供权威读法。虚构示例不是词典条目；未定术语需要负责来源确认。",
+    "related": [
+      "voice-over-script-formatting",
+      "bilingual-voice-acting-exercises"
+    ],
+    "unit": "step"
+  },
+  {
+    "slug": "voice-over-recording-room-checklist",
+    "keyword": "voice over recording room checklist",
+    "zh": "配音录音房间检查清单",
+    "intro": "Compare a room’s background noise and audible reflections using a repeatable test. Check your current recording position before moving furniture or buying treatment; use saved files to distinguish outside noise from room reflections.",
+    "zhintro": "用可重复测试比较房间背景噪声和可听反射。移动家具或购买处理材料前先检查现有位置，用保存的文件区分外界噪声与房间反射。",
+    "drills": [
+      [
+        "Log the normal conditions",
+        "Note time, open doors or windows, and nearby appliances. Test during the conditions in which the real session will occur."
+      ],
+      [
+        "Record quiet room tone",
+        "Keep the microphone and gain fixed and save a short quiet segment. Listen for intermittent traffic, fans, or neighboring activity rather than assuming silence."
+      ],
+      [
+        "Record a fixed sentence",
+        "Use the same sample line and position for every test. Leave a short pause after it so the decay and background can be heard."
+      ],
+      [
+        "Change one placement",
+        "Move the recording position once while keeping settings consistent. Compare the two files for reflections and noise, not just louder output."
+      ],
+      [
+        "Inspect practical interruptions",
+        "Check chair noise, clothing movement, desk vibration, and notifications. Test a natural movement while listening to the resulting recording."
+      ],
+      [
+        "Retest the chosen setup",
+        "Repeat the full line and quiet segment in the selected position. Record remaining limitations and check them with the receiving engineer when needed."
+      ]
+    ],
+    "zhdrills": [
+      [
+        "记录正常条件",
+        "记下时段、门窗和附近设备，在真实会话预计条件下测试。"
+      ],
+      [
+        "保存安静底噪",
+        "固定麦克风和增益录短安静片段，留意间歇交通、风扇和邻居声，不假定完全安静。"
+      ],
+      [
+        "朗读固定句子",
+        "所有测试使用相同台词和位置，句后留短停顿，便于听衰减和背景。"
+      ],
+      [
+        "只改一个位置",
+        "保持设置移动一次录音位置，对比反射与噪声，不只比较哪个更响。"
+      ],
+      [
+        "检查操作干扰",
+        "核对椅子、衣服、桌面振动和通知声，做自然动作后回听。"
+      ],
+      [
+        "复测选定布置",
+        "在选定位置重录台词与安静片段，记录限制，必要时请接收工程师核对。"
+      ]
+    ],
+    "sample": "Room test: The paper lantern rests beside the doorway. Pause, then repeat at the second position using the same input settings. File A = original position; file B = changed position; write the time and observable difference.",
+    "zhsample": "房间测试：纸灯笼放在门口旁。停顿后，在第二个位置用相同输入设置复读。文件 A＝原位置；文件 B＝改后位置；记下时间和可观察差别。",
+    "review": "Choose the position where the words remain clear and unwanted sound is reduced consistently in the repeated test. A single quiet moment does not prove the room is suitable throughout a session.",
+    "zhreview": "选择在重复测试中台词清楚、干扰稳定减少的位置。某一瞬间安静不证明整场录音都适合。",
+    "limit": "No room measurement, soundproofing rating, acoustic certification, or material recommendation is provided. Do not obstruct ventilation or make structural changes to complete this checklist; consult qualified help for building work.",
+    "zhlimit": "本页不提供房间测量、隔音等级、声学认证或材料推荐。不要为勾选堵住通风或改动结构，建筑工作需请合适人员处理。",
+    "related": [
+      "voice-over-equipment-setup",
+      "voice-acting-mouth-noise-exercises"
+    ],
+    "unit": "step"
+  },
+  {
+    "slug": "live-event-voice-announcements",
+    "keyword": "live event voice announcements",
+    "zh": "现场活动广播练习",
+    "intro": "Prepare concise live announcements that tell an audience who needs to act, where to go, and when. Rehearse normal updates, changed information, and a correction using a fictional event instead of improvising facts over a microphone.",
+    "zhintro": "准备简洁现场广播，清楚说明谁需要行动、去哪里、何时行动。用虚构活动练习常规更新、变更和更正，不在麦克风前临时编造事实。",
+    "drills": [
+      [
+        "Confirm the audience and source",
+        "Write who the message applies to and who approved its facts. Do not broadcast an unconfirmed location or time."
+      ],
+      [
+        "Put the action first",
+        "State the required action in a short sentence, then give the destination and timing. Remove background that delays the instruction."
+      ],
+      [
+        "Say locations distinctly",
+        "Read the actual room name or marker without rushing. Check whether a listener can repeat the destination after one pass."
+      ],
+      [
+        "Rehearse an update",
+        "Change one fact in the sample and label it as an update. Preserve everything that remains valid."
+      ],
+      [
+        "Make a clean correction",
+        "If you read the wrong room, explicitly correct that room and repeat the full current instruction. Avoid an unclear fragment such as actually, the other one."
+      ],
+      [
+        "Check handoff and repetition",
+        "Agree with the event lead when a message may repeat and who takes over. Save the approved wording and time in the event notes."
+      ]
+    ],
+    "zhdrills": [
+      [
+        "核对听众与来源",
+        "写明消息适用人群和事实确认者，不广播未经确认地点或时间。"
+      ],
+      [
+        "先说动作",
+        "短句说明要做什么，再给目的地和时间，移除拖延指令的背景。"
+      ],
+      [
+        "清楚说地点",
+        "不赶着读真实房间或标记名称，确认听者一次能复述。"
+      ],
+      [
+        "演练更新",
+        "只改示例一项事实，明确这是更新，保留仍有效部分。"
+      ],
+      [
+        "完整更正",
+        "读错房间时明确更正并重复当前完整指令，不说含糊的另一个。"
+      ],
+      [
+        "约定交接与重复",
+        "与负责人约定重复时间和接手人，将确认文字及时间保存到活动笔记。"
+      ]
+    ],
+    "sample": "Fictional event: Workshop participants, please meet at the blue desk at 14:30. Update: The meeting point is now the green desk; the time remains 14:30. Correction: Green desk, not blue desk.",
+    "zhsample": "虚构活动：工作坊参加者，请于 14:30 在蓝色柜台集合。更新：集合点改为绿色柜台，时间仍是 14:30。更正：绿色柜台，不是蓝色柜台。",
+    "review": "After a single reading, the listener must identify the intended group, current destination, and time. Compare the update against the approved facts rather than measuring excitement.",
+    "zhreview": "单次朗读后，听者需说出适用人群、当前地点和时间。更新按获批事实核对，不用兴奋程度评分。",
+    "limit": "This is a normal-event rehearsal, not an emergency announcement protocol or public-address system. Real emergency communication must follow the venue’s authorized procedures; the page does not verify live event facts.",
+    "zhlimit": "这是常规活动演练，不是应急广播规程或广播系统。真实应急沟通遵循场地授权流程，网页不核验活动实时事实。",
+    "related": [
+      "announcer-voice-exercises",
+      "tour-guide-voice-exercises"
+    ],
+    "unit": "step"
+  },
+  {
+    "slug": "voice-acting-rehearsal-schedule",
+    "keyword": "voice acting rehearsal schedule",
+    "zh": "配音排练计划",
+    "intro": "Plan a bounded rehearsal around one scene objective, a baseline take, a small number of comparisons, and a review. Separate preparation, practice, and follow-up so a schedule produces observable decisions instead of an arbitrary streak.",
+    "zhintro": "围绕一个场景目标、基准 take、少量对比和回听安排有限排练。分开准备、练习和后续，让计划产生可观察决定，而不是追求连续天数。",
+    "drills": [
+      [
+        "Define one outcome",
+        "Choose a result such as a clearer scene turn or consistent character relationship. Write how a listener will recognize it."
+      ],
+      [
+        "Prepare before the session",
+        "Select a short original or permitted script, set up your recorder, and identify the line to compare. Keep preparation separate from performance time."
+      ],
+      [
+        "Record the baseline",
+        "Make one comfortable unmodified take. Save it with a clear label before trying a new direction."
+      ],
+      [
+        "Reserve comparison time",
+        "Plan two versions that change one variable. Leave time to listen rather than using the whole session for repeated recording."
+      ],
+      [
+        "Use an explicit stop point",
+        "Finish after the planned comparison or earlier if comfort or attention changes. Unfinished steps can be resumed; completion is not an endurance target."
+      ],
+      [
+        "Schedule the next question",
+        "Write what worked, what remains unclear, and the next specific test. Revisit after a break with the same reference instead of starting from memory."
+      ]
+    ],
+    "zhdrills": [
+      [
+        "定义一个结果",
+        "例如转折更清楚或角色关系一致，写下听者怎样辨认。"
+      ],
+      [
+        "排练前准备",
+        "选短原创或获许可脚本，设置录音设备并确定比较句，把准备与表演时间分开。"
+      ],
+      [
+        "录基准版本",
+        "用舒适自然声音录一版，先按明确标签保存，再试新指令。"
+      ],
+      [
+        "留出比较时间",
+        "安排只改一个变量的两版，给回听留时间，不把全部时段用于反复录音。"
+      ],
+      [
+        "设置停止点",
+        "完成计划对比就结束，舒适度或注意力变化时可提前停，未完步骤下次继续。"
+      ],
+      [
+        "安排下一个问题",
+        "记录有效选择、未清楚事项和下一次测试，休息后用同一参照复查，不凭记忆重来。"
+      ]
+    ],
+    "sample": "Example plan, adjustable: preparation 5 minutes; baseline 2 minutes; two contrast takes 4 minutes; playback 5 minutes; notes 2 minutes. Objective: make “The key is still inside” sound like a practical discovery, not an accusation.",
+    "zhsample": "可调整示例：准备 5 分钟；基准 2 分钟；两种对比 4 分钟；回听 5 分钟；笔记 2 分钟。目标：把“钥匙还在里面”说成实际发现，而非指责。",
+    "review": "The session is useful when you retain a baseline, identify one audible difference, and write a next test. Duration and checked steps alone do not establish progress.",
+    "zhreview": "有效排练需保存基准、辨认一个可听差别并写下下一次测试。时长和勾选本身不能证明进步。",
+    "limit": "The page does not provide a calendar, reminders, a personalized training prescription, or automatic improvement measurements. The example timing is optional and should fit the task and your comfort.",
+    "zhlimit": "网页不提供日历、提醒、个性化训练处方或自动进步测量。示例时长可选，应按任务和舒适程度调整。",
+    "related": [
+      "voice-acting-self-critique",
+      "voice-acting-taking-direction-exercises"
+    ],
+    "unit": "step"
+  }
+]
